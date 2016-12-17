@@ -1,0 +1,33 @@
+{
+  "name": "moltensteelman-website",
+  "version": "0.0.1-alpha",
+  "description": "A website for moltensteelman.com",
+  "author": "Ken Eucker <keneucker@gmail.com>",
+  "contributors": [{
+    "name": "Anne Peterson",
+    "email": ""
+    },{
+    "name": "Tain",
+    "email": ""
+    },{
+    "name": "Martin Montensano",
+    "email" : ""}],
+  "bin": {},
+  "scripts": {    
+  },
+  "main": "index.js",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/KenEucker/moltensteelman-website.git"
+},
+  "bugs": {
+  "url": "https://github.com/KenEucker/moltensteelman-website/issues"
+},
+  "keywords": [],
+  "dependencies": {
+    },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "license": "Unlicense"
+}
