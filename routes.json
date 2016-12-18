@@ -1,0 +1,27 @@
+[
+    {
+      "route": "/home",
+      "template": "bootstrap",
+      "content": "content/home/home.json"
+    },
+    {
+      "route": "/home2",
+      "template": "simply-wonder-theme",
+      "content": "content/home/home.json"
+    },
+    {
+      "route": "/editor",
+      "template": "json-editor-master",
+      "content": ""
+    },
+    {
+      "route": "/thewalkingbeast",
+      "template": "project",
+      "content": "thewalkingbeast"
+    },
+    {
+      "route": "/admin",
+      "template": "admin",
+      "content": "admin"
+    }
+  ]
