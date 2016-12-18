@@ -11,9 +11,6 @@ var /// *Libraries*
     fs = require('fs'),
     /// To get relative and ultimate paths
     path = require('path'),
-    exists = require('fs-exists-sync'),
-    /// Enables us to use static folders alongside routed paths
-    //redirect = require("express-redirect"),
     
     // *Application Data*
     staticRoutes = require('./static.json'),
@@ -83,9 +80,6 @@ function serveFile(route, req, res) {
 
 // Turn on pretty formatted errors
 app.locals.pretty = true;
-
-// Add the redirect middleware that enables us to use static folders alongside routed paths
-//redirect(app);
 
 // Use the first route as the landing for the site
 app.get("", function(req, res) {
