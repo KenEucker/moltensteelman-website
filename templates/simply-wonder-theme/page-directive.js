@@ -1,0 +1,43 @@
+window.page.directive = {
+    '#heading': 'heading',
+    '#portfolio .gallery-item': {
+        'video<-videos':{
+            'a@href': 'video.url',
+            'img@src': 'video.thumbnail',
+            'h4': 'video.title',
+            'p > i': 'video.subtitle'
+        }
+    },
+    '#mentions  div.column': {
+        'mention<-mentions':{
+            'img@alt': 'mention.alt',
+            'img@src': 'mention.img'
+        }
+    },
+    '#team  div.columns': {
+        'member<-members':{
+            '.our-team-img img@src': 'member.img',
+            'h6': 'member.name',
+            'p': 'member.blurb',
+            '.email@href': 'member.email',
+            '.facebook@href': 'member.facebook',
+            // '.twitter@href': 'member.twitter',
+            '.linkedin@href': 'member.linkedin',
+            // '.pinterest@href': 'member.pinterest',
+        }
+    },
+    '#contact':{        
+        'contact<-contact':{
+            'p > b':'contact.company-name',
+            '#address-1': 'contact.address-1',
+            '#address-2': 'contact.address-2',
+            '#phone': 'contact.phone',
+            // '#fax': 'contact.fax',
+            '#email': 'contact.email',
+            '#web': 'contact.web',
+            '#facebook@href': 'contact.facebook',
+            '#twitter@href': 'contact.twitter',
+            '#pinterest@href': 'contact.pinterest'
+        }
+    }    
+};
