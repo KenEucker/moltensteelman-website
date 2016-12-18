@@ -1,6 +1,18 @@
 {
-    "heading": "Hello again and agin!",
+    "heading": "MoltenSteelMan and Acme Labs presents!",
     "portfolio-heading": "Videos of the beast",
+    "team-heading": "Our Makers",
+    "splashes": [
+        {
+            "heading": "The walking beast",
+            "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
+            "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
+            "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg"
+        }
+    ],
+    "about-title": "About our projects",
+    "about-blurb-heading": "Heading",
+    "about-blurb": "blurb", 
     "videos": [
         {
             "url": "https://www.youtube.com/embed/G7U07qE3lEc",
@@ -60,12 +72,12 @@
     "mentions": [
         {
             "alt": "Burning Man Blog",
-            "img": "img/burning-man-logo.png"
+            "img": "../../assets/img/burning-man-logo.png"
         }
     ],
     "members": [
         {
-            "img": "img/martin-montesano.jpg",
+            "img": "../../assets/img/martin-montesano.jpg",
             "name": "Martin Montesano, Inventor/Builder",
             "blurb": "Martin Montesano is a brilliant inventor with a pension for large machines and fire. Martin designed and built every single part of The Walking Beast, he laid every single weld.",
             "email": "moltensteelman@netscape.net",
@@ -75,7 +87,7 @@
             "pinterest": "https://www.pinterest.com/keneucker/"
         },        
         {
-            "img": "img/anne-peterson.jpg",
+            "img": "../../assets/img/anne-peterson.jpg",
             "name": "Anne Peterson, Builder/Organizer",
             "blurb": "Anne Peterson is a passionate.",
             "email": "PDXmoopie@gmail.com",
@@ -85,7 +97,7 @@
             "pinterest": "https://www.pinterest.com/keneucker/"
         },        
         {
-            "img": "img/ken-eucker.jpg",
+            "img": "../../assets/img/ken-eucker.jpg",
             "name": "Ken Eucker, Web Admin",
             "blurb": "Ken Eucker is involved in the website's construction and maintenance, while periodically joining The Walking Beast on outtings.",
             "email": "mailto:keneucker@gmail.com",

@@ -111,7 +111,7 @@
 								<img class="animated fadeInUp delay3" src="img/zurb-foundation.png" alt="Twitter Bootstrap" />
 							</div>
 					</section>
-					<section>
+					<!--<section>
 						<h2>Hello...</h2>
 						<h2>
 							<span class="big-text">We love</span> to create <span class="big-text">clean</span>, <span class="big-text">Sementic</span>, <br />
@@ -123,7 +123,7 @@
 							<div class="reveal-images">
 								<img class="animated fadeInUp delay1" src="img/responsive.png" alt="" />
 							</div>
-					</section>
+					</section>-->
 				</div>
 				
 			</div>
@@ -181,15 +181,13 @@
 			<section id="about" class="page-section">
 				<div class="row">
 					<div class="small-12 large-12 columns text-center">
-						<h2 class="section-title">A LITTLE  ABOUT US</h2>
+						<h2 id="about-title" class="section-title">A LITTLE  ABOUT US</h2>
 					</div>
 				</div>
 				<div class="row section-content">
-					<div class="small-12 large-8 columns">
+					<div id="about-blurb" class="small-12 large-8 columns">
 						<h3>Heading goes here </h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nisi ut aliquip  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ex ea commodo consequat. Duis aute irure dolor in  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nisi ut aliquip  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ex ea commodo consequat. Duis aute irure dolor in  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					</div>
 					<div class="small-12 large-4 columns">
 						<div class="widget-box">
 						<div class="widget-title">
@@ -252,7 +250,7 @@
 				<!-- Our Team Start here -->
 				<div id="our-team">
 			 		 <div class="row">
-			 		 		<h2 class="small-12 large-12 columns text-center">
+			 		 		<h2 id="team-heading" class="small-12 large-12 columns text-center">
 			 		 			Our Team
 			 		 		</h2> 
 			 		 </div>
@@ -600,6 +598,13 @@
 		</script>
 		<script src="js/foundation.min.js"></script>
 
+		<!-- PURE Unobtrusive Rendering Engine -->
+		<script src="../../vendor/pure/pure.min.js"></script>
+		<script>
+			// Render the page using PURE
+			$( 'body' ).render(window.page.content, window.page.directive);
+		</script>
+
 		<!-- Youtube API -->
 		<script src="http://www.youtube.com/player_api"></script>
 		
@@ -622,12 +627,6 @@
 		<script src="js/custom.js"></script>
 		<script>
 			$(document).foundation();
-		</script>
-		<!-- PURE Unobtrusive Rendering Engine -->
-		<script src="../../vendor/pure/pure.min.js"></script>
-		<script>
-			// Render the page using PURE
-			$( 'body' ).render(window.page.content, window.page.directive);
 		</script>
 	</body>
 </html>

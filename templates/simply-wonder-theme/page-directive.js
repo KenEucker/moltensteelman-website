@@ -1,5 +1,18 @@
 window.page.directive = {
     '#heading': 'heading',
+    '#team-heading': 'team-heading',
+    '.slides section': {
+        'splash<-splashes':{
+            '#heading':'splash.heading',
+            'img.delay1':'splash.img1',
+            'img.delay2':'splash.img2',
+            'img.delay3':'splash.img3'
+        }
+    },
+    '#about-title': 'about-title',
+    '#about-blurb > h3': 'about-blurb-heading',
+    '#about-blurb > p': 'about-blurb',
+    '#skills-blurb > p': 'about-blurb',
     '#portfolio .gallery-item': {
         'video<-videos':{
             'a@href': 'video.url',
