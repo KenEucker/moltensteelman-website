@@ -1,5 +1,5 @@
 {
-    "heading": "MoltenSteelMan and Acme Labs presents!",
+    "heading": "Moltensteelman and Acme Labs presents!",
     "portfolio-heading": "Videos of the beast",
     "team-heading": "Our Makers",
     "splashes": [
@@ -108,15 +108,15 @@
         }
     ],
     "contact": [{
-        "company-name": "MoltenSteelMan",
-        "address-1": "MoltenSteelMan",
-        "address-2": "MoltenSteelMan",
-        "phone": "MoltenSteelMan",
-        "fax": "MoltenSteelMan",
-        "email": "MoltenSteelMan",
-        "web": "MoltenSteelMan.Com",
-        "facebook": "MoltenSteelMan",
-        "twitter": "MoltenSteelMan",
-        "pinterest": "MoltenSteelMan"
+        "company-name": "moltensteelman",
+        "address-1": "moltensteelman",
+        "address-2": "moltensteelman",
+        "phone": "moltensteelman",
+        "fax": "moltensteelman",
+        "email": "moltensteelman",
+        "web": "moltensteelman.Com",
+        "facebook": "moltensteelman",
+        "twitter": "moltensteelman",
+        "pinterest": "moltensteelman"
     }]
 }

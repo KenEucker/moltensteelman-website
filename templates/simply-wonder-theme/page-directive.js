@@ -12,7 +12,6 @@ window.page.directive = {
     '#about-title': 'about-title',
     '#about-blurb > h3': 'about-blurb-heading',
     '#about-blurb > p': 'about-blurb',
-    '#skills-blurb > p': 'about-blurb',
     '#portfolio .gallery-item': {
         'video<-videos':{
             'a@href': 'video.url',
