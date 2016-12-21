@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Content Editor</title>
+    
+    <!-- Foundation CSS framework (Bootstrap and jQueryUI also supported) -->
+    <link rel='stylesheet' href='../../vendor/foundation/foundation.min.css'>
+    <!-- Font Awesome icons (Bootstrap, Foundation, and jQueryUI also supported) -->
+    <link rel='stylesheet' href='../../vendor/font-awesome/css/font-awesome.css'>
+    
+		<!-- Theme CSS files -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main_responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="./js/jsoneditor.min.js"></script>
+    
+    <script>
+    // Set the default CSS theme and icon library globally
+    JSONEditor.defaults.theme = 'foundation5';
+    JSONEditor.defaults.iconlib = 'fontawesome4';
+    </script>
+  </head>
+  <body>
+    <div class='row'>
+      <div class='medium-12 columns'>
+        <!--<h1>Content Editor</h1>-->
+      </div>
+    </div>
+    <div class='row'>
+      <div class='medium-12-columns'>
+        <a href="http://jsonschema.net/" class="button tiny dev" target="_blank">Create a new schema</a>
+        <button id='submit' class='tiny dev'>Submit (console.log)</button>
+        <button id='restore' class='secondary tiny dev'>Restore to Default</button>
+        <span id='valid_indicator' class='label dev'></span>
+      </div>
+    </div>
+    <div class='row'>
+      <div id='editor_holder' class='medium-12 columns'></div>
+    </div>
+    
+    <script>
+      // http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+      function getParameterByName(name, url) {
+        if (!url) {
+        url = window.location.href;
+        }
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+      // This is the starting value for the editor
+      // We will use this to seed the initial editor 
+      // and to provide a "Restore to Default" button.
+      var starting_value = { },
+          content = getParameterByName("schema"),
+          show_developer_tools = getParameterByName("dev") == "true" ? true : false,
+          dev_tools =  document.querySelectorAll(".dev");
+
+          if(!show_developer_tools){
+            for(var i = 0; i < dev_tools.length; ++i) {
+              dev_tools[i].style.display = "none";
+            }
+          }
+
+      // Initialize the editor
+      var editor = new JSONEditor(document.getElementById('editor_holder'),{
+        // Enable fetching schemas via ajax
+        ajax: true,
+        
+        // The schema for the editor
+        schema: {
+          $ref: "../../content/" + content + ".json",
+          format: "grid"
+        },
+        
+        // Seed the form with a starting value
+        startval: starting_value
+      });
+      
+      // Hook up the submit button to log to the console
+      document.getElementById('submit').addEventListener('click',function() {
+        // Get the value from the editor
+        console.log(editor.getValue());
+      });
+      
+      // Hook up the Restore to Default button
+      document.getElementById('restore').addEventListener('click',function() {
+        editor.setValue(starting_value);
+      });
+      
+      // Hook up the validation indicator to update its 
+      // status whenever the editor changes
+      editor.on('change',function() {
+        // Get an array of errors from the validator
+        var errors = editor.validate();
+        
+        var indicator = document.getElementById('valid_indicator');
+        
+        // Not valid
+        if(errors.length) {
+          indicator.className = 'label alert';
+          indicator.textContent = 'not valid';
+        }
+        // Valid
+        else {
+          indicator.className = 'label success';
+          indicator.textContent = 'valid';
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        // Add the save buttons
+
+        // Hide dynamically created buttons
+        if(!show_developer_tools){
+          var properties_button = document.querySelectorAll(".editor-btn-edit"),
+              json_button = document.querySelectorAll(".json-editor-btn-edit");
+              
+          json_button.item.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

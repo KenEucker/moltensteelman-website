@@ -1,54 +1,199 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
   "properties": {
-    "location": {
-      "type": "object",
-      "title": "Location",
-      "properties": {
-        "city": {
-          "type": "string"
-        },
-        "state": {
-          "type": "string"
-        },
-        "citystate": {
-          "type": "string",
-          "description": "This is generated automatically from the previous two fields",
-          "template": "{{city}}, {{state}}",
-          "watch": {
-            "city": "person.location.city",
-            "state": "person.location.state"
-          }
-        }
-      }
+    "heading": {
+      "type": "string"
     },
-    "pets": {
+    "portfolio-heading": {
+      "type": "string"
+    },
+    "team-heading": {
+      "type": "string"
+    },
+    "about-title": {
+      "type": "string"
+    },
+    "about-blurb-heading": {
+      "type": "string"
+    },
+    "about-blurb": {
+      "type": "string"
+    },
+    "splashes": {
       "type": "array",
-      "format": "table",
-      "title": "Pets",
-      "uniqueItems": true,
       "items": {
         "type": "object",
         "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "cat",
-              "dog",
-              "bird",
-              "reptile",
-              "other"
-            ],
-            "default": "dog"
+          "heading": {
+            "type": "string"
+          },
+          "img1": {
+            "type": "string"
+          },
+          "img2": {
+            "type": "string"
+          },
+          "img3": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "heading",
+          "img1",
+          "img2",
+          "img3"
+        ]
+      }
+    },
+    "videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "thumbnail",
+          "title",
+          "subtitle"
+        ]
+      }
+    },
+    "mentions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "alt": {
+            "type": "string"
+          },
+          "img": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "alt",
+          "img"
+        ]
+      }
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "img": {
+            "type": "string"
           },
           "name": {
             "type": "string"
           },
-          "fixed": {
-            "type": "boolean",
-            "title": "spayed / neutered"
+          "blurb": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "facebook": {
+            "type": "string"
+          },
+          "twitter": {
+            "type": "string"
+          },
+          "linkedin": {
+            "type": "string"
+          },
+          "pinterest": {
+            "type": "string"
           }
-        }
+        },
+        "required": [
+          "img",
+          "name",
+          "blurb",
+          "email",
+          "facebook",
+          "twitter",
+          "linkedin",
+          "pinterest"
+        ]
+      }
+    },
+    "contact": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company-name": {
+            "type": "string"
+          },
+          "address-1": {
+            "type": "string"
+          },
+          "address-2": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "web": {
+            "type": "string"
+          },
+          "facebook": {
+            "type": "string"
+          },
+          "twitter": {
+            "type": "string"
+          },
+          "pinterest": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "company-name",
+          "address-1",
+          "address-2",
+          "phone",
+          "fax",
+          "email",
+          "web",
+          "facebook",
+          "twitter",
+          "pinterest"
+        ]
       }
     }
-  }
+  },
+  "required": [
+    "heading",
+    "portfolio-heading",
+    "team-heading",
+    "splashes",
+    "about-title",
+    "about-blurb-heading",
+    "about-blurb",
+    "videos",
+    "mentions",
+    "members",
+    "contact" 
+  ]
 }
