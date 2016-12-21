@@ -1,0 +1,3 @@
+#!/bin/bash 
+
+echo "Packaging site into build folder"
