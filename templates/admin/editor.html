@@ -71,7 +71,10 @@
 
     function saveJSONToContentFile() {
         // Send json to server to be saved
-        
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+        xmlhttp.open("POST", "save?location=" + content_name + ".json");
+        xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xmlhttp.send(JSON.stringify(editor.getValue()));
     }
 
       // This is the starting value for the editor
@@ -141,7 +144,7 @@
       function addSaveButton(target) {
          // Add the save buttons
         var save_button_html = 
-        '<button type="button" title="Save" class="success button tiny json-editor-btn-edit " onclick="saveJSONToContentFile();"><i class="fa fa-save"></i> SAVE</button>',
+        '<button id="save-button" type="button" title="Save" class="secondary button tiny json-editor-btn-edit " onclick="saveJSONToContentFile();"><i class="fa fa-save"></i> SAVE</button>',
             save_button = document.createElement("div");
 
         save_button.style = "display:inline-block; margin-left: 10px; vertical-align: middle;";
@@ -151,7 +154,7 @@
         target.appendChild(save_button);
       }
 
-     window.onload = function() {   
+     setTimeout(function() {   
        var  dev_buttons = document.querySelectorAll(".json-editor-btn-edit"),
             editor_panel = document.querySelectorAll(".panel");   
         
@@ -165,7 +168,7 @@
 
         addSaveButton(dev_buttons[0].parentElement.parentElement);
         addSaveButton(editor_panel[0]);
-      };
+     }, 300);
     </script>
   </body>
 </html>

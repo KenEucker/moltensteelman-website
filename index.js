@@ -3,6 +3,8 @@ const PORT=8080;
 var /// *Libraries*
     /// Powers our app 
     express = require('express'),
+    /// For receiving and processing post data
+    bodyparser = require('body-parser'),
     /// For collection utilities
     _ = require('lodash'),
     /// To output console messages
@@ -78,8 +80,27 @@ function serveFile(route, req, res) {
     res.sendFile(path.join(__dirname, route, req.url));
 }
 
+function saveFile(contents, target) {
+    /// TODO: save bak of target with timestamp appended
+    fs.writeFile(target, contents, function(err) {
+        if(err) {
+            return console.log(chalk.red(err));
+        }
+
+        console.log(chalk.green("Successfully saved file to ", target));
+    }); 
+}
+
 // Turn on pretty formatted errors
 app.locals.pretty = true;
+
+// Receive json at this endpoint
+app.use(bodyparser.json());
+app.post('/admin/save', function(req, res){
+    /// TODO: verify credentials
+    // req.query.auth
+    saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
+});
 
 // Use the first route as the landing for the site
 app.get("", function(req, res) {
