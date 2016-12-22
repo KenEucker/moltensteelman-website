@@ -326,8 +326,20 @@
     <!-- PURE Unobtrusive Rendering Engine -->
     <script src="../../vendor/pure/pure.min.js"></script>
     <script>
+        document.addEventListener('click', function(e) {
+            console.log('Click event captured');
+            console.log('classes: ' + e.target.className);
+            console.log('element: ' + e.target.localName.toLowerCase());
+            console.log('parent: ' + e.target.parentNode.localName + ' ' + e.target.parentNode.className);
+            console.log('grandparent: ' + e.target.parentNode.parentNode.localName + ' ' + e.target.parentNode.parentNode.className);
+        });
+
         // Render the page using PURE
-        $( 'body' ).render(window.page.content, window.page.directive);
+        try {
+            $( 'body' ).render(window.page.content, window.page.directive);
+        } catch(e) {
+
+        }
     </script>
 </body>
 

@@ -54,13 +54,36 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
+    function getFileAsJSONObject(filePath)
+    {
+        var req = new XMLHttpRequest();
+        req.open("GET", filePath, false); // 'false': synchronous.
+        req.send(null);
+        return JSON.parse(req.responseText);
+    }
+
+    function saveContentAsTextFile(contents, filePath) {
+        // var blob = new Blob([JSON.stringify(contents)], {type: "text/plain;charset=utf-8"});
+        // FileSaver.saveAs(blob, filePath);
+        var file = new File([JSON.stringify(contents)], filePath, {type: "text/plain;charset=utf-8"});
+        saveAs(file);
+    }
+
+    function saveJSONToContentFile() {
+        // Send json to server to be saved
+        
+    }
+
       // This is the starting value for the editor
       // We will use this to seed the initial editor 
       // and to provide a "Restore to Default" button.
-      var starting_value = { },
-          content = getParameterByName("schema"),
+      var content = getParameterByName("schema"),
           show_developer_tools = getParameterByName("dev") == "true" ? true : false,
-          dev_tools =  document.querySelectorAll(".dev");
+          content_name = content.split(".")[0],
+          content_folder_path = '../../content/',
+          content_filepath = content_folder_path + content_name + '.json',
+          dev_tools =  document.querySelectorAll(".dev"),
+          existing_content = getFileAsJSONObject(content_filepath);
 
           if(!show_developer_tools){
             for(var i = 0; i < dev_tools.length; ++i) {
@@ -72,15 +95,16 @@
       var editor = new JSONEditor(document.getElementById('editor_holder'),{
         // Enable fetching schemas via ajax
         ajax: true,
+        form_name_root: content_name,
         
         // The schema for the editor
         schema: {
-          $ref: "../../content/" + content + ".json",
+          $ref: content_folder_path + content + ".json",
           format: "grid"
         },
         
         // Seed the form with a starting value
-        startval: starting_value
+        startval: existing_content
       });
       
       // Hook up the submit button to log to the console
@@ -114,17 +138,34 @@
         }
       });
 
-      document.addEventListener("DOMContentLoaded", function(event) { 
-        // Add the save buttons
+      function addSaveButton(target) {
+         // Add the save buttons
+        var save_button_html = 
+        '<button type="button" title="Save" class="success button tiny json-editor-btn-edit " onclick="saveJSONToContentFile();"><i class="fa fa-save"></i> SAVE</button>',
+            save_button = document.createElement("div");
 
+        save_button.style = "display:inline-block; margin-left: 10px; vertical-align: middle;";
+        save_button.className = "button-group";
+        save_button.innerHTML = save_button_html;
+
+        target.appendChild(save_button);
+      }
+
+     window.onload = function() {   
+       var  dev_buttons = document.querySelectorAll(".json-editor-btn-edit"),
+            editor_panel = document.querySelectorAll(".panel");   
+        
         // Hide dynamically created buttons
         if(!show_developer_tools){
-          var properties_button = document.querySelectorAll(".editor-btn-edit"),
-              json_button = document.querySelectorAll(".json-editor-btn-edit");
-              
-          json_button.item.style.display = "none";
+
+          for(var i = 0; i < dev_buttons.length; ++i) {
+            dev_buttons[i].style.display = "none";
+          }
         }
-      });
+
+        addSaveButton(dev_buttons[0].parentElement.parentElement);
+        addSaveButton(editor_panel[0]);
+      };
     </script>
   </body>
 </html>
