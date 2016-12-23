@@ -75,6 +75,27 @@
         xmlhttp.open("POST", "save?location=" + content_name + ".json");
         xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xmlhttp.send(JSON.stringify(editor.getValue()));
+        addClassRemoveClass('#save-button', 'success', 'secondary');
+    }
+
+    function addClassRemoveClass(target, remove, add) {
+        targets = document.querySelectorAll(target);
+
+        for(var i = 0; i < targets.length; ++i) {              
+          targets[i].classList.remove(remove);
+          targets[i].classList.add(add);
+        }
+    }
+
+    function addListenerToInputsForSaveButton() {
+        var inputs = document.querySelectorAll('input');
+
+        for(var i = 0; i < inputs.length; ++i) {
+          inputs[i].addEventListener('input', function()
+          {
+             addClassRemoveClass('#save-button', 'secondary', 'success');
+          });          
+        }
     }
 
       // This is the starting value for the editor
@@ -168,6 +189,7 @@
 
         addSaveButton(dev_buttons[0].parentElement.parentElement);
         addSaveButton(editor_panel[0]);
+        addListenerToInputsForSaveButton();
      }, 300);
     </script>
   </body>

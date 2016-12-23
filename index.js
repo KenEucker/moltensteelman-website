@@ -7,12 +7,12 @@ var /// *Libraries*
     bodyparser = require('body-parser'),
     /// For collection utilities
     _ = require('lodash'),
-    /// To output console messages
-    chalk = require('chalk'),
     /// So we can read files from the filesystem
     fs = require('fs'),
     /// To get relative and ultimate paths
     path = require('path'),
+    /// To output console messages
+    message = require('./message'),
     
     // *Application Data*
     staticRoutes = require('./static.json'),
@@ -29,13 +29,13 @@ function servePageOrFile(req, res) {
 
     if(req.url[lastSlashLocation] != '/') {
         var redirect = req.url.substring(0, lastSlashLocation + 1) + '/' + req.url.substring(lastSlashLocation + 1);
-        console.log(chalk.bgBlack('redirecting to ' + redirect));
+        message.logUpdate('redirecting to ' + redirect);
         res.redirect(redirect);
     }
     var url = req.path.substring(0, req.path.length - 1);
         routeIndex = routeKeys.indexOf(url);
     
-    console.log(chalk.yellow('receiving ' + url));
+    message.logStatus('receiving ' + url);
 
     if(routeIndex !== -1) {
         servePage(routes[routeIndex], req, res);
@@ -46,8 +46,8 @@ function servePageOrFile(req, res) {
 }
 
 function servePage(route, req, res) {
-    console.log(chalk.magenta('page ' + req.url + ' requested'));
-    console.log(chalk.green('route:', JSON.stringify(route, null, 2)));
+    message.logUpdate('page ' + req.url + ' requested');
+    message.logSuccess('route:', JSON.stringify(route, null, 2));
     var html = path.join(__dirname, 'templates/', route.template, '/index.html'), 
         content = path.join(__dirname, route.content);
     
@@ -55,7 +55,7 @@ function servePage(route, req, res) {
         // Get the html template
         html = fs.readFileSync(html, "utf8");
     } catch(e) {
-        console.log(chalk.red('Error reading html template: ' + e));
+        message.logError('Error reading html template: ' + e);
         res.status(404).send('Not today Sonny boy');
         return;
     }
@@ -64,7 +64,7 @@ function servePage(route, req, res) {
         // Get the page data to use in templating
         content = fs.readFileSync(content, "utf8");
     } catch(e) {
-        console.log(chalk.red('Error reading content for template: ' + e));
+        message.logError('Error reading content for template: ' + e);
     }
     // Insert our page data
     html = html.replace('<script src="./sample.js"></script>','<script>window.page.content=' + content + ';</script>');
@@ -75,7 +75,7 @@ function servePage(route, req, res) {
 }
 
 function serveFile(route, req, res) {        
-    console.log(chalk.blue("serving static file at " + route + req.url));
+    message.logNotice("serving static file at " + route + req.url);
     var file = req.url = (req.url.indexOf('?') != -1) ? req.url.substring(0, req.url.indexOf('?')) : req.url;
     res.sendFile(path.join(__dirname, route, req.url));
 }
@@ -84,10 +84,10 @@ function saveFile(contents, target) {
     /// TODO: save bak of target with timestamp appended
     fs.writeFile(target, contents, function(err) {
         if(err) {
-            return console.log(chalk.red(err));
+            message.logError(err);
         }
 
-        console.log(chalk.green("Successfully saved file to ", target));
+        message.logSuccess("Successfully saved file to " + target);
     }); 
 }
 
@@ -127,5 +127,5 @@ _.forEach(staticRoutes, function(route) {
 
 // Start the app and give success message
 app.listen(PORT, function () {
-    console.log(chalk.green("Server listening on: http://localhost:", PORT));
+    message.logSuccess("Server listening on: http://localhost:" + PORT);
 });
