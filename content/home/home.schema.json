@@ -22,7 +22,7 @@
       "type": "string"
     },
     "splashes": {
-      "title": "splash",
+      "title": "splashes",
       "type": "array",
       "items": {
         "type": "object",
@@ -46,6 +46,39 @@
           "img1",
           "img2",
           "img3"
+        ]
+      }
+    },
+    "products": {
+      "type": "array",
+      "title": "products",
+      "items": {
+        "type": "object",
+        "title": "product",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "thumb-image": {
+            "type": "string"
+          },
+          "banner-image": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "specs": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "image",
+          "description"
         ]
       }
     },
