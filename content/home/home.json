@@ -13,6 +13,16 @@
       "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg"
     }
   ],
+  "products": [
+    {
+      "title": "pyrosaurus",
+      "image": "../../assets/img/2016PyroPairJD.jpg",
+      "thumb-image": "../../assets/img/2016PyroPairJD.jpg",
+      "banner-image": "../../assets/img/2016PyroPairJD.jpg",
+      "description": "the pyrosaurus is a mini fire breathing dragon!",
+      "specs": ""
+    }
+  ],
   "videos": [
     {
       "url": "https://www.youtube.com/embed/G7U07qE3lEc",
