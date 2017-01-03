@@ -794,9 +794,20 @@ strong,
 /* 6. Main Page */
 .page-main{  
     position: relative;
-	margin-left: 50%;
-    width: 50%;
+	margin-left: 40%;
+    width: 60%;
     height: 100%;
+}
+.page-main-expanded{  
+    position: relative;
+	margin-left: 10%;
+    width: 90%;
+    height: 100%;
+	margin-top: 5%;
+}
+
+.page-main-expanded .p-footer {
+	left: 50%;
 }
  
 /* 6.0 Page footer with scroll down button */
@@ -806,6 +817,7 @@ strong,
     width: 100%;
     padding-top: 5rem;
 }
+
 .p-footer .icon{
 	position: absolute;
 	top: 24px;
@@ -1245,7 +1257,11 @@ strong,
 	left: 56px;
 	top: 0;
 	bottom: 0;
-	right: 50%;
+	right: 60%;
+}
+.pane-when-collapsed{
+	position: relative !important;
+	top: 10% !important;;
 }
 .pane-when:after{
 	position: absolute;
@@ -1256,6 +1272,37 @@ strong,
 	width: 1px;
 	border-left: 1px solid #fff; 
 }
+.pane-when-collapsed:after{
+	position: absolute;
+	content: "";
+	top: 25%;
+	right: 0;
+	height: 50%;
+	width: 1px;
+	border-left: 1px solid #fff; 
+}
+/* collapse/expand button */
+.move-button {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+.pane-when-collapsed .move-button {
+    position: absolute;
+    top: 0;
+	margin-top: 0%;
+    right: 8%;
+}
+
+a#move-button {
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
 /* Logo */
 .pane-when .logo{
 	width: 460px;

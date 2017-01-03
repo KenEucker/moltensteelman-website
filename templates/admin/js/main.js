@@ -160,7 +160,24 @@ $(document).ready(function() {
 		
         afterRender: function(){}
     });
+
+    $('#move-button').click(function() {
+        var state = $('.pane-when-collapsed');
+
+        if(state.length == 0) {
+            $('.pane-when').addClass('pane-when-collapsed');
+            $('.page-main').addClass('page-main-expanded').removeClass('page-main');
+            $('.move-button i').removeClass('ion-arrow-shrink').addClass('ion-arrow-expand');
+        }
+        else {
+            $('.pane-when').removeClass('pane-when-collapsed');
+            $('.page-main-expanded').removeClass('page-main-expanded').addClass('page-main');
+            $('.move-button i').addClass('ion-arrow-shrink').removeClass('ion-arrow-expand');
+        }
+    });
 });
+
+
 
 
 
