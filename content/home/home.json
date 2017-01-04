@@ -1,8 +1,8 @@
 {
-  "heading": "Moltensteelman and Acme Labs presents!",
+  "heading": "Moltensteelman",
   "portfolio-heading": "Videos of the beast",
   "team-heading": "Our Makers",
-  "about-title": "About our projects",
+  "about-title": "A little about us",
   "about-blurb-heading": "Heading",
   "about-blurb": "blurb",
   "splashes": [
@@ -104,16 +104,6 @@
       "facebook": "https://www.facebook.com/moopie",
       "twitter": "facebook.com/ken.eucker",
       "linkedin": "https://www.linkedin.com/in/annegetsresults",
-      "pinterest": "https://www.pinterest.com/keneucker/"
-    },
-    {
-      "img": "../../assets/img/ken-eucker.jpg",
-      "name": "Ken Eucker, Web Admin",
-      "blurb": "Ken Eucker is involved in the website's construction and maintenance, while periodically joining The Walking Beast on outtings.",
-      "email": "mailto:keneucker@gmail.com",
-      "facebook": "https://facebook.com/ken.eucker",
-      "twitter": "https://twitter.com/KenEucker",
-      "linkedin": "https://www.linkedin.com/in/keneucker",
       "pinterest": "https://www.pinterest.com/keneucker/"
     }
   ],

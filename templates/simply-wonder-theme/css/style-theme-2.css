@@ -462,4 +462,12 @@ button.btn-grey:hover, button.btn-grey:focus, .button.btn-grey:hover, .button.bt
 	.small-input{width: 100% !important;}
 }
 
+/* Additional styles */
+#heading {
+	display: inline-block;
+}
+
+.hidden {
+	display: none;
+}
 

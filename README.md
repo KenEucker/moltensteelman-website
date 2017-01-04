@@ -21,6 +21,8 @@ The idea is that you can develop a theme without any of the server tech running 
 * Static assets that are only used for a specific template may remain in that template's folder. Templates using static assets only specific to that template are expected to use a relative path specific to that template's folder structure.
 * Assets that are specific to site content would go into the /assets folder to be used between different templates. Assets that are used between templates are expected to use a path that goes the required levels out of the /templates folder 
 
+## Testing
+We have a test site, using Xervo as a hosting provider, up at http://moltensteelman-94980.app.xervo.io/
 
 ## Vendors that make this possible
 * purejs

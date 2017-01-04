@@ -111,7 +111,7 @@ $(document).ready(function() {
 		
 		// Initialise the fancyBox after the DOM is loaded
 		$(document).ready(function() {
-			$(".fancybox.video")
+			$(".fancybox.iframe")
 				.attr('rel', 'gallery')
 				.fancybox({
 					openEffect  : 'none',
@@ -139,42 +139,42 @@ $(document).ready(function() {
 
 	/*------------  for Google map  ------------ */
 
-	$(window).load(function() {
-		LoadGmaps();
-	});
+	// $(window).load(function() {
+	// 	LoadGmaps();
+	// });
 
-	/* Add Your Company Name latitude and  longitude here.
-	 * for latitude and longitude please check http://itouchmap.com/latlong.html
-	 *  */
-	var latitude = "45.073323";
-	var longitude = "-122.979173";
-	var details = "MoltenSteelMan Headquarters - Salem, OR, United States";
+	// /* Add Your Company Name latitude and  longitude here.
+	//  * for latitude and longitude please check http://itouchmap.com/latlong.html
+	//  *  */
+	// var latitude = "45.073323";
+	// var longitude = "-122.979173";
+	// var details = "Moltensteelman Headquarters - Salem, OR, United States";
 
-	function LoadGmaps() {
-		var myLatlng = new google.maps.LatLng(latitude, longitude);
-		var myOptions = {
-			zoom : 8,
-			scrollwheel : true,
-			center : myLatlng,
-			navigationControl : true,
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		}
+	// function LoadGmaps() {
+	// 	var myLatlng = new google.maps.LatLng(latitude, longitude);
+	// 	var myOptions = {
+	// 		zoom : 100,
+	// 		scrollwheel : true,
+	// 		center : myLatlng,
+	// 		navigationControl : true,
+	// 		mapTypeId : google.maps.MapTypeId.SATELLITE
+	// 	}
 
-		var map = new google.maps.Map(document.getElementById("googlemaps"), myOptions);
-		var marker = new google.maps.Marker({
-			position : myLatlng,
-			map : map,
-			icon : 'img/map_icon.png'
-		});
-		var infowindow = new google.maps.InfoWindow({
-			content : details
-		});
-		google.maps.event.addListener(marker, "click", function() {
-			infowindow.open(map, marker);
+	// 	var map = new google.maps.Map(document.getElementById("googlemaps"), myOptions);
+	// 	var marker = new google.maps.Marker({
+	// 		position : myLatlng,
+	// 		map : map,
+	// 		icon : 'img/map_icon.png'
+	// 	});
+	// 	var infowindow = new google.maps.InfoWindow({
+	// 		content : details
+	// 	});
+	// 	google.maps.event.addListener(marker, "click", function() {
+	// 		infowindow.open(map, marker);
 
-		});
+	// 	});
 
-	}
+	// }
 
 });
 

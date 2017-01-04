@@ -1,6 +1,5 @@
 window.page.directive = {
     '#heading': 'heading',
-    '#team-heading': 'team-heading',
     '.slides section': {
         'splash<-splashes':{
             '#heading':'splash.heading',
@@ -10,8 +9,11 @@ window.page.directive = {
         }
     },
     '#about-title': 'about-title',
+    '#about-link': 'about-title',
     '#about-blurb > h3': 'about-blurb-heading',
     '#about-blurb > p': 'about-blurb',
+    '#portfolio-link': 'portfolio-heading',
+    '#portfolio .section-title': 'portfolio-heading',
     '#portfolio .gallery-item': {
         'video<-videos':{
             'a@href': 'video.url',
@@ -26,7 +28,7 @@ window.page.directive = {
             'img@src': 'mention.img'
         }
     },
-    '#team  div.columns': {
+    '#team  div.rows': {
         'member<-members':{
             '.our-team-img img@src': 'member.img',
             'h6': 'member.name',
