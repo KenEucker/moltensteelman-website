@@ -5,6 +5,7 @@
   "about-title": "A little about us",
   "about-blurb-heading": "\"Robot Aliens And Fire!\"",
   "about-blurb": "In 2007, Martin Montensano set on an adventure of both skill and scale to build what has long been called The Walking Beast. What was once called Acme Labs, consists of two members (three?) of Martin Montensano, Anne Peterson, and... Currently, moltensteelman has a miniature version of the walking beast and a pyrosaurus that you can purchase here on this site.",
+  "about-image": "../../assets/img/2016PyroPairJD.jpg",
   "splashes": [
     {
       "heading": "The walking beast",
@@ -33,6 +34,15 @@
       "banner-image": "../../assets/img/2016PyroPairJD.jpg",
       "description": "the pyrosaurus is a mini fire breathing dragon!",
       "specs": ""
+    }
+  ],
+  "services": [
+    {
+      "image": "<i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-bolt fa-stack-1x text-primary'></i>",
+      "name": "Fabrication",
+      "text": "OMG so much welding!",
+      "link": "http://google.com",
+      "link-text": "Learn more about welding"
     }
   ],
   "videos": [

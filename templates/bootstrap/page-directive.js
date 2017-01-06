@@ -8,10 +8,19 @@ window.page.directive = {
             'img@src': 'video.thumbnail',
         }
     },
-    '#mentions  div.column': {
-        'mention<-mentions':{
-            // 'img@alt': 'mention.alt',
-            // 'img@src': 'mention.img'
+    // '#mentions  div.column': {
+    //     'mention<-mentions':{
+    //         // 'img@alt': 'mention.alt',
+    //         // 'img@src': 'mention.img'
+    //     }
+    // },
+    '#services  div.service-item': {
+        'service<-services':{
+            'span': 'service.image',
+            'h4 > strong': 'service.name',
+            'p': 'service.text',
+            'a@href': 'service.link',
+            'a': 'service.link-text'
         }
     },
     '#team  div.column': {
@@ -40,6 +49,9 @@ window.page.directive = {
             '#pinterest@href': 'contact.pinterest'
         }
     },
+    '#callout h1': 'about-blurb-heading',
+    '#callout p': 'about-blurb',
+    '#callout-image': 'about-image',
     '#page-author-blurb': 'page-author-blurb'
     // '#page-author-link': 'page-author-link',
     // '#page-author-link-text': 'page-author-link-text'    
