@@ -5,27 +5,7 @@
   "about-title": "A little about us",
   "about-blurb-heading": "\"Robot Aliens And Fire!\"",
   "about-blurb": "In 2007, Martin Montensano set on an adventure of both skill and scale to build what has long been called The Walking Beast. What was once called Acme Labs, consists of two members (three?) of Martin Montensano, Anne Peterson, and... Currently, moltensteelman has a miniature version of the walking beast and a pyrosaurus that you can purchase here on this site.",
-  "splashes": [
-    {
-      "heading": "The walking beast",
-      "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg"
-    },
-    {
-      "heading": "The Pyrosauraus",
-      "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": ""
-    },
-    {
-      "heading": "The mini beast",
-      "img1": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": ""
-    }
-  ],
-  "products": [
+  "product": [
     {
       "title": "pyrosaurus",
       "image": "../../assets/img/2016PyroPairJD.jpg",
@@ -47,48 +27,6 @@
       "thumbnail": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
       "title": "The AWESOME walking beast",
       "subtitle": ""
-    },
-    {
-      "url": "https://www.youtube.com/embed/al-CxNrLo6k",
-      "thumbnail": "http://img.youtube.com/vi/al-CxNrLo6k/hqdefault.jpg",
-      "title": "Walking Beast at Burning Man '07",
-      "subtitle": "Subtitle"
-    },
-    {
-      "url": "https://www.youtube.com/embed/iBsAdfcCXKA",
-      "thumbnail": "http://img.youtube.com/vi/iBsAdfcCXKA/hqdefault.jpg",
-      "title": "Burning Man 2008",
-      "subtitle": "The beast walks by"
-    },
-    {
-      "url": "https://www.youtube.com/embed/6eDqxHLXNbs",
-      "thumbnail": "http://img.youtube.com/vi/6eDqxHLXNbs/hqdefault.jpg",
-      "title": "EDC LA 2009",
-      "subtitle": "The walking beast"
-    },
-    {
-      "url": "https://www.youtube.com/embed/aAgXUGCbKdk",
-      "thumbnail": "http://img.youtube.com/vi/aAgXUGCbKdk/hqdefault.jpg",
-      "title": "Mechanical Advantage",
-      "subtitle": "Burning Man 2008"
-    },
-    {
-      "url": "https://www.youtube.com/embed/2UJGajdzQV8",
-      "thumbnail": "http://img.youtube.com/vi/2UJGajdzQV8/hqdefault.jpg",
-      "title": "Molten Steel Man - The Walking Beast",
-      "subtitle": "PDX BurnOut 2009"
-    },
-    {
-      "url": "https://www.youtube.com/embed/B3fqNVr1LLc",
-      "thumbnail": "http://img.youtube.com/vi/B3fqNVr1LLc/hqdefault.jpg",
-      "title": "Burning Man 2010",
-      "subtitle": "The Walking Beast"
-    },
-    {
-      "url": "https://www.youtube.com/embed/bxi9wM2Xhu4",
-      "thumbnail": "http://img.youtube.com/vi/bxi9wM2Xhu4/hqdefault.jpg",
-      "title": "The Walking Beast",
-      "subtitle": "walks onto a lowboy trailer"
     }
   ],
   "mentions": [
@@ -132,8 +70,5 @@
       "twitter": "moltensteelman",
       "pinterest": "moltensteelman"
     }
-  ],
-  "page-author-blurb": "Ken Eucker published this site",
-  "page-author-link": "http://keneucker.com",
-  "page-author-link-text": "Ken Eucker published this site"
+  ]
 }

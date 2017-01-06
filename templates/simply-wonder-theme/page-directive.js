@@ -22,6 +22,7 @@ window.page.directive = {
             'p > i': 'video.subtitle'
         }
     },
+    '#mentions .section-title': 'Mentioned In',
     '#mentions  div.column': {
         'mention<-mentions':{
             'img@alt': 'mention.alt',

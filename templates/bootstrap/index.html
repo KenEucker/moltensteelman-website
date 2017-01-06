@@ -73,7 +73,7 @@
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="specs" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -94,18 +94,19 @@
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>our makers</h2>
                     <hr class="small">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-6">
+                    <div id="team" class="row">
+                        <div class="column col-md-5 col-sm-6">
                             <div class="service-item">
                                <img src="../../assets/img/anne-peterson.jpg" class="profile-image">
                                 <h4>
                                     <strong>Anne Peterson</strong>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="https://www.facebook.com/moopie" class="btn btn-light">Learn More</a>
+                                <a href="https://www.facebook.com/moopie" class="email btn btn-light">Learn More</a>
                             </div>
                         </div>
-                        <div class="col-md-5 col-sm-6">
+                    </div>
+                        <!--<div class="col-md-5 col-sm-6">
                             <div class="service-item">
                                <img src="../../assets/img/martin-montesano.jpg" class="profile-image">
                                 
@@ -115,8 +116,9 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
-                        </div>
-                        <div class="col-md-5 col-sm-6">
+                        </div>-->
+                    <div id="mentions" class="row">
+                        <div class="column col-md-5 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -129,7 +131,8 @@
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
                         </div>
-                        <div class="col-md-5 col-sm-6">
+                    </div>
+                        <!--<div class="col-md-5 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -141,7 +144,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 <a href="#" class="btn btn-light">Learn More</a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -167,14 +170,14 @@
                     <h2>Our Work</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 gallery-item">
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!--<div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
@@ -194,7 +197,7 @@
                                     <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
                                 </a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                     <!-- /.row (nested) -->
                     <a href="#" class="btn btn-dark">View More Items</a>
@@ -218,41 +221,40 @@
             </div>
         </div>
     </aside>
-
     <!-- Map -->
+    <!--
     <section id="contact" class="map">
        
-    </section>
+    </section>-->
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                <div id="contact" class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Start Bootstrap</strong></h4>
+                    <p><span  class="address-1">3481 Melrose Place</span>
+                        <br><span  class="address-2">Beverly Hills, CA 90210</span></p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        <li id="phone"><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li id="email"><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
                         </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a id="facebook" href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a id="twitter" href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a id="pinterest" href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
                 </div>
+                <hr class="small">
+                <p id="page-author-blurb" class="text-muted">Copyright &copy; Your Website 2014</p>
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
@@ -331,6 +333,7 @@
 
         // Render the page using PURE
         try {
+            //$( 'head' ).render(window.page.content, window.page.directive);
             $( 'body' ).render(window.page.content, window.page.directive);
         } catch(e) {
 

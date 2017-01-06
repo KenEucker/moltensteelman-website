@@ -1,0 +1,243 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "page",
+  "properties": {
+    "heading": {
+      "type": "string"
+    },
+    "portfolio-heading": {
+      "type": "string"
+    },
+    "team-heading": {
+      "type": "string"
+    },
+    "about-title": {
+      "type": "string"
+    },
+    "about-blurb-heading": {
+      "type": "string"
+    },
+    "about-blurb": {
+      "type": "string"
+    },
+    "splashes": {
+      "title": "splashes",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "splash",
+        "properties": {
+          "heading": {
+            "type": "string"
+          },
+          "img1": {
+            "type": "string"
+          },
+          "img2": {
+            "type": "string"
+          },
+          "img3": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "heading",
+          "img1",
+          "img2",
+          "img3"
+        ]
+      }
+    },
+    "products": {
+      "type": "array",
+      "title": "products",
+      "items": {
+        "type": "object",
+        "title": "product",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "thumb-image": {
+            "type": "string"
+          },
+          "banner-image": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "specs": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "image",
+          "description"
+        ]
+      }
+    },
+    "videos": {
+      "type": "array",
+      "title": "videos",
+      "items": {
+        "title": "video",
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "thumbnail": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "thumbnail",
+          "title",
+          "subtitle"
+        ]
+      }
+    },
+    "mentions": {
+      "type": "array",
+      "title": "mentions",
+      "items": {
+        "type": "object",
+        "title": "mention",
+        "properties": {
+          "alt": {
+            "type": "string"
+          },
+          "img": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "alt",
+          "img"
+        ]
+      }
+    },
+    "members": {
+      "type": "array",
+      "title": "members",
+      "items": {
+        "title": "member",
+        "type": "object",
+        "properties": {
+          "img": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "blurb": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "facebook": {
+            "type": "string"
+          },
+          "twitter": {
+            "type": "string"
+          },
+          "linkedin": {
+            "type": "string"
+          },
+          "pinterest": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "img",
+          "name",
+          "blurb",
+          "email",
+          "facebook",
+          "twitter",
+          "linkedin",
+          "pinterest"
+        ]
+      }
+    },
+    "contact": {
+      "type": "array",
+      "title": "contact info",
+      "items": {
+        "title": "contact",
+        "type": "object",
+        "properties": {
+          "company-name": {
+            "type": "string"
+          },
+          "address-1": {
+            "type": "string"
+          },
+          "address-2": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "fax": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "web": {
+            "type": "string"
+          },
+          "facebook": {
+            "type": "string"
+          },
+          "twitter": {
+            "type": "string"
+          },
+          "pinterest": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "company-name",
+          "address-1",
+          "address-2",
+          "phone",
+          "fax",
+          "email",
+          "web",
+          "facebook",
+          "twitter",
+          "pinterest"
+        ]
+      }
+    }
+  },
+  "required": [
+    "heading",
+    "portfolio-heading",
+    "team-heading",
+    "splashes",
+    "about-title",
+    "about-blurb-heading",
+    "about-blurb",
+    "videos",
+    "mentions",
+    "members",
+    "contact" 
+  ]
+}
