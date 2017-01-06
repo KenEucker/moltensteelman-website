@@ -10,8 +10,8 @@
       "heading": "The walking beast",
       "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
       "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg"
-    },
+      "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg" 
+      },
     {
       "heading": "The Pyrosauraus",
       "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
@@ -111,7 +111,7 @@
     {
       "img": "../../assets/img/anne-peterson.jpg",
       "name": "Anne Peterson, Builder/Organizer",
-      "blurb": "Anne Peterson is a passionate.",
+      "blurb": "Anne Peterson is a passionate organizer and team builder with many different skills between fabrication and costume making.",
       "email": "PDXmoopie@gmail.com",
       "facebook": "https://www.facebook.com/moopie",
       "twitter": "facebook.com/ken.eucker",
