@@ -10,8 +10,8 @@ window.page.directive = {
     },
     '#about-title': 'about-title',
     '#about-link': 'about-title',
-    '#about-blurb > h3': 'about-blurb-heading',
-    '#about-blurb > p': 'about-blurb',
+    '#about-blurb .original > h3': 'about-blurb-heading',
+    '#about-blurb .original > p': 'about-blurb',
     '#portfolio-link': 'portfolio-heading',
     '#portfolio .section-title': 'portfolio-heading',
     '#portfolio .gallery-item': {

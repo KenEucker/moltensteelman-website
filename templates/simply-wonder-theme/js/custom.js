@@ -137,6 +137,16 @@ $(document).ready(function() {
 		
 	}
 
+	$('div.our-team').click(function(){
+			$('#about-blurb .member').html($(this).find('.caption').html());
+			$('#about-blurb .original').addClass('hidden');
+			$('#about-blurb .member').removeClass('hidden');
+	});
+	$('#about-title').click(function(){
+			$('#about-blurb .original').removeClass('hidden');
+			$('#about-blurb .member').addClass('hidden');
+	});
+
 	/*------------  for Google map  ------------ */
 
 	// $(window).load(function() {

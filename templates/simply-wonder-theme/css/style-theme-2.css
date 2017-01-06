@@ -253,6 +253,7 @@ padding: 0;
 .our-team {
 	text-align: center;
 	padding-top: 15px;
+	cursor: pointer;
 }
 .our-team img{
 	width:140px;
@@ -461,13 +462,3 @@ button.btn-grey:hover, button.btn-grey:focus, .button.btn-grey:hover, .button.bt
 	}
 	.small-input{width: 100% !important;}
 }
-
-/* Additional styles */
-#heading {
-	display: inline-block;
-}
-
-.hidden {
-	display: none;
-}
-
