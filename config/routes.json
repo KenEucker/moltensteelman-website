@@ -1,0 +1,38 @@
+[
+    {
+      "route": "/home",
+      "template": "bootstrap",
+      "content": "content/home/home.json",
+      "permissions": "public"
+    },
+    {
+      "route": "/home2",
+      "template": "simply-wonder-theme",
+      "content": "content/home/home.json",
+      "permissions": "public"
+    },
+    {
+      "route": "/login",
+      "template": "login",
+      "content": "",
+      "permissions": "public"
+    },
+    {
+      "route": "/editor",
+      "template": "json-editor-master",
+      "content": "",
+      "permissions": "private"
+    },
+    {
+      "route": "/admin",
+      "template": "admin",
+      "content": "admin",
+      "permissions": "private"
+    },
+    {
+      "route": "/thewalkingbeast",
+      "template": "project",
+      "content": "thewalkingbeast",
+      "permissions": "public"
+    }
+  ]

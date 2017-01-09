@@ -1,3 +1,5 @@
+'use strict';
+
 const PORT=8080; 
 
 var /// *Libraries*
@@ -13,11 +15,18 @@ var /// *Libraries*
     path = require('path'),
     /// To output console messages
     message = require('./message'),
+    /// For user authentication
+    passport = require('passport'),
+    /// For authenticating Google account users
+    GoogleOauthJWTStrategy = require('passport-google-oauth-jwt').GoogleOauthJWTStrategy,
+    /// For using cookies with express
+    cookieParser = require('cookie-parser'),
+    /// Simple session middleware for express
+    session = require('express-session'),
     
     // *Application Data*
-    staticRoutes = require('./static.json'),
-    routes = require('./routes.json'),
-    routeKeys = _.map(routes, 'route'),
+    config = require("./config"),
+    routeKeys = _.map(config.routes, 'route'),
 
     // *Main application*
     app = express();
@@ -30,15 +39,15 @@ function servePageOrFile(req, res) {
     if(req.url[lastSlashLocation] != '/') {
         var redirect = req.url.substring(0, lastSlashLocation + 1) + '/' + req.url.substring(lastSlashLocation + 1);
         message.logUpdate('redirecting to ' + redirect);
-        res.redirect(redirect);
+        return res.redirect(redirect);
     }
-    var url = req.path.substring(0, req.path.length - 1);
+    var url = req.path.substring(0, req.path.length - 1),
         routeIndex = routeKeys.indexOf(url);
     
     message.logStatus('receiving ' + url);
 
     if(routeIndex !== -1) {
-        servePage(routes[routeIndex], req, res);
+        servePage(config.routes[routeIndex], req, res);
     }
     else {
         serveFile(req.path, req, res);
@@ -80,8 +89,15 @@ function serveFile(route, req, res) {
     res.sendFile(path.join(__dirname, route, req.url));
 }
 
+function backupFile(target) {
+    var backup = target + ".bak";
+    
+    fs.writeFileSync(backup, fs.readFileSync(target));
+}
+
 function saveFile(contents, target) {
-    /// TODO: save bak of target with timestamp appended
+    backupFile(target);
+    
     fs.writeFile(target, contents, function(err) {
         if(err) {
             message.logError(err);
@@ -91,14 +107,54 @@ function saveFile(contents, target) {
     }); 
 }
 
+// route middleware to make sure a user is logged in
+function isLoggedIn(req, res, next) {
+
+    // if user is authenticated in the session, carry on
+    if (req.isAuthenticated())
+        return next();
+
+    // if they aren't redirect them to the login page
+    message.logNotice("saving " + req.url + " to redirect to after authentication");
+    req.session.redirectTo = req.url;
+    res.redirect('/login');
+}
+
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.use(new GoogleOauthJWTStrategy({
+	clientId: config.auth.google.clientID,
+	clientSecret: config.auth.google.clientSecret
+}, function verify(token, info, refreshToken, done) {
+	_.find(config.users, function(user) {
+           if(user.id == info.email) {
+               message.logInfo("User " + info.email + " Authenticted using google");
+               done(null, { email: info.email });
+           }
+       });
+}));
+
+/********** Set up application and routes **********/
+
 // Turn on pretty formatted errors
 app.locals.pretty = true;
 
-// Receive json at this endpoint
 app.use(bodyparser.json());
-app.post('/admin/save', function(req, res){
-    /// TODO: verify credentials
-    // req.query.auth
+app.use(session({
+	secret: 'google-oauth-jwt',
+	resave: false,
+	saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.post('/admin/save', isLoggedIn, function(req, res){
     saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
 });
 
@@ -107,15 +163,25 @@ app.get("", function(req, res) {
     res.redirect(routeKeys[0] + '/');
 });
 
-_.forEach(routes, function(route) {
-    app.get(route.route, servePageOrFile); 
-    // Include the template folder
-    app.use(route.route, function(req, res) {
-        serveFile('templates/' + route.template, req, res);
-    }); 
+_.forEach(config.routes, function(route) {
+    /// If the user must be authenticated
+    if(route.permissions == "private") {
+        app.get(route.route, isLoggedIn, servePageOrFile); 
+        // Include the template folder
+        app.use(route.route, isLoggedIn, function(req, res) {
+            serveFile('templates/' + route.template, req, res);
+        }); 
+    }
+    else {
+        app.get(route.route, servePageOrFile); 
+        // Include the template folder
+        app.use(route.route, function(req, res) {
+            serveFile('templates/' + route.template, req, res);
+        }); 
+    }
 });
 
-_.forEach(staticRoutes, function(route) {
+_.forEach(config.static, function(route) {
     // Honestly I cannot figure this out
     // Use static middleware without defined route
     app.use(express.static(path.join(__dirname, route)));
@@ -124,6 +190,19 @@ _.forEach(staticRoutes, function(route) {
         serveFile(route, req, res);
     });    
 });
+
+// request google login
+app.get('/auth/google', passport.authenticate('google-oauth-jwt', {
+    callbackUrl: config.auth.google.callbackURL, scope: ['email']}));
+
+// handle google callback
+app.get('/auth/google/callback', 
+  passport.authenticate('google-oauth-jwt', { callbackUrl: config.auth.google.callbackURL}),
+  function(req, res) {
+      var redirectTo = req.session.redirectTo;
+      delete req.session.redirectTo;
+      res.redirect(redirectTo);
+  });
 
 // Start the app and give success message
 app.listen(PORT, function () {

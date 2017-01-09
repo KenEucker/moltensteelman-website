@@ -27,6 +27,7 @@ We have a test site, using Xervo as a hosting provider, up at http://moltensteel
 ## Vendors that make this possible
 * purejs
 * express
+* passport
 * foundation
 * font-awesome
 
