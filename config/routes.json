@@ -30,9 +30,31 @@
       "protected": true
     },
     {
+      "route": "/admin/save",
+      "template": "admin",
+      "content": "admin",
+      "protected": true
+    },
+    {
       "route": "/thewalkingbeast",
       "template": "project",
       "content": "thewalkingbeast",
       "protected": false
+    },
+    {
+      "route": "/vendor",
+      "static": true
+    },
+    {
+      "route": "/content",
+      "static": true
+    },
+    {
+      "route": "/assets",
+      "static": true
+    },
+    {
+      "route": "/templates",
+      "static": true
     }
   ]

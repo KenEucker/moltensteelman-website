@@ -44,8 +44,6 @@ function servePageOrFile(req, res) {
     var url = req.path.substring(0, req.path.length - 1),
         routeIndex = routeKeys.indexOf(url);
     
-    message.logStatus('receiving ' + url);
-
     if(routeIndex !== -1) {
         servePage(config.routes[routeIndex], req, res);
     }
@@ -55,8 +53,8 @@ function servePageOrFile(req, res) {
 }
 
 function servePage(route, req, res) {
-    message.logUpdate('page ' + req.url + ' requested');
-    message.logSuccess('route:', JSON.stringify(route, null, 2));
+    message.logUpdate('page requested: ' + req.url);
+    message.logSuccess('route matched:', route.route);
     var html = path.join(__dirname, 'templates/', route.template, '/index.html'), 
         content = path.join(__dirname, route.content);
     
@@ -84,7 +82,7 @@ function servePage(route, req, res) {
 }
 
 function serveFile(route, req, res) {        
-    message.logNotice("serving static file at " + route + req.url);
+    message.logNotice("static file requested: " + route + req.url);
     var file = req.url = (req.url.indexOf('?') != -1) ? req.url.substring(0, req.url.indexOf('?')) : req.url;
     res.sendFile(path.join(__dirname, route, req.url));
 }
@@ -107,8 +105,8 @@ function saveFile(contents, target) {
     }); 
 }
 
-// route middleware to make sure a user is logged in
-function isLoggedIn(req, res, next) {
+// route middleware to make sure a user is authenticated
+function ensureAuthenticated(req, res, next) {
 
     // if user is authenticated in the session, carry on
     if (req.isAuthenticated())
@@ -119,7 +117,6 @@ function isLoggedIn(req, res, next) {
     req.session.redirectTo = req.url;
     res.redirect('/login');
 }
-
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -128,33 +125,40 @@ passport.deserializeUser(function(user, done) {
   done(null, user);
 });
 
-passport.use(new GoogleOauthJWTStrategy({
-	clientId: config.auth.google.clientID,
-	clientSecret: config.auth.google.clientSecret
-}, function verify(token, info, refreshToken, done) {
-	_.find(config.users, function(user) {
-           if(user.id == info.email) {
-               message.logInfo("User " + info.email + " Authenticted using google");
-               done(null, { email: info.email });
-           }
-       });
-}));
-
 /********** Set up application and routes **********/
 
 // Turn on pretty formatted errors
 app.locals.pretty = true;
 
+// Configure sessions and set authentication keys for each authentication method
+_.forEach(config.auth, function(authentication) {
+    app.use(session({
+        secret: authentication.session,
+        resave: false,
+        saveUninitialized: false
+    }));
+    switch(authentication.name) {
+        case "google": 
+            passport.use(new GoogleOauthJWTStrategy({
+                clientId: authentication.clientID,
+                clientSecret: authentication.clientSecret
+            }, function verify(token, info, refreshToken, done) {
+                _.find(config.users, function(user) {
+                    if(user.id == info.email) {
+                        message.logInfo("User " + info.email + " Authenticted using google");
+                        done(null, { email: info.email });
+                    }
+                });
+            }));
+            break;
+    }
+});
 app.use(bodyparser.json());
-app.use(session({
-	secret: 'google-oauth-jwt',
-	resave: false,
-	saveUninitialized: false
-}));
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.post('/admin/save', isLoggedIn, function(req, res){
+/// TODO: put route in configuration
+app.post('/admin/save', ensureAuthenticated, function(req, res){
     saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
 });
 
@@ -163,48 +167,60 @@ app.get("", function(req, res) {
     res.redirect(routeKeys[0] + '/');
 });
 
+// Configure routes
 _.forEach(config.routes, function(route) {
-    /// If the user must be authenticated
-    if(route.protected === true) {
-        app.get(route.route, isLoggedIn, servePageOrFile); 
+    message.logInfo("Configuring route: " + route.route);
+
+    // If the route is static
+    if(route.static === true) {
+        /// TODO: should static routes be protectable?
+        // Honestly I cannot figure this out
+        // Use static middleware without defined route
+        app.use(express.static(path.join(__dirname, route.route)));
+        // Define route and use sendFile on the requested path
+        app.use(route.route, function(req, res) {
+            serveFile(route.route, req, res);
+        });   
+    }
+    // If the user must be authenticated for this route
+    else if(route.protected === true) {
+        // servePageOrFile at this route with authentication
+        app.get(route.route, ensureAuthenticated, servePageOrFile); 
         // Include the template folder
-        app.use(route.route, isLoggedIn, function(req, res) {
+        app.use(route.route, ensureAuthenticated, function(req, res) {
             serveFile('templates/' + route.template, req, res);
         }); 
     }
     else {
+        // servePageOrFile at this route
         app.get(route.route, servePageOrFile); 
-        // Include the template folder
+        // Include the template folder as static route
         app.use(route.route, function(req, res) {
             serveFile('templates/' + route.template, req, res);
         }); 
     }
 });
 
-_.forEach(config.static, function(route) {
-    // Honestly I cannot figure this out
-    // Use static middleware without defined route
-    app.use(express.static(path.join(__dirname, route)));
-    // Define route and use sendFile on the requested path
-    app.use(route, function(req, res) {
-        serveFile(route, req, res);
-    });    
+// Configure authentication routes
+_.forEach(config.auth, function(authentication) {
+    message.logInfo("Configuring authentication: " + authentication.name);
+
+    // request google login
+    app.get( authentication.authRoute, passport.authenticate( authentication.session, 
+        { callbackUrl: authentication.callbackURL, scope: authentication.scope }));
+
+    // handle google callback
+    app.get( authentication.callbackRoute, 
+    passport.authenticate( authentication.session, { callbackUrl: authentication.callbackURL}),
+    function(req, res) {
+        var redirectTo = req.session.redirectTo;
+        delete req.session.redirectTo;
+        res.redirect(redirectTo);
+    });
 });
 
-// request google login
-app.get('/auth/google', passport.authenticate('google-oauth-jwt', {
-    callbackUrl: config.auth.google.callbackURL, scope: ['email']}));
-
-// handle google callback
-app.get('/auth/google/callback', 
-  passport.authenticate('google-oauth-jwt', { callbackUrl: config.auth.google.callbackURL}),
-  function(req, res) {
-      var redirectTo = req.session.redirectTo;
-      delete req.session.redirectTo;
-      res.redirect(redirectTo);
-  });
-
+message.logSuccess("Configuration Successful");
 // Start the app and give success message
 app.listen(PORT, function () {
-    message.logSuccess("Server listening on: http://localhost:" + PORT);
+    message.logSuccess("App listening on: http://localhost:" + PORT);
 });
