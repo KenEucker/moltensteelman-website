@@ -4,8 +4,8 @@ window.page.directive = {
     '#specs p': 'specs-blurb',
     '#portfolio .gallery-item': {
         'video<-videos':{
-            'a@href': 'video.url',
-            'img@src': 'video.thumbnail',
+            'iframe@src': 'video.url',
+            'iframe@title': 'video.title',
         }
     },
     // '#mentions  div.column': {

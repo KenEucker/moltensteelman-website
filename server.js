@@ -14,7 +14,7 @@ var /// *Libraries*
     /// To get relative and ultimate paths
     path = require('path'),
     /// To output console messages
-    message = require('./message'),
+    message = require('./vendor/message/message'),
     /// For user authentication
     passport = require('passport'),
     /// For authenticating Google account users
@@ -165,7 +165,7 @@ app.get("", function(req, res) {
 
 _.forEach(config.routes, function(route) {
     /// If the user must be authenticated
-    if(route.permissions == "private") {
+    if(route.protected === true) {
         app.get(route.route, isLoggedIn, servePageOrFile); 
         // Include the template folder
         app.use(route.route, isLoggedIn, function(req, res) {

@@ -231,8 +231,8 @@ padding: 0;
 }
 .section-title{
 	font-size: 3em;
-	font-style: italic;
-	font-weight: bold;
+	line-height: 1.5em;
+	font-weight: normal;
 	text-shadow: 
 	0 1px 0 #CCC, 
 	0 2px 0 #C9C9C9, 
