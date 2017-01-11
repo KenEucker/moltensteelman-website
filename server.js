@@ -58,7 +58,8 @@ function servePage(route, req, res) {
     message.logUpdate('page requested: ' + req.url);
     message.logSuccess('route matched:', route.route);
     var html = path.join(__dirname, 'templates/', route.template, '/index.html'), 
-        content = path.join(__dirname, route.content);
+        contentPath = path.join(__dirname, route.content),
+        content;
     
     try {
         // Get the html template
@@ -71,9 +72,10 @@ function servePage(route, req, res) {
 
     try {
         // Get the page data to use in templating
-        content = fs.readFileSync(content, "utf8");
+        content = fs.readFileSync(contentPath, "utf8");
     } catch(e) {
-        message.logError('Error reading content for template: ' + e);
+        message.logError('Error reading content for template at ' + contentPath + ': ' + e);
+        content = "''";
     }
     // Insert our page data
     html = html.replace('<script src="./sample.js"></script>','<script>window.page.content=' + content + ';</script>');

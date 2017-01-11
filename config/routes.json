@@ -36,6 +36,12 @@
       "protected": false
     },
     {
+      "route": "/version",
+      "template": "version",
+      "content": "/content/../package.json",
+      "protected": false
+    },
+    {
       "route": "/vendor",
       "static": true
     },
