@@ -47,6 +47,8 @@ $(document).ready(function() {
 		$( target + '-link').click(function(event) {
 			event.preventDefault();
 			scrollTo(this, target);
+			// Hide the menu
+			$('.toggle-topbar').click();		
 		});
 	});
 	
