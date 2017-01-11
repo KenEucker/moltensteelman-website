@@ -13,14 +13,13 @@
 		<title>Moltensteelman</title>
 		
 		<link rel="stylesheet" href="css/normalize.css"> 
-		<link rel="stylesheet" href="../../vendor/foundation/foundation.css"> 
+		<link rel="stylesheet" href="css/foundation.css"> 
 		
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		
 		<!-- Icon Fonts -->
 		<link rel="stylesheet" href="css/font-awesome.css" media="screen">
-		<!--<link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css" media="screen">-->
 		
 		<!-- Reveal core CSS -->
 		<link rel="stylesheet" href="css/reveal.css">
@@ -89,9 +88,10 @@
 			        <li class="divider"> </li> 
 			        <li ><a href="#about" id="about-link" class="nav-link" > About Us</a></li>
 			        
-			        <!--<li class="divider"></li> 
-			        <li ><a href="#contact" id="contact-link" class="nav-link"> Contact Us</a></li>
-			        -->
+			        <li class="divider"></li> 
+			        	<li ><a href="#events" id="events-link" class="nav-link"> Events</a>
+							</li>
+			        
 			        <li class="divider"></li> 
 			        <li ><a data-reveal-id="contact-us" href="#contact"> Contact Us </a></li>
 			      </ul>
@@ -235,8 +235,13 @@
 
 			 <hr />
 			 
-			<section id="events">
-				<div class="event">
+			<section id="events" class="page-section">
+				<div class="row">
+					<div class="small-12 large-12 text-center">
+						<h2 id="events-title" class="section-title">Events</h2>
+					</div>
+				</div>
+				<div class="event medium-2 large-5 rows">
 					<div class="event-left">
 						<a class="block" href="site">
 							<div style="width: 150px; height: 100px;">
@@ -254,16 +259,16 @@
 						</div>
 					<div class="map">
 						<a href="map">
-							<i class="gen-enclosed icon-location">Where </i>
+							<i class="icon icon-location-arrow"></i>
 							<span>Normandale Dog Park</span>
 						</a>
 					</div>
 					<div class="date">
-							<i class="gen-enclosed icon-calendar">When </i>
+							<i class="icon gen-enclosed icon-calendar"></i>
 							<span>2/12/2017 - 2/14/2017</span>
 					</div>
 					<div class="description">
-							<i class="gen-enclosed icon-star">Why </i>
+							<i class="icon gen-enclosed icon-star"></i>
 							<span>Description</span>
 					</div>
 				</div>

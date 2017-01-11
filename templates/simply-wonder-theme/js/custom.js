@@ -38,50 +38,29 @@ $(document).ready(function() {
 
 	$('.logo').click(function(event) {
 		event.preventDefault();
-		var liIndex = $(this).index();
-
-		$('html, body').stop().animate({
-			scrollTop : 0
-		}, 800);
+		scrollTo(this, "#home");
 	});
 
-	$('#home-link').click(function(event) {
-		event.preventDefault();
-		var liIndex = $(this).index();
-		$('html, body').stop().animate({
-			scrollTop : 0
-		}, 800);
+	$.each($("#top-nav a"),
+	function(i, el) {
+		var target = el.hash;
+		$( target + '-link').click(function(event) {
+			event.preventDefault();
+			scrollTo(this, target);
+		});
 	});
+	
 
-	$('#about-link').click(function(event) {
-		event.preventDefault();
-		var liIndex = $(this).index();
-		var contentPosTop = $('#about').eq(liIndex).position().top;
+	function scrollTo(target, selector) {
+		var liIndex = $(target).index();
+		var contentPosTop = $(selector).eq(liIndex).position().top;
 
 		$('html, body').stop().animate({
 			scrollTop : contentPosTop
 		}, 800);
-	});
+	}
 
-	$('#portfolio-link').click(function(event) {
-		event.preventDefault();
-		var liIndex = $(this).index();
-		var contentPosTop = $('#portfolio').eq(liIndex).position().top;
-
-		$('html, body').stop().animate({
-			scrollTop : contentPosTop
-		}, 800);
-	});
-
-	$('#contact-link').click(function(event) {
-		event.preventDefault();
-		var liIndex = $(this).index();
-		var contentPosTop = $('#contact').eq(liIndex).position().top;
-
-		$('html, body').stop().animate({
-			scrollTop : contentPosTop
-		}, 800);
-	});
+	
 
 	/*------------ For Portfolio thumbnails ------------ */
 
@@ -146,45 +125,5 @@ $(document).ready(function() {
 			$('#about-blurb .original').removeClass('hidden');
 			$('#about-blurb .member').addClass('hidden');
 	});
-
-	/*------------  for Google map  ------------ */
-
-	// $(window).load(function() {
-	// 	LoadGmaps();
-	// });
-
-	// /* Add Your Company Name latitude and  longitude here.
-	//  * for latitude and longitude please check http://itouchmap.com/latlong.html
-	//  *  */
-	// var latitude = "45.073323";
-	// var longitude = "-122.979173";
-	// var details = "Moltensteelman Headquarters - Salem, OR, United States";
-
-	// function LoadGmaps() {
-	// 	var myLatlng = new google.maps.LatLng(latitude, longitude);
-	// 	var myOptions = {
-	// 		zoom : 100,
-	// 		scrollwheel : true,
-	// 		center : myLatlng,
-	// 		navigationControl : true,
-	// 		mapTypeId : google.maps.MapTypeId.SATELLITE
-	// 	}
-
-	// 	var map = new google.maps.Map(document.getElementById("googlemaps"), myOptions);
-	// 	var marker = new google.maps.Marker({
-	// 		position : myLatlng,
-	// 		map : map,
-	// 		icon : 'img/map_icon.png'
-	// 	});
-	// 	var infowindow = new google.maps.InfoWindow({
-	// 		content : details
-	// 	});
-	// 	google.maps.event.addListener(marker, "click", function() {
-	// 		infowindow.open(map, marker);
-
-	// 	});
-
-	// }
-
 });
 

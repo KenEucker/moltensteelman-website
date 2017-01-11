@@ -41,7 +41,7 @@ window.page.directive = {
             // '.pinterest@href': 'member.pinterest',
         }
     },
-    "#events": {
+    "#events .event": {
         'event<-events': {
             '.img@src': 'event.image',
             '.date-bubble@title': 'event.date',
