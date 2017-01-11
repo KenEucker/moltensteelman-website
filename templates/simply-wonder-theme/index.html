@@ -7,19 +7,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta name="description" content="Simply Wonder Zurb Foundation 4 Responsive Theme "/>
-		<meta name="keywords" content="Template, Theme, web, html5, css3, Zurb Foundation 4,Foundation 4 Responsive Theme,Foundation 4 one page" />
-		<meta name="author" content="AdSays Creation Pvt. Ltd."/>
+		<meta name="description" content=""/>
+		<meta name="keywords" content="Robot, Aliens, Fire" />
+		<meta name="author" content="Ken Eucker"/>
 		<title>Moltensteelman</title>
 		
 		<link rel="stylesheet" href="css/normalize.css"> 
-		<link rel="stylesheet" href="css/foundation.css"> 
+		<link rel="stylesheet" href="../../vendor/foundation/foundation.css"> 
 		
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		
 		<!-- Icon Fonts -->
-		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+		<link rel="stylesheet" href="css/font-awesome.css" media="screen">
+		<!--<link rel="stylesheet" href="../../vendor/font-awesome/css/font-awesome.css" media="screen">-->
 		
 		<!-- Reveal core CSS -->
 		<link rel="stylesheet" href="css/reveal.css">
@@ -88,11 +89,11 @@
 			        <li class="divider"> </li> 
 			        <li ><a href="#about" id="about-link" class="nav-link" > About Us</a></li>
 			        
-			        <li class="divider"></li> 
+			        <!--<li class="divider"></li> 
 			        <li ><a href="#contact" id="contact-link" class="nav-link"> Contact Us</a></li>
-			        
+			        -->
 			        <li class="divider"></li> 
-			        <li ><a data-reveal-id="quote" href="#quote"> Request a Quote </a></li>
+			        <li ><a data-reveal-id="contact-us" href="#contact"> Contact Us </a></li>
 			      </ul>
 			    </section>
 			  </nav>
@@ -231,7 +232,43 @@
 	 		 	
 			</section> 
 			<!--About End here-->
+
+			 <hr />
 			 
+			<section id="events">
+				<div class="event">
+					<div class="event-left">
+						<a class="block" href="site">
+							<div style="width: 150px; height: 100px;">
+								<img class="img" width="150" height="150">
+								</div>
+							<div class="date-bubble" title="Tuesday, January 10">
+								<span class="month block">JAN</span>
+								<span class="day block">10</span>
+							</div>
+						</a>
+					</div>
+					<div class="event-right">
+						<div class="link">
+							<a href="link">Gracie Dog Party!!</a>
+						</div>
+					<div class="map">
+						<a href="map">
+							<i class="gen-enclosed icon-location">Where </i>
+							<span>Normandale Dog Park</span>
+						</a>
+					</div>
+					<div class="date">
+							<i class="gen-enclosed icon-calendar">When </i>
+							<span>2/12/2017 - 2/14/2017</span>
+					</div>
+					<div class="description">
+							<i class="gen-enclosed icon-star">Why </i>
+							<span>Description</span>
+					</div>
+				</div>
+			</section>
+
 			 <hr />
 	 		 	
 	 		 <section class="page-section">
@@ -277,7 +314,7 @@
 					</div>
 					
 					<!--Contact form Start here--> 
-					<div class="small-12 large-6 columns page-section">
+					<div id="contact-us" class="reveal-modal small">
 						 <div class="widget">
 						<h4>Contact us</h4> 
 							<form class="contactform" data-abide>
@@ -297,16 +334,17 @@
 				                  </label>
 				                </div>
 				                <div class="item">
-				                  <label>Comments</label>
-				                  <textarea  cols="10" name="Msg" rows="4" class="cat_listbox" required ></textarea>
-				                  <small class="error">Please enter your comments</small>
+				                  <label>Message</label>
+				                  <textarea  cols="10" name="Message" rows="4" class="cat_listbox" required ></textarea>
+				                  <small class="error">Please enter your message</small>
 				                </div>
 				                <div class="item">
 				                  <input class="button alert small" type="submit" value="Submit" id="catwebformbutton">
 				                </div>
-				              </form> 
+								</form>
+								<a class="close-reveal-modal">&#215;</a>
+							</div>
 						</div>
-					</div>   
 					<!--Contact form End here-->  
 	 		 	</div> <!--End .row--> 
 	 		 </section>
@@ -330,64 +368,64 @@
 	  		<h3>Request a Quote</h3>
 		  <form action="/signin" method="post" class="form-stacked">
 				             
-				            <div class="clearfix">
-				              <div class="input"> 
-				                <input name="name" type="text" placeholder="Name" required="">  
-				              </div>
-				            </div>
-				             <div class="clearfix">
-				              <div class="input">
-				                <input name="emai" type="email" placeholder="Your Email Address" required="">  
-				              </div>
-				            </div>
-				             <div class="clearfix">
-				              <div class="input">
-				                <input name="company" type="text" placeholder="Company Name"> 
-				              </div>
-				            </div> 
-				           
-				             <div class="clearfix">
-				              <div class="input">
-				                <input name="number" type="tel" placeholder="Contact Number"> 
-				              </div>
-				            </div> 
-				             <div class="clearfix">
-				              <div class="input">
-				                <select name="pbudge" class="input-medium">
-	                            <option value=""> Select Project type </option>
-		                            <option value="Website">Website</option>
-		                            <option value="Mobile Application">Mobile Application</option>
-		                            <option value="Design">Design</option>
-		                            <option value="Photography">Photography</option>
-		                            <option value="Destop Application">Destop Application</option> 
-               					</select>
-				              </div>
-				            </div> 
-				             <div class="clearfix">
-				              <div class="input">
-				                <select name="pbudge" class="input-medium">
-	                            <option value=""> Select Project Budget </option>
-		                            <option value="$500 - $1000">$500 - $1000</option>
-		                            <option value="$1000 - $3000">$1000 - $3000</option>
-		                            <option value="$3000 - $5000">$3000 - $5000</option>
-		                            <option value="$5000 - $10000">$5000 - $10000</option>
-		                            <option value="$10000 - $20000">$10000 - $20000</option>
-		                            <option value="$20000 - $50000">$20000 - $50000</option>
-		                            <option value="$50000 +">$50000 +</option>                                  
-               					</select>
-				              </div>
-				            </div> 
+					<div class="clearfix">
+						<div class="input"> 
+							<input name="name" type="text" placeholder="Name" required="">  
+						</div>
+					</div>
+						<div class="clearfix">
+						<div class="input">
+							<input name="emai" type="email" placeholder="Your Email Address" required="">  
+						</div>
+					</div>
+						<div class="clearfix">
+						<div class="input">
+							<input name="company" type="text" placeholder="Company Name"> 
+						</div>
+					</div> 
+					
+						<div class="clearfix">
+						<div class="input">
+							<input name="number" type="tel" placeholder="Contact Number"> 
+						</div>
+					</div> 
+						<div class="clearfix">
+						<div class="input">
+							<select name="pbudge" class="input-medium">
+										<option value=""> Select Project type </option>
+											<option value="Website">Website</option>
+											<option value="Mobile Application">Mobile Application</option>
+											<option value="Design">Design</option>
+											<option value="Photography">Photography</option>
+											<option value="Destop Application">Destop Application</option> 
+							</select>
+						</div>
+					</div> 
+						<div class="clearfix">
+						<div class="input">
+							<select name="pbudge" class="input-medium">
+										<option value=""> Select Project Budget </option>
+											<option value="$500 - $1000">$500 - $1000</option>
+											<option value="$1000 - $3000">$1000 - $3000</option>
+											<option value="$3000 - $5000">$3000 - $5000</option>
+											<option value="$5000 - $10000">$5000 - $10000</option>
+											<option value="$10000 - $20000">$10000 - $20000</option>
+											<option value="$20000 - $50000">$20000 - $50000</option>
+											<option value="$50000 +">$50000 +</option>                                  
+							</select>
+						</div>
+					</div> 
 				            
-				             <div class="clearfix">
-				              <div class="input">
-				                <textarea rows="10" id="inputDesc" placeholder="Project Details"></textarea>
-				              </div>
-				            </div>
-				            <div class="actions">
-				              <input class="button alert" type="submit" value="Send"> 
-				            </div>
-				             
-          			</form>
+					<div class="clearfix">
+					<div class="input">
+						<textarea rows="10" id="inputDesc" placeholder="Project Details"></textarea>
+					</div>
+				</div>
+				<div class="actions">
+					<input class="button alert" type="submit" value="Send"> 
+				</div>
+					
+		</form>
 	  <a class="close-reveal-modal">&#215;</a>
 	</div>
 		

@@ -1,6 +1,6 @@
 'use strict';
 
-const PORT=8080; 
+const PORT = process.env.PORT ? process.env.PORT : 8080; 
 
 var /// *Libraries*
     /// Powers our app 
@@ -14,7 +14,9 @@ var /// *Libraries*
     /// To get relative and ultimate paths
     path = require('path'),
     /// To output console messages
-    message = require('./vendor/message/message'),
+    message = require('./vendor/message/'),
+    /// To send emails using nodemailer
+    nodemailer = require('./vendor/nodemailer/'),
     /// For user authentication
     passport = require('passport'),
     /// For authenticating Google account users
@@ -169,7 +171,7 @@ app.get("", function(req, res) {
 
 // Configure routes
 _.forEach(config.routes, function(route) {
-    message.logInfo("Configuring route: " + route.route);
+    var type = "dynamic";
 
     // If the route is static
     if(route.static === true) {
@@ -181,6 +183,7 @@ _.forEach(config.routes, function(route) {
         app.use(route.route, function(req, res) {
             serveFile(route.route, req, res);
         });   
+        type = "static";
     }
     // If the user must be authenticated for this route
     else if(route.protected === true) {
@@ -190,6 +193,7 @@ _.forEach(config.routes, function(route) {
         app.use(route.route, ensureAuthenticated, function(req, res) {
             serveFile('templates/' + route.template, req, res);
         }); 
+        type += "-protected";
     }
     else {
         // servePageOrFile at this route
@@ -199,6 +203,7 @@ _.forEach(config.routes, function(route) {
             serveFile('templates/' + route.template, req, res);
         }); 
     }
+    message.logInfo("Configured " + type + " route: " + route.route);
 });
 
 // Configure authentication routes

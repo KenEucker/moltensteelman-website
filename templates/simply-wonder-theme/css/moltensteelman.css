@@ -5,3 +5,77 @@
 .hidden {
 	display: none;
 }
+
+.block {
+  display:block;
+}
+
+.event {
+	display: block;
+	position: relative;
+}
+.event-left {
+  display: block;
+  float: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.event-right {
+  direction:ltr;
+  display:block;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  left: 10px;
+  position: relative;
+}
+.event .link a{
+    color: #3b5998;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-bottom: 2px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 292px;
+}
+
+.event .date-bubble {
+  color:rgb(255, 255, 255);
+  cursor:pointer;
+  direction: ltr;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+    left: 12px;
+    position: absolute;
+    top: 12px;
+    z-index: 2;
+}
+
+.event .map a{
+  color: #4b4f56;
+    font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.event .day {
+  font-size: 18px;
+}
+
+.event .month {
+  font-size: 10px;
+}
+.event .img {
+    height: 100px;
+    width: 100%;
+}
+.event .description {
+    color: #90949c;
+    font-weight: normal;
+}

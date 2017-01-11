@@ -41,8 +41,21 @@ window.page.directive = {
             // '.pinterest@href': 'member.pinterest',
         }
     },
+    "#events": {
+        'event<-events': {
+            '.img@src': 'event.image',
+            '.date-bubble@title': 'event.date',
+            '.month': 'event.month',
+            '.day': 'event.day',
+            '.link a': 'event.link-text',
+            '.link a@href': 'event.link',
+            '.map span': 'event.where',
+            '.date span': 'event.when',
+            '.description span': 'event.description'
+        } 
+    },
     '#contact':{        
-        'contact<-contact':{
+        'contact<-contact': {
             'p > b':'contact.company-name',
             '#address-1': 'contact.address-1',
             '#address-2': 'contact.address-2',

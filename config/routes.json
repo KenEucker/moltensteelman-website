@@ -1,13 +1,13 @@
 [
     {
       "route": "/home",
-      "template": "bootstrap",
+      "template": "simply-wonder-theme",
       "content": "content/home/home.json",
       "protected": false
     },
     {
       "route": "/home2",
-      "template": "simply-wonder-theme",
+      "template": "bootstrap",
       "content": "content/home/home.json",
       "protected": false
     },
@@ -25,12 +25,6 @@
     },
     {
       "route": "/admin",
-      "template": "admin",
-      "content": "admin",
-      "protected": true
-    },
-    {
-      "route": "/admin/save",
       "template": "admin",
       "content": "admin",
       "protected": true
