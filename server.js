@@ -2,7 +2,7 @@
 
 const PORT = process.env.PORT ? process.env.PORT : 8080; 
 
-var /// *Libraries*
+var /* * Libraries * */
     /// Powers our app 
     express = require('express'),
     /// For receiving and processing post data
@@ -26,11 +26,11 @@ var /// *Libraries*
     /// Simple session middleware for express
     session = require('express-session'),
     
-    // *Application Data*
+    /* * Application Data * */
     config = require("./config"),
     routeKeys = _.map(config.routes, 'route'),
 
-    // *Main application*
+    /* * Main application * */
     app = express();
 
 /// Serves template files and files from the static routes
@@ -60,7 +60,10 @@ function servePage(route, req, res) {
     var html = path.join(__dirname, 'templates/', route.template, '/index.html'), 
         contentPath = path.join(__dirname, route.content),
         content;
-    
+
+    /// TODO: add serverside PUREjs templating for the <head> of the document
+    /// TODO: Cachebusting - append the version of the app to the resource tags (css,js)
+
     try {
         // Get the html template
         html = fs.readFileSync(html, "utf8");

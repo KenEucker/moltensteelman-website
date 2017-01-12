@@ -1,7 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
-  "title": "page",
   "properties": {
     "heading": {
       "type": "string"
@@ -21,12 +20,13 @@
     "about-blurb": {
       "type": "string"
     },
+    "about-image": {
+      "type": "string"
+    },
     "splashes": {
-      "title": "splashes",
       "type": "array",
       "items": {
         "type": "object",
-        "title": "splash",
         "properties": {
           "heading": {
             "type": "string"
@@ -40,21 +40,13 @@
           "img3": {
             "type": "string"
           }
-        },
-        "required": [
-          "heading",
-          "img1",
-          "img2",
-          "img3"
-        ]
+        }
       }
     },
     "products": {
       "type": "array",
-      "title": "products",
       "items": {
         "type": "object",
-        "title": "product",
         "properties": {
           "title": {
             "type": "string"
@@ -74,19 +66,12 @@
           "specs": {
             "type": "string"
           }
-        },
-        "required": [
-          "title",
-          "image",
-          "description"
-        ]
+        }
       }
     },
     "videos": {
       "type": "array",
-      "title": "videos",
       "items": {
-        "title": "video",
         "type": "object",
         "properties": {
           "url": {
@@ -101,21 +86,13 @@
           "subtitle": {
             "type": "string"
           }
-        },
-        "required": [
-          "url",
-          "thumbnail",
-          "title",
-          "subtitle"
-        ]
+        }
       }
     },
     "mentions": {
       "type": "array",
-      "title": "mentions",
       "items": {
         "type": "object",
-        "title": "mention",
         "properties": {
           "alt": {
             "type": "string"
@@ -123,18 +100,12 @@
           "img": {
             "type": "string"
           }
-        },
-        "required": [
-          "alt",
-          "img"
-        ]
+        }
       }
     },
     "members": {
       "type": "array",
-      "title": "members",
       "items": {
-        "title": "member",
         "type": "object",
         "properties": {
           "img": {
@@ -161,24 +132,12 @@
           "pinterest": {
             "type": "string"
           }
-        },
-        "required": [
-          "img",
-          "name",
-          "blurb",
-          "email",
-          "facebook",
-          "twitter",
-          "linkedin",
-          "pinterest"
-        ]
+        }
       }
     },
     "contact": {
       "type": "array",
-      "title": "contact info",
       "items": {
-        "title": "contact",
         "type": "object",
         "properties": {
           "company-name": {
@@ -211,33 +170,78 @@
           "pinterest": {
             "type": "string"
           }
-        },
-        "required": [
-          "company-name",
-          "address-1",
-          "address-2",
-          "phone",
-          "fax",
-          "email",
-          "web",
-          "facebook",
-          "twitter",
-          "pinterest"
-        ]
+        }
       }
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "link-text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "day": {
+            "type": "string"
+          },
+          "month": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "when": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "where": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "link-text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "page-author-blurb": {
+      "type": "string"
+    },
+    "page-author-link": {
+      "type": "string"
+    },
+    "page-author-link-text": {
+      "type": "string"
     }
-  },
-  "required": [
-    "heading",
-    "portfolio-heading",
-    "team-heading",
-    "splashes",
-    "about-title",
-    "about-blurb-heading",
-    "about-blurb",
-    "videos",
-    "mentions",
-    "members",
-    "contact" 
-  ]
+  }
 }

@@ -42,6 +42,60 @@
       "protected": false
     },
     {
+      "route": "/agency",
+      "template": "foundation/agency",
+      "content": "content/agency/agency.json",
+      "protected": false
+    },
+    {
+      "route": "/blog",
+      "template": "foundation/blog",
+      "content": "content/blog/blog.json",
+      "protected": false
+    },
+    {
+      "route": "/blog-simple",
+      "template": "foundation/blog-simple",
+      "content": "content/blog-simple/blog-simple.json",
+      "protected": false
+    },
+    {
+      "route": "/ecommerce",
+      "template": "foundation/ecommerce",
+      "content": "content/ecommerce/ecommerce.json",
+      "protected": false
+    },
+    {
+      "route": "/marketing-site",
+      "template": "foundation/marketing-site",
+      "content": "content/marketing-site/marketing-site.json",
+      "protected": false
+    },
+    {
+      "route": "/news-magazine",
+      "template": "foundation/news-magazine",
+      "content": "content/news-magazine/news-magazine.json",
+      "protected": false
+    },
+    {
+      "route": "/portfolio",
+      "template": "foundation/portfolio",
+      "content": "content/portfolio/portfolio.json",
+      "protected": false
+    },
+    {
+      "route": "/product-page",
+      "template": "foundation/product-page",
+      "content": "content/product-page/product-page.json",
+      "protected": false
+    },
+    {
+      "route": "/real-estate",
+      "template": "foundation/real-estate",
+      "content": "content/real-estate/real-estate.json",
+      "protected": false
+    },
+    {
       "route": "/vendor",
       "static": true
     },

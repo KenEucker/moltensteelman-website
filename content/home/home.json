@@ -5,6 +5,7 @@
   "about-title": "A little about us",
   "about-blurb-heading": "\"Robot Aliens And Fire!\"",
   "about-blurb": "In 2007, Martin Montensano set on an adventure of both skill and scale to build what has long been called The Walking Beast. What was once called Acme Labs, consists of two members (three?) of Martin Montensano, Anne Peterson, and... Currently, moltensteelman has a miniature version of the walking beast and a pyrosaurus that you can purchase here on this site.",
+  "about-image": "../../assets/img/2016PyroPairJD.jpg",
   "splashes": [
     {
       "heading": "The walking beast",
@@ -133,7 +134,6 @@
       "pinterest": "moltensteelman"
     }
   ],
-  "about-image": "../../assets/img/2016PyroPairJD.jpg",
   "services": [
     {
       "image": "<i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-bolt fa-stack-1x text-primary'></i>",
@@ -150,7 +150,7 @@
       "day": "12",
       "month": "Feb",
       "date": "3/12/2017",
-      "daterange": "3/12/2017 -3/14/2017",
+      "when": "3/12/2017 -3/14/2017",
       "description": "Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly showcase of invention, creativity and resourcefulness, and a celebration of the Maker Movement.  It’s a place where people show what they are making, and share what they are learning.",
       "where": "123 some address way, Seattle WA",
       "link": "facebook.com/seattlemakerfair",
@@ -162,7 +162,7 @@
       "day": "12",
       "month": "Feb",
       "date": "3/12/2017",
-      "daterange": "3/12/2017 -3/14/2017",
+      "when": "3/12/2017 -3/14/2017",
       "description": "the seattle maker fair is cool.",
       "where": "123 some address way, Seattle WA",
       "link": "facebook.com/seattlemakerfair",
