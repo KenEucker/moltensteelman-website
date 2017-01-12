@@ -35,14 +35,6 @@
 		<!-- Select your Theme from below-->
 		<link href="css/style-theme-2.css" rel="stylesheet">
 		<link href="css/moltensteelman.css" rel="stylesheet">
-		<!--
-		<link href="css/style-theme-1.css" rel="stylesheet">
-		<link href="css/style-theme-2.css" rel="stylesheet">
-		<link href="css/style-theme-3.css" rel="stylesheet">
-		<link href="css/style-theme-4.css" rel="stylesheet">
-		<link href="css/style-theme-5.css" rel="stylesheet">
-		<link href="css/style-theme-6.css" rel="stylesheet"> 
-		-->
 		 
 	 	<!--Custom styles for this template - Add your CSS style in custom.css-->
 		<link href="css/custom.css" rel="stylesheet">
@@ -106,7 +98,7 @@
 				<!-- Any section element inside of this container is displayed as a slide -->
 				<div class="slides">
 					<section>
-						<h2 id="heading">We Provide <br/> Solution for a Smart WEBSITES</h2><br />
+						<h2 class="heading">We Provide <br/> Solution for a Smart WEBSITES</h2>
 							<div class="reveal-images">
 								<img class="animated fadeInUp delay1" src="img/html5.png" alt="HTML5" />
 								<img class="animated fadeInUp delay2" src="img/css3.png" alt="CSS" /> 
@@ -125,8 +117,9 @@
 	 		 
 			<!--Portfolio Start here-->
 			<section id="portfolio" class="page-section">
-			<div class="row">
-				<h2 class="section-title text-center">Portfolio</h2>
+			<div class="row text-center">
+				<h2 class="section-title">Portfolio</h2>
+				<h5 class="section-description">Section description</h5><br />
 					<div class="small-6 large-4 column gallery-item text-center">  
 						<a class="fancybox fancybox.iframe" href="img/work/img_3.jpg" data-fancybox-group="gallery">
 							<img class="img-responsive" src="img/work/th_img_3.jpg" alt="Picture Title Goes Here"> 
@@ -186,6 +179,7 @@
 				<div class="row">
 					<div class="small-12 large-12 columns text-center">
 						<h2 id="about-title" class="section-title">A LITTLE ABOUT US</h2>
+						<h5 class="section-description">Section description</h5><br />
 					</div>
 				</div>
 				<div class="row section-content">
@@ -238,10 +232,11 @@
 			<section id="events" class="page-section">
 				<div class="row">
 					<div class="small-12 large-12 text-center">
-						<h2 id="events-title" class="section-title">Events</h2>
+						<h2 class="section-title">Events</h2>
+						<h5 class="section-description">Section description</h5><br />
 					</div>
 				</div>
-				<div class="event medium-2 large-5 rows">
+				<div class="event large-5 rows">
 					<div class="event-left">
 						<a class="block" href="site">
 							<div style="width: 150px; height: 100px;">
@@ -281,6 +276,7 @@
 	  			<div class="row">
 							<div id="mentions" class="our-clients">
 								<h2 class="section-title text-center">Mentioned In</h2>
+								<h5 class="section-description">Section description</h5><br />
 								<div class="small-6 large-2 column">
 									<img class="img-responsive grayscale" src="img/client-logo-03.png" alt="">
 								</div>
@@ -366,73 +362,6 @@
 	 		
 		
 		</div><!--End .wrapper-->
-		
-		
-		
-		<div id="quote" class="reveal-modal small">
-	  		<h3>Request a Quote</h3>
-		  <form action="/signin" method="post" class="form-stacked">
-				             
-					<div class="clearfix">
-						<div class="input"> 
-							<input name="name" type="text" placeholder="Name" required="">  
-						</div>
-					</div>
-						<div class="clearfix">
-						<div class="input">
-							<input name="emai" type="email" placeholder="Your Email Address" required="">  
-						</div>
-					</div>
-						<div class="clearfix">
-						<div class="input">
-							<input name="company" type="text" placeholder="Company Name"> 
-						</div>
-					</div> 
-					
-						<div class="clearfix">
-						<div class="input">
-							<input name="number" type="tel" placeholder="Contact Number"> 
-						</div>
-					</div> 
-						<div class="clearfix">
-						<div class="input">
-							<select name="pbudge" class="input-medium">
-										<option value=""> Select Project type </option>
-											<option value="Website">Website</option>
-											<option value="Mobile Application">Mobile Application</option>
-											<option value="Design">Design</option>
-											<option value="Photography">Photography</option>
-											<option value="Destop Application">Destop Application</option> 
-							</select>
-						</div>
-					</div> 
-						<div class="clearfix">
-						<div class="input">
-							<select name="pbudge" class="input-medium">
-										<option value=""> Select Project Budget </option>
-											<option value="$500 - $1000">$500 - $1000</option>
-											<option value="$1000 - $3000">$1000 - $3000</option>
-											<option value="$3000 - $5000">$3000 - $5000</option>
-											<option value="$5000 - $10000">$5000 - $10000</option>
-											<option value="$10000 - $20000">$10000 - $20000</option>
-											<option value="$20000 - $50000">$20000 - $50000</option>
-											<option value="$50000 +">$50000 +</option>                                  
-							</select>
-						</div>
-					</div> 
-				            
-					<div class="clearfix">
-					<div class="input">
-						<textarea rows="10" id="inputDesc" placeholder="Project Details"></textarea>
-					</div>
-				</div>
-				<div class="actions">
-					<input class="button alert" type="submit" value="Send"> 
-				</div>
-					
-		</form>
-	  <a class="close-reveal-modal">&#215;</a>
-	</div>
 		
 		<!-- Foundation  core JavaScript
 		================================================== -->
