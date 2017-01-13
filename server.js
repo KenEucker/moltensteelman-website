@@ -57,7 +57,8 @@ function servePageOrFile(req, res) {
 function servePage(route, req, res) {
     message.logUpdate('page requested: ' + req.url);
     message.logSuccess('route matched:', route.route);
-    var html = path.join(__dirname, 'templates/', route.template, '/index.html'), 
+    var page = route.page != "" ? route.page : "index.html",
+        html = path.join(__dirname, 'templates/', route.template, '/', page), 
         contentPath = path.join(__dirname, route.content),
         content;
 

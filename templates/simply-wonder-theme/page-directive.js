@@ -1,5 +1,6 @@
 window.page.directive = {
     '#heading': 'heading',
+    '#banner .heading': 'banner-heading',
     '.slides section': {
         'splash<-splashes':{
             '.heading':'splash.heading',
@@ -29,7 +30,7 @@ window.page.directive = {
     },
     '#about .section-title': 'about-heading',
     '#about .section-description': 'about-description',
-    '#about-link': 'about-title',
+    '#about-link': 'about-heading',
     '#about-blurb .original > h3': 'about-blurb-heading',
     '#about-blurb .original > p': 'about-blurb',
     '#team  div.rows': {
