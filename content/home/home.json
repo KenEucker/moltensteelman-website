@@ -101,8 +101,34 @@
   ],
   "mentions": [
     {
-      "alt": "Burning Man Blog",
-      "img": "../../assets/img/burning-man-logo.png"
+      "alt": "Dark Roasted Blend Publication",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/dark-roasted-blend-logo.png"
+    },
+    {
+      "alt": "Discovery Channel",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/discovery-channel-logo.jpg"
+    },
+    {
+      "alt": "Popular Science",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/popular-science-logo.png"
+    },
+    {
+      "alt": "History Channel",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/history-channel-logo.png"
+    },
+    {
+      "alt": "FF Journal",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/ff-journal-logo.jpg"
+    },
+    {
+      "alt": "Statesman Journal",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/statesman-journal-logo2.jpeg"
     }
   ],
   "members": [
