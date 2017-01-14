@@ -3,16 +3,18 @@ $(document).ready(function() {
 	/*------------ For Scrollspy Init ------------ */
 	$('.nav-link').each(function(i) {
 		var position = $($(this).attr("href")).position();
-		$(this).scrollspy({
-			min : position.top - 50,
-			max : position.top + $($(this).attr("href")).height(),
-			onEnter : function(element, position) {
-				$(element).addClass('active'); 
-			},
-			onLeave : function(element, position) {
-				$(element).removeClass('active');
-			}
-		});
+		if(position) {
+			$(this).scrollspy({
+				min : position.top - 50,
+				max : position.top + $($(this).attr("href")).height(),
+				onEnter : function(element, position) {
+					$(element).addClass('active'); 
+				},
+				onLeave : function(element, position) {
+					$(element).removeClass('active');
+				}
+			});
+		}
 	});
 	
 	
@@ -38,7 +40,7 @@ $(document).ready(function() {
 
 	$('.logo').click(function(event) {
 		event.preventDefault();
-		scrollTo(this, "#home");
+		scrollTo(this, "#banner");
 	});
 
 	$.each($("#top-nav a"),
@@ -51,7 +53,6 @@ $(document).ready(function() {
 			$('.toggle-topbar').click();		
 		});
 	});
-	
 
 	function scrollTo(target, selector) {
 		var liIndex = $(target).index();
@@ -61,8 +62,6 @@ $(document).ready(function() {
 			scrollTop : contentPosTop
 		}, 800);
 	}
-
-	
 
 	/*------------ For Portfolio thumbnails ------------ */
 

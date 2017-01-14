@@ -1,6 +1,7 @@
 window.page.directive = {
     '#heading': 'heading',
     '#banner .heading': 'banner-heading',
+    '#banner-link': 'banner-heading',
     '.slides section': {
         'splash<-splashes':{
             '.heading':'splash.heading',

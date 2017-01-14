@@ -5,13 +5,25 @@
     "heading": {
       "type": "string"
     },
+    "banner-heading": {
+      "type": "string"
+    },
     "portfolio-heading": {
+      "type": "string"
+    },
+    "portfolio-description": {
       "type": "string"
     },
     "team-heading": {
       "type": "string"
     },
-    "about-title": {
+    "team-description": {
+      "type": "string"
+    },
+    "about-heading": {
+      "type": "string"
+    },
+    "about-description": {
       "type": "string"
     },
     "about-blurb-heading": {
@@ -21,6 +33,18 @@
       "type": "string"
     },
     "about-image": {
+      "type": "string"
+    },
+    "events-heading": {
+      "type": "string"
+    },
+    "events-description": {
+      "type": "string"
+    },
+    "mentions-heading": {
+      "type": "string"
+    },
+    "mentions-description": {
       "type": "string"
     },
     "splashes": {
@@ -95,6 +119,9 @@
         "type": "object",
         "properties": {
           "alt": {
+            "type": "string"
+          },
+          "link": {
             "type": "string"
           },
           "img": {

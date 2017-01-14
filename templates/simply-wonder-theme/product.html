@@ -13,8 +13,7 @@
 		<title>Moltensteelman</title>
 		
 		<link rel="stylesheet" href="css/normalize.css"> 
-		<!--<link rel="stylesheet" href="css/foundation.css"> -->
-    	<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+		<link rel="stylesheet" href="../../vendor/foundation/6/css/foundation.css">
 
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -31,14 +30,16 @@
 		
 		<!-- CSS3 Animation  -->
 		<link href="css/animate.css" rel="stylesheet">
+
+		<!--Hacky-->
+		<link href="css/foundation-4-to-6.css" rel="stylesheet">
 		
 		<!--Themes styles for this template -->
 		<!-- Select your Theme from below-->
-		<!--<link href="css/style-theme-2.css" rel="stylesheet">-->
-		<!--<link href="css/moltensteelman.css" rel="stylesheet">-->
+		<link href="css/style-theme-2.css" rel="stylesheet">
 		 
 	 	<!--Custom styles for this template - Add your CSS style in custom.css-->
-		<!--<link href="css/custom.css" rel="stylesheet">-->
+		<link href="css/custom.css" rel="stylesheet">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -52,6 +53,53 @@
 		<script src="./product-page-directive.js"></script>
 	</head>
 	<body>
+		  
+		  <!-- Header and Nav -->
+		  <div class="fixed nav-custom" >
+			<nav class="top-bar row">
+			<ul class="title-area">
+				<!-- Title Area -->
+				<li class="name">
+				<h1>
+					<a href="#" class="logo">
+					<i class="icon-fire"></i><div id="heading">Simply Wonder</div>
+					</a>
+				</h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+			
+			<section class="top-bar-section"  >  
+				<!-- Right Nav Section -->
+				<ul class="right" id="top-nav">
+				<li class="divider"></li> 
+				<li><a href="#banner" id="banner-link" class="nav-link" > Home </a></li>
+				
+				<li class="divider"></li> 
+				<li ><a href="#portfolio"  id="portfolio-link" class="nav-link"> Portfolio</a></li>
+				
+				<li class="divider"> </li> 
+				<li ><a href="#about" id="about-link" class="nav-link" > About Us</a></li>
+				
+				<li class="divider"></li> 
+					<li ><a href="#events" id="events-link" class="nav-link"> Events</a>
+						</li>
+				
+				<li class="divider"></li> 
+				<li ><a data-reveal-id="contact-us" href="#contact"> Contact Us </a></li>
+				</ul>
+			</section>
+			</nav>
+ 		</div> 
+  		<!-- End Header and Nav -->
+		  <!-- Reveal requires this even though we are only using reveal for the modal window -->
+		  <div class="reveal"> 
+				<!-- Any section element inside of this container is displayed as a slide -->
+				<div class="slides">
+					<section>
+					</section>
+				</div>
+		  </div>
 		  
 		<div class="row">
 			<div class="medium-6 columns">
@@ -220,7 +268,7 @@
 		<footer class="footer">
 			<p class="text-center">
 				<!-- Copyright information. You can remove my site link. -->
-				Copyright © moltensteelman Inc. | Designed by <a href="http:/keneucker.com">Ken Eucker</a>
+				Copyright © moltensteelman Inc. | Developed by <a href="http://keneucker.com">Ken Eucker</a>
 			</p>
 		</footer>
 			<!--Footer End here--> 
@@ -231,11 +279,8 @@
 		<!-- Foundation  core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-		<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
-		</script>
-		<script src="./js/foundation.min.js"></script>
+		<script src="../../vendor/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../../vendor/foundation/6/js/vendor/foundation.min.js"></script>
 
 		<!-- Youtube API -->
 		<script src="http://www.youtube.com/player_api"></script>
@@ -254,6 +299,7 @@
 		<script>
 			$(document).foundation();
 		</script>
+		<script src="./js/custom.js"></script>
 
 		<!-- PURE Unobtrusive Rendering Engine -->
 		<script src="../../vendor/pure/pure.min.js"></script>
