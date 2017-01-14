@@ -16,10 +16,7 @@ $(document).ready(function() {
 			});
 		}
 	});
-	
-	
-	
-	
+
 	/*------------ For Top Banner ------------ */
 	// Full list of configuration options available here:
 	// https://github.com/hakimel/reveal.js#configuration

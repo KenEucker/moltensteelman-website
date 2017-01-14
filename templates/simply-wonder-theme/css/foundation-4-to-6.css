@@ -1,4 +1,6 @@
-
+.wrapper {
+    margin-top: 70px;
+}
 
 /* Copied from foundation 4 */
 /* Wrapped around .top-bar to contain to grid width */
@@ -33,6 +35,7 @@
   line-height: 45px;
   position: relative;
   background: #111111;
+  padding: 0;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;

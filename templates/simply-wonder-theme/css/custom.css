@@ -63,6 +63,7 @@
 
 .top-bar .name h1 a {
   padding: unset;
+  display: inline;
 }
 
 .controller a {
