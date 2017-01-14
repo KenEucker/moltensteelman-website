@@ -5,14 +5,14 @@
     <title>Content Editor</title>
     
     <!-- Foundation CSS framework (Bootstrap and jQueryUI also supported) -->
-    <link rel='stylesheet' href='../../vendor/foundation/css/foundation.min.css'>
+    <link rel='stylesheet' href='../../vendor/foundation/6/css/foundation.min.css'>
     <!-- Font Awesome icons (Bootstrap, Foundation, and jQueryUI also supported) -->
     <link rel='stylesheet' href='../../vendor/font-awesome/css/font-awesome.css'>
     
 		<!-- Theme CSS files -->
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main_responsive.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/editor.css">
     
     <script src="./js/jsoneditor.min.js"></script>
     
@@ -101,11 +101,11 @@
       // This is the starting value for the editor
       // We will use this to seed the initial editor 
       // and to provide a "Restore to Default" button.
-      var content = getParameterByName("schema"),
+      var content = getParameterByName("content"),
           show_developer_tools = getParameterByName("dev") == "true" ? true : false,
-          content_name = content.split(".")[0],
+          type = getParameterByName("type"),
           content_folder_path = '../../content/',
-          content_filepath = content_folder_path + content_name + '.json',
+          content_filepath = content_folder_path + type + "/" + content + '.json',
           dev_tools =  document.querySelectorAll(".dev"),
           existing_content = getFileAsJSONObject(content_filepath);
 
@@ -119,11 +119,11 @@
       var editor = new JSONEditor(document.getElementById('editor_holder'),{
         // Enable fetching schemas via ajax
         ajax: true,
-        form_name_root: content_name,
+        form_name_root: type,
         
         // The schema for the editor
         schema: {
-          $ref: content_folder_path + content + ".json",
+          $ref: content_folder_path + type + "/" + type + ".schema.json",
           format: "grid"
         },
         

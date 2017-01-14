@@ -1,0 +1,31 @@
+{
+    "title": "Pyrosaurus",
+    "description": "Fire breathing mini saurus on a globe that ignites the magician in you.",
+    "colors": ["blue","red","green"],
+    "text-field-text": "Inscription",
+    "buy-button-text": "Place Order",
+    "links": [
+        {
+            "text": "Facebook",
+            "link": "http://facebook.com"
+        },
+        {
+            "text": "Etsy",
+            "link": "http://etsy.com"
+        },
+        {
+            "text": "GoFundMe",
+            "link": "http://gofundme.com"
+        }
+    ],
+    "navigation-links": [
+        {
+            "text": "Home",
+            "link": "/"
+        },
+        {
+            "text": "The Mini Beast",
+            "link": "/minibeast"
+        }
+    ]
+}
