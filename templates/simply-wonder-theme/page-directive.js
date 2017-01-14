@@ -25,7 +25,8 @@ window.page.directive = {
     '#mentions  div.column': {
         'mention<-mentions':{
             'img@alt': 'mention.alt',
-            'img@src': 'mention.img'
+            'img@src': 'mention.img',
+            'a@href': 'mention.link'
         }
     },
     '#about .section-title': 'about-heading',
