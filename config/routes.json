@@ -36,9 +36,16 @@
     },
     {
       "route": "/thewalkingbeast",
-      "template": "project",
-      "page": "",
+      "template": "simply-wonder-theme",
+      "page": "product.html",
       "content": "thewalkingbeast",
+      "protected": false
+    },
+    {
+      "route": "/theminibeast",
+      "template": "simply-wonder-theme",
+      "page": "product.html",
+      "content": "theminibeast",
       "protected": false
     },
     {
