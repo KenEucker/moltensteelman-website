@@ -1,5 +1,5 @@
 window.page.directive = {
-    '#heading': 'heading',
+    '#heading': 'page-heading',
     '#banner .heading': 'banner-heading',
     '#banner-link': 'banner-heading',
     '.slides section': {

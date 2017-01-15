@@ -199,3 +199,13 @@
 	background-color: #D84E4E;
 	opacity:1;
 }
+
+img.big {
+  width: 650px;
+  height: 350px;
+}
+
+img.thumb {
+    width: 100px;
+    height: 100px;
+}

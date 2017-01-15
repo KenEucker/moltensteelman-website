@@ -278,7 +278,8 @@ $p.core = function(sel, ctxt, plugins){
 				target = plugins.find(dom, selector);
 			}
 			if(!target || target.length === 0){
-				return error('The node "' + sel + '" was not found in the template:\n' + outerHTML(dom).replace(/\t/g,'  '));
+				// the target doesn't exist, let the receiving method handle that
+				return null;
 			}
 		}else{
 			// autoRender node
@@ -468,6 +469,10 @@ $p.core = function(sel, ctxt, plugins){
 		spec = parseloopspec(ls);
 		itersel = dataselectfn(spec.sel);
 		target = gettarget(dom, sel, true);
+
+		// If the target doesn't exist, move on
+		if(target == null) { return; }
+
 		nodes = target.nodes;
 
 		for(i = 0; i < nodes.length; i++){
@@ -569,6 +574,9 @@ $p.core = function(sel, ctxt, plugins){
 					// set the value for the node/attr
 					psel = sels[ii];
 					target = gettarget(dom, psel, false);
+					// If the target doesn't exist, move on
+					if(target == null) { continue; }
+
 					setsig(target, fns.length);
 					fns[fns.length] = wrapquote(target.quotefn, dataselectfn(dsel));
 				}else{
@@ -588,12 +596,18 @@ $p.core = function(sel, ctxt, plugins){
 				if(cspec.t === 'str'){
 					// if the target is a value
 					target = gettarget(n, cspec, false);
+					// If the target doesn't exist, move on
+					if(target == null) { continue; }
+
 					setsig(target, fns.length);
 					fns[fns.length] = wrapquote(target.quotefn, dataselectfn(cspec.prop));
 				}else{
 					// if the target is a loop
 					itersel = dataselectfn(cspec.sel);
 					target = gettarget(n, cspec, true);
+					// If the target doesn't exist, move on
+					if(target == null) { continue; }
+
 					nodes = target.nodes;
 					for(j = 0, jj = nodes.length; j < jj; j++){
 						node = nodes[j];

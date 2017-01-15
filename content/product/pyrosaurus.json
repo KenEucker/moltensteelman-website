@@ -1,9 +1,28 @@
 {
+    "page-heading": "Pyrosaurus - The fire dragon",
     "title": "Pyrosaurus",
     "description": "Fire breathing mini saurus on a globe that ignites the magician in you.",
-    "colors": ["blue","red","green"],
+    "colors": [
+        {
+            "color":"blue"
+        },
+        {
+            "color": "red"
+        },
+        {
+            "color": "green"
+        }
+        ],
     "text-field-text": "Inscription",
+    "text-field-placeholder": "For the fire in all of us",
     "buy-button-text": "Place Order",
+    "main-image": "http://placehold.it/650x350",
+    "images": [
+        {
+            "image":"",
+            "alt":"image"
+        }
+        ],
     "links": [
         {
             "text": "Facebook",

@@ -45,7 +45,7 @@
       "route": "/pyrosaurus",
       "template": "simply-wonder-theme",
       "page": "product.html",
-      "content": "content/products/pyrosaurus.json",
+      "content": "content/product/pyrosaurus.json",
       "protected": false
     },
     {
