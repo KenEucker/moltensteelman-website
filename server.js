@@ -230,6 +230,11 @@ _.forEach(config.auth, function(authentication) {
     });
 });
 
+// Set default route to the first site as well
+app.get('*', function(req, res) {
+    res.redirect(routeKeys[0] + '/');
+});
+
 message.logSuccess("Configuration Successful");
 // Start the app and give success message
 app.listen(PORT, function () {

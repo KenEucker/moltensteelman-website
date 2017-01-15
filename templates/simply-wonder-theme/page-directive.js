@@ -5,6 +5,7 @@ window.page.directive = {
     '.slides section': {
         'splash<-splashes':{
             '.heading':'splash.heading',
+            'a@href': 'splash.link',
             'img.delay1':'splash.img1',
             'img.delay2':'splash.img2',
             'img.delay3':'splash.img3'

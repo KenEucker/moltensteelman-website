@@ -10,17 +10,29 @@
             "color": "red"
         },
         {
-            "color": "green"
+            "color": "purple"
         }
         ],
     "text-field-text": "Inscription",
     "text-field-placeholder": "For the fire in all of us",
     "buy-button-text": "Place Order",
-    "main-image": "http://placehold.it/650x350",
+    "main-image": "../../assets/img/2016PyroPairJD.jpg",
     "images": [
         {
-            "image":"",
-            "alt":"image"
+            "image":"../../assets/img/2016PyroPairJD.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2015JDPyrosaurus.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/Pyrosaurus-sunset-2013.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/pyrosaurus.jpg",
+            "alt":"Pair of pyrosaurus'"
         }
         ],
     "links": [
@@ -33,10 +45,31 @@
             "link": "http://etsy.com"
         },
         {
-            "text": "GoFundMe",
-            "link": "http://gofundme.com"
+            "text": "KickStarter",
+            "link": "http://kickstarter.com"
         }
     ],
+    "features-heading": "Features",
+    "features": [
+        {
+            "image":"../../assets/img/2015JDPyrosaurus.jpg",
+            "title": "Shoots Fire!",
+            "description": "The pyrosaurus is equipped with a fire poofer that shoots fire out of the mouth of the dragon."
+        },
+        {
+            "image":"../../assets/img/Pyro-spec-0114.jpg",
+            "title": "Machined aluminum",
+            "description": "The pyrosaurus body is machined aluminum and will not rust."
+        },
+        {
+            "image":"../../assets/img/2012MartinPyro.jpg",
+            "title": "Hand crafted",
+            "description": "The original pyrosaurus was hand crafted by Martin Montesano. Each and every pyrosaurus sold will be assembled by the creators."
+        }
+    ],
+    "questions-heading": "Questions",
+    "questions-placeholder": "Ask your question here",
+    "questions-button": "Ask",
     "navigation-links": [
         {
             "text": "Home",

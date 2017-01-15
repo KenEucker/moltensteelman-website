@@ -1,9 +1,6 @@
 /* Custom CSS
 ====================================================================== */
 
-
-
-
 /* Higher than 1200 (desktop devices)
 ====================================================================== */
 @media only screen and (min-width: 1200px) {
@@ -53,12 +50,17 @@
   display:block;
 }
 
+.inline {
+  display: inline-block;
+}
+
 #home {
   margin-top: 35px;
 }
 
 .page-section h2 {
     margin-bottom: unset;
+    color: #fff;
 }
 
 .top-bar .name h1 a {
@@ -206,6 +208,34 @@ img.big {
 }
 
 img.thumb {
-    width: 100px;
+    width: 115px;
     height: 100px;
+    cursor: pointer;
+}
+
+#features .thumbnail {
+  width: 300px;
+  max-height: 250px;
+}
+
+@media only screen and (min-width: 940px){
+  .top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
+      border-bottom: none;
+      border-top: none;
+      border-right: solid 1px #2b2b2b;
+      border-left: solid 1px black;
+      clear: none;
+      height: 45px;
+      width: 0;
+  }
+}
+
+.top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
+    border-right: solid 1px #0C7BA2;
+    border-left: solid 1px #3bbbea;
+}
+
+.top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
+    border-right: solid 1px #0C7BA2;
+    border-left: solid 1px #3bbbea;
 }

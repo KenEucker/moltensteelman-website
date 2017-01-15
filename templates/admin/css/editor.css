@@ -13,6 +13,7 @@ h3 span {
     color: #fefefe;
     padding: 5px;
     border-radius: 5px;
+    vertical-align: middle;
 }
 
 .button-group {
