@@ -54,6 +54,66 @@ function servePageOrFile(req, res) {
     }
 }
 
+// Inserts a string into another string before the single occurance where
+function insertBefore(what, where, insert) {
+    var split = what.split(where);
+    
+    return split[0] + insert + where + split[1];
+}
+
+// Inserts a string into another string after the single occurance where
+function insertAfter(what, where, insert, complication) {
+     var split = what.split(where);
+        
+    if(complication) {
+        var afterComplication = split[1].indexOf(complication) + 1,
+            complicationResolution = split[1].substr(0, afterComplication);
+        
+        return split[0] + where + complicationResolution + insert + split[1].substring(afterComplication);
+    }
+    else {
+        return split[0] + where + insert + split[1];
+    }
+}
+
+function modifyPage(html, window_page_content) {
+    var headStartScripts = '', 
+        headEndScripts = '', 
+        bodyStartScripts = '', 
+        bodyEndScripts = '';
+
+    _.forEach(config.scripts, function(script){
+        switch(script.location) {
+            case "headStart":
+                headStartScripts += script.script;
+                break;
+            case "headEnd":
+                headEndScripts += script.script;
+                break;
+            case "bodyStart":
+                bodyStartScripts += script.script;
+                break;
+            case "bodyEnd":
+                bodyEndScripts += script.script;
+                break;
+        }
+    });
+
+    // Replace the sample content for the template and insert the page content defined in the route
+    html = html.replace('<script src="./sample.js"></script>','<script>window.page.content=' + window_page_content + ';</script>')
+    html = insertAfter(html, "<head", headStartScripts, '>');
+    html = insertBefore(html, "</head>", headEndScripts);
+    html = insertAfter(html, "<body", bodyStartScripts, '>');
+
+    // TODO: create a workaround for this
+    // Because of how PURE renders the body we need to put our end body scripts before that script
+    html = insertBefore(html, "<!-- PURE Unobtrusive Rendering Engine -->", bodyEndScripts);
+    // Therefore the following would work if PUREjs was not being used on the page 
+    //html = insertBefore(html, "</body>", bodyEndScripts);
+            
+    return html;
+}
+
 function servePage(route, req, res) {
     message.logUpdate('page requested: ' + req.url);
     message.logSuccess('route matched:', route.route);
@@ -81,9 +141,10 @@ function servePage(route, req, res) {
         message.logError('Error reading content for template at ' + contentPath + ': ' + e);
         content = "''";
     }
-    // Insert our page data
-    html = html.replace('<script src="./sample.js"></script>','<script>window.page.content=' + content + ';</script>');
 
+    // Modify the html to include the page content and scripts
+    html = modifyPage(html, content);
+    
     // Send the html to the browser
     res.write(html);
     res.end();
