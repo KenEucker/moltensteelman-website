@@ -104,12 +104,7 @@ function modifyPage(html, window_page_content) {
     html = insertAfter(html, "<head", headStartScripts, '>');
     html = insertBefore(html, "</head>", headEndScripts);
     html = insertAfter(html, "<body", bodyStartScripts, '>');
-
-    // TODO: create a workaround for this
-    // Because of how PURE renders the body we need to put our end body scripts before that script
-    html = insertBefore(html, "<!-- PURE Unobtrusive Rendering Engine -->", bodyEndScripts);
-    // Therefore the following would work if PUREjs was not being used on the page 
-    //html = insertBefore(html, "</body>", bodyEndScripts);
+    html = insertBefore(html, "</body>", bodyEndScripts);
             
     return html;
 }
