@@ -218,6 +218,14 @@ img.thumb {
   max-height: 250px;
 }
 
+#features {
+  background-color: #e9ebee;
+}
+
+.tabs {
+  background-color: #e9ebee;
+}
+
 @media only screen and (min-width: 940px){
   .top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
       border-bottom: none;
@@ -238,4 +246,9 @@ img.thumb {
 .top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
     border-right: solid 1px #0C7BA2;
     border-left: solid 1px #3bbbea;
+}
+
+.thumbnail {
+    border-radius: 10px;
+    border-color: #202020;
 }
