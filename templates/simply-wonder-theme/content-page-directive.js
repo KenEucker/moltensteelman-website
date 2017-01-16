@@ -18,7 +18,7 @@ window.page.directive = {
     '#callout .button2': 'callout-button2',
     '#description h2': 'description-title',
     '#description p': 'description',
-    '#description img.main@src': 'main-image',
+    '#description iframe@src': 'main-video',
     '#points .point': {
         'point<-points': {
             'h3': 'point.heading',

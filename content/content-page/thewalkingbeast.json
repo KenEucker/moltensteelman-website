@@ -2,7 +2,7 @@
     "page-heading": "The walking beast",
     "description-title": "The walking beast",
     "description": "Fantasy vehicles like the Star Wars ATAT, MechWarrior video games and real-life robotics prototypes such as the Adaptive Suspension Vehicle (ASV) from Ohio State University inspired the creation of The Walking Beast. By now it is an iconic feature of the Burning Man arts festival and The Walking Beast has developed an international following of loyal fans. It is brought to public appearances by trailer and never fails to attract attention while on the road.<br>I decided to build the Walking Beast after seeing a video about the Ohio State University Adaptive Suspension Vehicle because it brought science out of the lab and into reality.  I started thinking about battlebots, the MechWarrior video games, and a toy walking creature I had as a kid.<br>It took me another ten years before I was re-inspired and decided it was time to build a walking machine.  Then it was another three years to imagine, design, and build it and I spent over 6,000 hours cutting, notching, grinding, bending, welding and assembling the machine.  It helped that I am a metal fabricator and I had a shop where I could do this work.<br>After The Walking Beast took its first steps in 2007, I had some help sanding, painting, and wiring. Later I had more help installing the LED lighting, upholstering the upper deck and repairing some mechanical parts.",
-    "main-image": "../../assets/img/2016TWBSeattle.jpg",
+    "main-video": "https://www.youtube.com/embed/KqgbLZrsQVw",
     "callout-title": "\"A masterful feat of engineering\"",
     "callout-description": "That it is",
     "callout-button1": "",
@@ -30,6 +30,10 @@
         }
     ],
     "images": [
+        {
+            "image":"../../assets/img/2016TWBSeattle.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
         {
             "image":"../../assets/img/2008TWBstormtroopers.jpg",
             "alt":"Pair of pyrosaurus'"
