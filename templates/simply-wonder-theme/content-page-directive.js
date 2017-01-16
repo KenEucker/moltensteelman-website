@@ -6,7 +6,7 @@ window.page.directive = {
             'a@href': 'link.link'
         }
     },
-    '#images-heading h4': 'images-heading',
+    '#images-heading h3': 'images-heading',
     '.images .column': {
         'image<-images': {
             'img@src': 'image.image'
