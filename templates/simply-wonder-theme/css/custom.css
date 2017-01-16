@@ -251,4 +251,9 @@ img.thumb {
 .thumbnail {
     border-radius: 10px;
     border-color: #202020;
+    object-fit: cover;
+}
+
+.price {
+  color: orange;
 }

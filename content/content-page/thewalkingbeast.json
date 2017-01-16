@@ -1,0 +1,225 @@
+{
+    "page-heading": "The walking beast",
+    "description-title": "The walking beast",
+    "description": "Fantasy vehicles like the Star Wars ATAT, MechWarrior video games and real-life robotics prototypes such as the Adaptive Suspension Vehicle (ASV) from Ohio State University inspired the creation of The Walking Beast. By now it is an iconic feature of the Burning Man arts festival and The Walking Beast has developed an international following of loyal fans. It is brought to public appearances by trailer and never fails to attract attention while on the road.<br>I decided to build the Walking Beast after seeing a video about the Ohio State University Adaptive Suspension Vehicle because it brought science out of the lab and into reality.  I started thinking about battlebots, the MechWarrior video games, and a toy walking creature I had as a kid.<br>It took me another ten years before I was re-inspired and decided it was time to build a walking machine.  Then it was another three years to imagine, design, and build it and I spent over 6,000 hours cutting, notching, grinding, bending, welding and assembling the machine.  It helped that I am a metal fabricator and I had a shop where I could do this work.<br>After The Walking Beast took its first steps in 2007, I had some help sanding, painting, and wiring. Later I had more help installing the LED lighting, upholstering the upper deck and repairing some mechanical parts.",
+    "main-image": "../../assets/img/2016TWBSeattle.jpg",
+    "callout-title": "\"A masterful feat of engineering\"",
+    "callout-description": "That it is",
+    "callout-button1": "",
+    "callout-button2": "",
+    "bullets": [
+        {
+            "amount": 7,
+            "name": "tons"
+        },
+        {
+            "amount": 1600,
+            "name": "hours spent welding"
+        },
+        {
+            "amount": 300,
+            "name": "days building"
+        },
+        {
+            "amount": 1000,
+            "name": "multiple-phase LEDs"
+        },
+        {
+            "amount": 200,
+            "name": "pounds of propane"
+        }
+    ],
+    "images": [
+        {
+            "image":"../../assets/img/2008TWBstormtroopers.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2010TWBdust.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2010TWBwedding.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2011TWBGravedigger.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2011TWBHistoryChannel.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2011TWBloaded.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2011TWBmogfest.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2012TWBacme.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2012TWBfred.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/2012TWBmoopie.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/Bridge-crush-090915.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/GOPR0034.JPG",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/Side-Beast-2012.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/Slow-exposure-0915-2.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/TWB-fire.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/TWB-OMSI-Max-Bridge-090815.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/TWBsunset.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-01.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-04.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-05.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-01.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-04.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-05.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-01.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-04.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-05.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-06.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-07.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-08.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-10.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-11.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-12.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-13.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-14.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-15.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-16.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-17.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/WB-18.jpg",
+            "alt":"Pair of pyrosaurus'"
+        }
+        ],
+    "links": [
+        {
+            "text": "Facebook",
+            "link": "http://facebook.com"
+        },
+        {
+            "text": "Etsy",
+            "link": "http://etsy.com"
+        },
+        {
+            "text": "KickStarter",
+            "link": "http://kickstarter.com"
+        }
+    ],
+    "points": [
+        {
+            "heading": "Specifications",
+            "description": "7 tons (14,250 lbs) or about the weight of 4 cars<br>The Walking Beast weighs more than most monster trucks!<br>Height	11 feet<br>Width	8 feet 4 inches<br>Length	24 feet<br>Ground Pressure	20.8 psi when standing on four legs<br>(as compared to 30 psi for a standard passenger car)"
+        },
+        {
+            "heading": "Powered By",
+            "description": "454 cu. in. Big block Chevy V-8	 <br>TH400 transmission modified with 475 straight cut gears <br>Two Klune-V extreme under drive Goliath planetary gear reduction boxes <br>Rockwell 2 1/2 ton military differential modified with custom 5 ton parts <br>Final Drive Ratio is 125:1 <br>Fuel Consumption is 2 gallons gasoline per mile (GPM) <br>"
+        },
+        {
+            "heading": "Construction",
+            "description": "Linkage - 6-bar linkage system designed and patented by Joe Klann for walking machines.<br>The Walking Beast  linkage has 56 pivot points and uses 114 bearings.<br>Metals Used - Steel, aluminum, 1040, 4130, 4140, 4340, and 8620 chromium and molybdenum alloy<br>Method - Frame, legs and linkage are tubing cut, notched and welded, or CNC plasma cut, and then formed on a press brake and welded together to form box or angle structures. All pivot points and pins are CNC machined."
+        }
+    ],
+    "navigation-links": [
+        {
+            "text": "Home",
+            "link": "/"
+        },
+        {
+            "text": "The Mini Beast",
+            "link": "/theminibeast"
+        }
+    ]
+}
+

@@ -37,8 +37,8 @@
     {
       "route": "/thewalkingbeast",
       "template": "simply-wonder-theme",
-      "page": "product.html",
-      "content": "thewalkingbeast",
+      "page": "content-page.html",
+      "content": "content/content-page/thewalkingbeast.json",
       "protected": false
     },
     {
