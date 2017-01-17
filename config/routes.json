@@ -140,5 +140,9 @@
     {
       "route": "/templates",
       "static": true
+    },
+    {
+      "content": "/assets/img/favicon.ico",
+      "favicon": true
     }
   ]
