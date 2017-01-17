@@ -21,8 +21,6 @@ var /* * Libraries * */
     passport = require('passport'),
     /// For authenticating Google account users
     GoogleOauthJWTStrategy = require('passport-google-oauth-jwt').GoogleOauthJWTStrategy,
-    /// For using cookies with express
-    cookieParser = require('cookie-parser'),
     /// Simple session middleware for express
     session = require('express-session'),
     
@@ -99,8 +97,12 @@ function modifyPage(html, window_page_content) {
         }
     });
 
-    // Replace the sample content for the template and insert the page content defined in the route
-    html = html.replace('<script src="./sample.js"></script>','<script>window.page.content=' + window_page_content + ';</script>')
+    // Remove the sample content for the template if it exists (REMNANT)
+    html = html.replace('<script src="./sample.js"></script>', '');
+
+    // Insert the page content to be used for PUREjs
+    html = insertBefore(html, '</body>', '<script>window.page.content=' + window_page_content + ';</script>');
+
     html = insertAfter(html, "<head", headStartScripts, '>');
     html = insertBefore(html, "</head>", headEndScripts);
     html = insertAfter(html, "<body", bodyStartScripts, '>');
@@ -110,8 +112,8 @@ function modifyPage(html, window_page_content) {
 }
 
 function servePage(route, req, res) {
-    message.logUpdate('page requested: ' + req.url);
-    message.logSuccess('route matched:' + route.route);
+    message.logSuccess('route matched page: ' + route.route);
+
     var page = route.page != "" ? route.page : "index.html",
         html = path.join(__dirname, 'templates/', route.template, '/', page), 
         contentPath = path.join(__dirname, route.content),
@@ -125,7 +127,7 @@ function servePage(route, req, res) {
         html = fs.readFileSync(html, "utf8");
     } catch(e) {
         message.logError('Error reading html template: ' + e);
-        res.status(404).send('Not today Sonny boy');
+        res.status(404).send();
         return;
     }
 
@@ -181,118 +183,133 @@ function ensureAuthenticated(req, res, next) {
     req.session.redirectTo = req.url;
     res.redirect('/login');
 }
-passport.serializeUser(function(user, done) {
-  done(null, user);
-});
 
-passport.deserializeUser(function(user, done) {
-  done(null, user);
-});
-
-/********** Set up application and routes **********/
-
-// Turn on pretty formatted errors
-app.locals.pretty = true;
-
-// Configure sessions and set authentication keys for each authentication method
-_.forEach(config.auth, function(authentication) {
-    app.use(session({
-        secret: authentication.session,
-        resave: false,
-        saveUninitialized: false
-    }));
-    switch(authentication.name) {
-        case "google": 
-            passport.use(new GoogleOauthJWTStrategy({
-                clientId: authentication.clientID,
-                clientSecret: authentication.clientSecret
-            }, function verify(token, info, refreshToken, done) {
-                _.find(config.users, function(user) {
-                    if(user.id == info.email) {
-                        message.logInfo("User " + info.email + " Authenticted using google");
-                        done(null, { email: info.email });
-                    }
-                });
-            }));
-            break;
-    }
-});
-app.use(bodyparser.json());
-app.use(passport.initialize());
-app.use(passport.session());
-
-/// TODO: put route in configuration
-app.post('/admin/save', ensureAuthenticated, function(req, res){
-    saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
-});
-
-// Use the first route as the landing for the site
-app.get("", function(req, res) {
-    res.redirect(routeKeys[0] + '/');
-});
-
-// Configure routes
-_.forEach(config.routes, function(route) {
-    var type = "dynamic";
-
-    // If the route is static
-    if(route.static === true) {
-        /// TODO: should static routes be protectable?
-        // Honestly I cannot figure this out
-        // Use static middleware without defined route
-        app.use(express.static(path.join(__dirname, route.route)));
-        // Define route and use sendFile on the requested path
-        app.use(route.route, function(req, res) {
-            serveFile(route.route, req, res);
-        });   
-        type = "static";
-    }
-    // If the user must be authenticated for this route
-    else if(route.protected === true) {
-        // servePageOrFile at this route with authentication
-        app.get(route.route, ensureAuthenticated, servePageOrFile); 
-        // Include the template folder
-        app.use(route.route, ensureAuthenticated, function(req, res) {
-            serveFile('templates/' + route.template, req, res);
-        }); 
-        type += "-protected";
-    }
-    else {
-        // servePageOrFile at this route
-        app.get(route.route, servePageOrFile); 
-        // Include the template folder as static route
-        app.use(route.route, function(req, res) {
-            serveFile('templates/' + route.template, req, res);
-        }); 
-    }
-    message.logInfo("Configured " + type + " route: " + route.route);
-});
-
-// Configure authentication routes
-_.forEach(config.auth, function(authentication) {
-    message.logInfo("Configuring authentication: " + authentication.name);
-
-    // request google login
-    app.get( authentication.authRoute, passport.authenticate( authentication.session, 
-        { callbackUrl: authentication.callbackURL, scope: authentication.scope }));
-
-    // handle google callback
-    app.get( authentication.callbackRoute, 
-    passport.authenticate( authentication.session, { callbackUrl: authentication.callbackURL}),
-    function(req, res) {
-        var redirectTo = req.session.redirectTo;
-        delete req.session.redirectTo;
-        res.redirect(redirectTo);
+function configureQuasiApp() {
+    /********** Set up passport methods **********/
+    
+    passport.serializeUser(function(user, done) {
+        done(null, user);
     });
-});
 
-// Set default route to the first site as well
-app.get('*', function(req, res) {
-    res.redirect(routeKeys[0] + '/');
-});
+    passport.deserializeUser(function(user, done) {
+        done(null, user);
+    });
 
-message.logSuccess("Configuration Successful");
-// Start the app and give success message
-app.listen(PORT, function () {
-    message.logSuccess("App listening on: http://localhost:" + PORT);
-});
+    /********** Set up application and routes **********/
+
+    // Turn on pretty formatted errors
+    app.locals.pretty = true;
+
+    // Configure sessions and set authentication keys for each authentication method
+    _.forEach(config.auth, function(authentication) {
+        app.use(session({
+            secret: authentication.session,
+            resave: false,
+            saveUninitialized: false
+        }));
+        switch(authentication.name) {
+            case "google": 
+                passport.use(new GoogleOauthJWTStrategy({
+                    clientId: authentication.clientID,
+                    clientSecret: authentication.clientSecret
+                }, function verify(token, info, refreshToken, done) {
+                    _.find(config.users, function(user) {
+                        if(user.id == info.email) {
+                            message.logInfo("User " + info.email + " authenticted using google");
+                            done(null, { email: info.email });
+                        }
+                    });
+                }));
+                break;
+        }
+    });
+    app.use(bodyparser.json());
+    app.use(passport.initialize());
+    app.use(passport.session());
+
+    /// TODO: put route in configuration (this is a REMNANT)
+    app.post('/admin/save', ensureAuthenticated, function(req, res){
+        saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
+    });
+
+    // Use the first route as the landing for the site
+    app.get("", function(req, res) {
+        res.redirect(routeKeys[0] + '/');
+    });
+
+    // Configure routes
+    _.forEach(config.routes, function(route) {
+        var type = "dynamic";
+
+        // If the route is static
+        if(route.static === true) {
+            /// TODO: should static routes be protectable?
+            // Honestly I cannot figure this out
+            // Use static middleware without defined route
+            app.use(express.static(path.join(__dirname, route.route)));
+            // Define route and use sendFile on the requested path
+            app.use(route.route, function(req, res) {
+                serveFile(route.route, req, res);
+            });   
+            type = "static";
+        }
+        // If the user must be authenticated for this route
+        else if(route.protected === true) {
+            // servePageOrFile at this route with authentication
+            app.get(route.route, ensureAuthenticated, servePageOrFile); 
+            // Include the template folder
+            app.use(route.route, ensureAuthenticated, function(req, res) {
+                serveFile('templates/' + route.template, req, res);
+            }); 
+            type += "-protected";
+        }
+        else {
+            // servePageOrFile at this route
+            app.get(route.route, servePageOrFile); 
+            // Include the template folder as static route
+            app.use(route.route, function(req, res) {
+                serveFile('templates/' + route.template, req, res);
+            }); 
+        }
+        message.logInfo("Configured " + type + " route: " + route.route);
+    });
+
+    // Configure authentication routes
+    _.forEach(config.auth, function(authentication) {
+        message.logInfo("Configuring authentication: " + authentication.name);
+
+        // request google login
+        app.get( authentication.authRoute, passport.authenticate( authentication.session, 
+            { callbackUrl: authentication.callbackURL, scope: authentication.scope }));
+
+        // handle google callback
+        app.get( authentication.callbackRoute, 
+        passport.authenticate( authentication.session, { callbackUrl: authentication.callbackURL}),
+        function(req, res) {
+            var redirectTo = req.session.redirectTo;
+            delete req.session.redirectTo;
+            res.redirect(redirectTo);
+        });
+    });
+
+    // Set default route to the first site as well
+    app.get('*', function(req, res) {
+        res.redirect(routeKeys[0] + '/');
+    });
+
+    message.logSuccess("Configuration Successful");
+}
+
+function run(port) {
+    if(!port) port = PORT;
+
+    // Start the app and give success message
+    app.listen(port, function () {
+        message.logSuccess("App listening on: http://localhost:" + port);
+    });
+}
+
+module.exports = {
+    run: run,
+    configure: configureQuasiApp
+}

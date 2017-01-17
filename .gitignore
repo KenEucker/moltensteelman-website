@@ -38,3 +38,7 @@ jspm_packages
 
 # Output folder
 build
+
+# private configuration files
+config/auth.json
+config/users.json

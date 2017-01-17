@@ -1,4 +1,4 @@
 #!/bin/bash 
 
 echo ">> Running Node Server"
-node server.js
+node index.js
