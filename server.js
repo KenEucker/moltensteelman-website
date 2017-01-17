@@ -111,7 +111,7 @@ function modifyPage(html, window_page_content) {
 
 function servePage(route, req, res) {
     message.logUpdate('page requested: ' + req.url);
-    message.logSuccess('route matched:', route.route);
+    message.logSuccess('route matched:' + route.route);
     var page = route.page != "" ? route.page : "index.html",
         html = path.join(__dirname, 'templates/', route.template, '/', page), 
         contentPath = path.join(__dirname, route.content),
