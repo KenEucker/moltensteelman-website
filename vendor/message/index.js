@@ -36,8 +36,10 @@ function logInfo(message) {
     log(message);
 }
 
-
 function logChalkMessage(styles, message) {
+    if(typeof(message) == "object") {
+        message = JSON.stringify(message);
+    }
     console.log(styles(message));
 }
 

@@ -39,7 +39,7 @@ window.page.directive = {
             'img.thumbnail@src': 'feature.image'
         }
     },
-    '#questions label': 'questions-heading',
+    '#questions label.question-heading': 'questions-heading',
     '#questions textarea@placeholder': 'questions-placeholder',
     '#questions button': "questions-button"
 };

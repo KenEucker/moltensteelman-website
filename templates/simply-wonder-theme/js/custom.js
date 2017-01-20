@@ -130,5 +130,9 @@ $(document).ready(function() {
 			$('#about-blurb .original').removeClass('hidden');
 			$('#about-blurb .member').addClass('hidden');
 	});
+	$('form input[type="submit"]').click(function() {
+		$('form .close-reveal-modal').click();
+	});
+
 });
 

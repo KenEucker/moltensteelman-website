@@ -212,7 +212,7 @@ function configureQuasiApp() {
         switch(authentication.name) {
             case "google": 
                 passport.use(new GoogleOauthJWTStrategy({
-                    clientId: authentication.clientID,
+                    clientId: authentication.clientId,
                     clientSecret: authentication.clientSecret
                 }, function verify(token, info, refreshToken, done) {
                     _.find(config.users, function(user) {
@@ -226,6 +226,7 @@ function configureQuasiApp() {
         }
     });
     app.use(bodyparser.json());
+    app.use(bodyparser.urlencoded({ extended: true }));
     app.use(passport.initialize());
     app.use(passport.session());
 
@@ -297,20 +298,30 @@ function configureQuasiApp() {
             delete req.session.redirectTo;
             res.redirect(redirectTo);
         });
-    });
 
-    // For sending mail
-    app.post('/mail', function(req, res){
-        /// TODO: very that the request is coming from the app itself
-        message.logInfo("testing sending mail");
-        var mailOptions = {
-            replyTo: "any@whatever.com",
-            to: "user from auth (really doesn't matter because it is what is set for the auth)",
-            subject: "Hello",
-            generateTextFromHTML: true,
-            html: "<b>Hello world</b>"
-        };
-        nodemailer.sendMail(mailOptions, config.auth.google);
+        if(authentication.name == "google") {
+            app.post('/' + authentication.service, function(req, res){
+                /// TODO: very that the request is coming from the app itself
+                message.logNotice(req.body);
+
+                // Validate the incoming data
+                if(req.body.replyTo.length > 0 && req.body.message.length > 0) {
+                    message.logNotice("Sending email");
+                
+                    var mailOptions = {
+                        replyTo: req.body.replyTo + " <" + req.body.name + ">",
+                        to: authentication.user,
+                        subject: req.body.subject,
+                        generateTextFromHTML: true,
+                        html: req.body.message
+                    };
+                    nodemailer.sendMail(mailOptions, authentication);
+                }
+                else {
+                    message.logError("Email data incomplete");
+                }
+            });
+        }
     });
 
     // Set default route to the first site as well
