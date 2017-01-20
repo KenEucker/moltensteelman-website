@@ -299,6 +299,20 @@ function configureQuasiApp() {
         });
     });
 
+    // For sending mail
+    app.post('/mail', function(req, res){
+        /// TODO: very that the request is coming from the app itself
+        message.logInfo("testing sending mail");
+        var mailOptions = {
+            replyTo: "any@whatever.com",
+            to: "user from auth (really doesn't matter because it is what is set for the auth)",
+            subject: "Hello",
+            generateTextFromHTML: true,
+            html: "<b>Hello world</b>"
+        };
+        nodemailer.sendMail(mailOptions, config.auth.google);
+    });
+
     // Set default route to the first site as well
     app.get('*', function(req, res) {
         res.redirect(routeKeys[0] + '/');

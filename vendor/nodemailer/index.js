@@ -1,24 +1,44 @@
 /* eslint no-console: 0 */
 
 'use strict';
-var nodemailer = require('nodemailer');
+var nodemailer = require('nodemailer'),
+    message = require('../message');
 
-// create reusable transporter object using the default SMTP transport
-//var transporter = nodemailer.createTransport('smtps://user%40gmail.com:pass@smtp.gmail.com');
+// Example taken from: http://masashi-k.blogspot.com/2013/06/sending-mail-with-gmail-using-xoauth2.html
+// Uses nodemailer v0.7.1
+// To get your client secret and ID: https://console.developers.google.com
+// To get your refresh token go here: https://developers.google.com/oauthplayground
+function sendMail(mailOptions, auth) {
+    var smtpTransport = nodemailer.createTransport("SMTP", {
+        service: auth.service,
+        auth: {
+            XOAuth2: {
+            user: auth.user,
+            clientId: auth.clientId,
+            clientSecret: auth.clientSecret,
+            refreshToken: auth.refreshToken
+            }
+        }
+    });
 
-// setup e-mail data with unicode symbols
-var mailOptions = {
-    from: '"Fred Foo ?" <foo@blurdybloop.com>', // sender address
-    to: 'bar@blurdybloop.com, baz@blurdybloop.com', // list of receivers
-    subject: 'Hello ✔', // Subject line
-    text: 'Hello world ?', // plaintext body
-    html: '<b>Hello world ?</b>' // html body
-};
+    // var mailOptions = {
+    // replyTo: "any@whatever.com",
+    // to: "user from auth (really doesn't matter because it is what is set for the auth)",
+    // subject: "Hello",
+    // generateTextFromHTML: true,
+    // html: "<b>Hello world</b>"
+    // };
 
-// send mail with defined transport object
-// transporter.sendMail(mailOptions, function(error, info){
-//     if(error){
-//         return console.log(error);
-//     }
-//     console.log('Message sent: ' + info.response);
-// });
+    smtpTransport.sendMail(mailOptions, function(error, response) {
+    if (error) {
+        message.logError(error);
+        console.log(error);
+    } else {
+        message.logSuccess(response);
+        console.log(response);
+    }
+    smtpTransport.close();
+    });
+}
+
+module.exports = { sendMail: sendMail };
