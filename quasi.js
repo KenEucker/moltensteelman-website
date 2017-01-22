@@ -63,17 +63,11 @@ function insertBefore(what, where, insert) {
 
 // Inserts a string into another string after the single occurance where
 function insertAfter(what, where, insert, complication) {
-     var split = what.split(where);
-        
-    if(complication) {
-        var afterComplication = split[1].indexOf(complication) + 1,
-            complicationResolution = split[1].substr(0, afterComplication);
-        
-        return split[0] + where + complicationResolution + insert + split[1].substring(afterComplication);
-    }
-    else {
-        return split[0] + where + insert + split[1];
-    }
+    var location = location + what.substring(what.indexOf(where)).indexOf(complication) + 1,
+        firstHalf = what.substring(0, location),
+        secondHalf = what.substring(location + 1);
+
+    return firstHalf + insert + secondHalf;
 }
 
 function modifyPage(html, window_page_content) {

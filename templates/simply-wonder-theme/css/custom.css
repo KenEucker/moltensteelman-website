@@ -204,7 +204,7 @@
 
 img.big {
   width: 650px;
-  height: 350px;
+  max-height: 350px;
 }
 
 img.thumb {
