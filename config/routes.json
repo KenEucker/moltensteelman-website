@@ -45,7 +45,14 @@
       "route": "/theminibeast",
       "template": "simply-wonder-theme",
       "page": "product.html",
-      "content": "theminibeast",
+      "content": "content/product/theminibeast.json",
+      "protected": false
+    },
+    {
+      "route": "/cherry",
+      "template": "simply-wonder-theme",
+      "page": "product.html",
+      "content": "content/product/pyrosaurus.json",
       "protected": false
     },
     {
@@ -142,7 +149,7 @@
       "static": true
     },
     {
-      "content": "/assets/img/favicon.ico",
+      "content": "/assets/img/moltensteelman.ico",
       "favicon": true
     }
   ]
