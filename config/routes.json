@@ -42,6 +42,20 @@
       "protected": false
     },
     {
+      "route": "/sarp10",
+      "template": "simply-wonder-theme",
+      "page": "project.html",
+      "content": "content/project/sarp10.json",
+      "protected": false
+    },
+    {
+      "route": "/flamboni",
+      "template": "simply-wonder-theme",
+      "page": "project.html",
+      "content": "content/project/flamboni.json",
+      "protected": false
+    },
+    {
       "route": "/theminiwalkingbeast",
       "template": "simply-wonder-theme",
       "page": "product.html",
