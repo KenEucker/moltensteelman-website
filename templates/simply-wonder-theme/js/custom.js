@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	// HACK!
+	$.each($('#top-nav div.inline'), function(i, el) {
+		var contents = $(el).html();
+		$(el).replaceWith(contents);
+	});
+
 	/*------------ For Scrollspy Init ------------ */
 	$('.nav-link').each(function(i) {
 		var position = $($(this).attr("href")).position();
@@ -58,7 +64,9 @@ $(document).ready(function() {
 
 	function scrollTo(target, selector) {
 		var liIndex = $(target).index();
-		var contentPosTop = $(selector).eq(liIndex).position().top;
+		var contentPosTop = $(selector).eq(liIndex).position();
+
+		contentPosTop = contentPosTop ? contentPosTop.top : 0;
 
 		$('html, body').stop().animate({
 			scrollTop : contentPosTop
@@ -138,6 +146,5 @@ $(document).ready(function() {
 	$('form input[type="submit"]').click(function() {
 		$('form .close-reveal-modal').click();
 	});
-
 });
 

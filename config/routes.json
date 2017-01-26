@@ -1,8 +1,8 @@
 [
     {
-      "route": "/home",
+      "route": "",
       "template": "simply-wonder-theme",
-      "page": "",
+      "page": "index.html",
       "content": "content/landing/home.json",
       "protected": false
     },

@@ -229,15 +229,10 @@ function configureQuasiApp() {
     app.use(passport.initialize());
     app.use(passport.session());
 
-    /// TODO: put route in configuration (this is a REMNANT)
-    app.post('/admin/save', ensureAuthenticated, function(req, res){
-        saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
-    });
-
-    // Use the first route as the landing for the site
-    app.get("", function(req, res) {
-        res.redirect(routeKeys[0] + '/');
-    });
+    // // Use the first route as the landing for the site
+    // app.get("", function(req, res) {
+    //     res.redirect(routeKeys[0]);
+    // });
 
     // Configure routes
     _.forEach(config.routes, function(route) {
@@ -323,9 +318,14 @@ function configureQuasiApp() {
         }
     });
 
+    /// TODO: put route in configuration (this is a REMNANT)
+    app.post('/admin/save', ensureAuthenticated, function(req, res){
+        saveFile(JSON.stringify(req.body, null, 2), "content/" + req.query.location);
+    });
+
     // Set default route to the first site as well
     app.get('*', function(req, res) {
-        res.redirect(routeKeys[0] + '/');
+        res.redirect(routeKeys[0]);
     });
 
     message.logSuccess("Configuration Successful");
