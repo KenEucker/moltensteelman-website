@@ -74,6 +74,7 @@ app.listen(port, function() {
   console.log('Listening on ' + port);
 });
 
+module.exports = app;
 
 /*
 // catch all errors and prevent nodejs to crash, production mode

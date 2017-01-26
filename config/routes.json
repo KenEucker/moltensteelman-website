@@ -1,6 +1,6 @@
 [
     {
-      "route": "",
+      "route": "/home",
       "template": "simply-wonder-theme",
       "page": "index.html",
       "content": "content/landing/home.json",
@@ -19,6 +19,13 @@
       "page": "",
       "content": "",
       "protected": false
+    },
+    {
+      "route": "/manager",
+      "template": "cloud-explorer",
+      "page": "",
+      "content": "",
+      "protected": true
     },
     {
       "route": "/editor",
