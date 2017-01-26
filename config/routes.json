@@ -3,14 +3,14 @@
       "route": "/home",
       "template": "simply-wonder-theme",
       "page": "",
-      "content": "content/home/home.json",
+      "content": "content/landing/home.json",
       "protected": false
     },
     {
       "route": "/home2",
       "template": "bootstrap",
       "page": "",
-      "content": "content/home/home.json",
+      "content": "content/landing/home.json",
       "protected": false
     },
     {
@@ -37,22 +37,22 @@
     {
       "route": "/thewalkingbeast",
       "template": "simply-wonder-theme",
-      "page": "content-page.html",
-      "content": "content/content-page/thewalkingbeast.json",
+      "page": "project.html",
+      "content": "content/project/thewalkingbeast.json",
       "protected": false
     },
     {
-      "route": "/theminibeast",
+      "route": "/theminiwalkingbeast",
       "template": "simply-wonder-theme",
       "page": "product.html",
-      "content": "content/product/theminibeast.json",
+      "content": "content/product/theminiwalkingbeast.json",
       "protected": false
     },
     {
       "route": "/cherry",
       "template": "simply-wonder-theme",
       "page": "product.html",
-      "content": "content/product/pyrosaurus.json",
+      "content": "content/product/cherry.json",
       "protected": false
     },
     {

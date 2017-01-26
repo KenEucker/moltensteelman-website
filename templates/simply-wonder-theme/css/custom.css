@@ -257,3 +257,33 @@ img.thumb {
 .price {
   color: orange;
 }
+
+.slides img {
+  max-height: 350px;
+  border-radius: 40px;
+  margin-top: 0 !important;
+}
+
+.reveal h2 {
+    width: 1024px;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.controller-pause {
+  left: 43%;
+  top: unset !important;
+}
+
+.reveal-modal {
+    border-radius: 15px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  margin-top: 7px;
+}

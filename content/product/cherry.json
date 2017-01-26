@@ -1,0 +1,32 @@
+{
+  "page-heading": "Chery - The handheld ATAT",
+  "title": "Cherry",
+  "description": "Cherry is a two legged walking machine",
+  "colors": [
+    {
+      "color": "Steel-black"
+    }
+  ],
+  "price": "Available",
+  "price-heading": "Pre Order",
+  "text-field-text": "",
+  "buy-button-text": "Pre Order",
+  "links": [],
+  "questions-heading": "Have a question about this product?",
+  "questions-placeholder": "Ask your question here",
+  "questions-button": "Ask",
+  "navigation-links": [
+    {
+      "text": "Home",
+      "link": "/"
+    },
+    {
+      "text": "Pyrosaurus",
+      "link": "/pyrosaurus"
+    },
+    {
+      "text": "The Mini Walking Beast",
+      "link": "/theminiwalkingbeast"
+    }
+  ]
+}

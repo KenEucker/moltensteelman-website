@@ -33,6 +33,11 @@ $(document).ready(function() {
 		maxScale : 1.0
 	});
 
+	$('.controller-pause').click(function(){
+		Reveal.configure({ autoSlide: 0 }); // off
+		$(this).fadeOut();
+	});
+
 	/*------------ For smooth scroll ------------ */
 
 	$('.logo').click(function(event) {

@@ -19,22 +19,22 @@
     {
       "heading": "The walking beast",
       "link": "/thewalkingbeast",
-      "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg"
-    },
-    {
-      "heading": "The Pyrosaurus",
-      "link": "/pyrosaurus",
-      "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
+      "img1": "../../assets/img/2012TWBacme.jpg",
+      "img2": "",
       "img3": ""
     },
     {
-      "heading": "The mini beast",
-      "link": "/theminibeast",
-      "img1": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
+      "heading": "Pyrosaurus",
+      "link": "/pyrosaurus",
+      "img1": "../../assets/img/Pyrosaurus-card.jpg",
+      "img2": "",
+      "img3": ""
+    },
+    {
+      "heading": "The Mini Walking Beast",
+      "link": "/theminiwalkingbeast",
+      "img1": "../../assets/img/MTWB-ad-card.jpg",
+      "img2": "",
       "img3": ""
     }
   ],

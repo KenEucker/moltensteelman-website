@@ -57,10 +57,15 @@
 
     function getFileAsJSONObject(filePath)
     {
+      try {
         var req = new XMLHttpRequest();
         req.open("GET", filePath, false); // 'false': synchronous.
         req.send(null);
         return JSON.parse(req.responseText);
+      }
+      catch(exception) {
+        return null;
+      }
     }
 
     function saveContentAsTextFile(contents, filePath) {

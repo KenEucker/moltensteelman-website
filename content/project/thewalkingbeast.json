@@ -205,11 +205,11 @@
     "points": [
         {
             "heading": "Specifications",
-            "description": "7 tons (14,250 lbs) or about the weight of 4 cars<br>The Walking Beast weighs more than most monster trucks!<br>Height	11 feet<br>Width	8 feet 4 inches<br>Length	24 feet<br>Ground Pressure	20.8 psi when standing on four legs<br>(as compared to 30 psi for a standard passenger car)"
+            "description": "7 tons (14,250 lbs) or about the weight of 4 cars<br>The Walking Beast weighs more than most monster trucks!<br>Height 11 feet<br>Width 8 feet 4 inches<br>Length 24 feet<br>Ground Pressure 20.8 psi when standing on four legs<br>(as compared to 30 psi for a standard passenger car)"
         },
         {
             "heading": "Powered By",
-            "description": "454 cu. in. Big block Chevy V-8	 <br>TH400 transmission modified with 475 straight cut gears <br>Two Klune-V extreme under drive Goliath planetary gear reduction boxes <br>Rockwell 2 1/2 ton military differential modified with custom 5 ton parts <br>Final Drive Ratio is 125:1 <br>Fuel Consumption is 2 gallons gasoline per mile (GPM) <br>"
+            "description": "454 cu. in. Big block Chevy V-8 <br>TH400 transmission modified with 475 straight cut gears <br>Two Klune-V extreme under drive Goliath planetary gear reduction boxes <br>Rockwell 2 1/2 ton military differential modified with custom 5 ton parts <br>Final Drive Ratio is 125:1 <br>Fuel Consumption is 2 gallons gasoline per mile (GPM) <br>"
         },
         {
             "heading": "Construction",
@@ -222,8 +222,16 @@
             "link": "/"
         },
         {
-            "text": "The Mini Beast",
-            "link": "/theminibeast"
+            "text": "Pyrosaurus",
+            "link": "/pyrosaurus"
+        },
+        {
+            "text": "The Mini Walking Beast",
+            "link": "/theminiwalkingbeast"
+        },
+        {
+            "text": "Cherry",
+            "link": "/cherry"
         }
     ]
 }

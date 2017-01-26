@@ -1,0 +1,33 @@
+{
+    "page-heading": "The Mini Walking Beast",
+    "title": "Here is a title, finally",
+    "description": "The Mini Walking Beast",
+    "colors": [
+        {
+            "color": "Unpainted Steel"
+        }
+    ],
+    "price": "Available",
+    "price-heading": "Pre Order",
+    "buy-button-text": "Pre Order",
+    "text-field-text": "Maker Name",
+    "text-field-placeholder": "For recognition of your contributions",
+    "links": [],
+    "questions-heading": "Have a question about this product?",
+    "questions-placeholder": "Ask your question here",
+    "questions-button": "Ask",
+    "navigation-links": [
+        {
+            "text": "Home",
+            "link": "/"
+        },
+        {
+            "text": "Cherry",
+            "link": "/cherry"
+        },
+        {
+            "text": "Pyrosaurus",
+            "link": "/pyrosaurus"
+        }
+    ]
+}

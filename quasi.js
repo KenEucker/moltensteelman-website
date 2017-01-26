@@ -152,7 +152,12 @@ function serveFile(route, req, res) {
 function backupFile(target) {
     var backup = target + ".bak";
     
-    fs.writeFileSync(backup, fs.readFileSync(target));
+    try{
+        fs.writeFileSync(backup, fs.readFileSync(target));
+    }
+    catch(exceptiom) {
+        
+    }
 }
 
 function saveFile(contents, target) {

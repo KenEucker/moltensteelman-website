@@ -14,7 +14,8 @@ window.page.directive = {
     },
     '#description h3': 'title',
     '#description > p': 'description',
-    '#description h3': 'title',
+    '#description .cost label span': 'price-heading',
+    '#description .cost .price': 'price',
     '#description label.text-field': 'text-field-text',
     '#description input@placeholder': 'text-field-placeholder',
     '#description .options option': {

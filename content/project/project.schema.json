@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "page-heading": {
+      "type": "string",
+      "id": "page-heading"
+    },
+    "description-title": {
+      "type": "string",
+      "id": "description-title"
+    },
+    "description": {
+      "type": "string",
+      "id": "description"
+    },
+    "main-video": {
+      "type": "string",
+      "id": "main-video"
+    },
+    "callout-title": {
+      "type": "string",
+      "id": "callout-title"
+    },
+    "callout-description": {
+      "type": "string",
+      "id": "callout-description"
+    },
+    "callout-button1": {
+      "type": "string",
+      "id": "callout-button1"
+    },
+    "callout-button2": {
+      "type": "string",
+      "id": "callout-button2"
+    },
+    "bullets": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "integer",
+            "id": "amount"
+          },
+          "name": {
+            "type": "string",
+            "id": "name"
+          }
+        },
+        "id": "4",
+        "required": [
+          "amount",
+          "name"
+        ]
+      },
+      "id": "bullets"
+    },
+    "images-heading": {
+      "type": "string",
+      "id": "images-heading"
+    },
+    "images": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "id": "image"
+          },
+          "alt": {
+            "type": "string",
+            "id": "alt"
+          }
+        },
+        "id": "38",
+        "required": [
+          "image",
+          "alt"
+        ]
+      },
+      "id": "images"
+    },
+    "links": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "id": "text"
+          },
+          "link": {
+            "type": "string",
+            "id": "link"
+          }
+        },
+        "id": "2",
+        "required": [
+          "text",
+          "link"
+        ]
+      },
+      "id": "links"
+    },
+    "points": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "heading": {
+            "type": "string",
+            "id": "heading"
+          },
+          "description": {
+            "type": "string",
+            "id": "description"
+          }
+        },
+        "id": "2",
+        "required": [
+          "heading",
+          "description"
+        ]
+      },
+      "id": "points"
+    },
+    "navigation-links": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "id": "text"
+          },
+          "link": {
+            "type": "string",
+            "id": "link"
+          }
+        },
+        "id": "1",
+        "required": [
+          "text",
+          "link"
+        ]
+      },
+      "id": "navigation-links"
+    }
+  },
+  "id": "/",
+  "required": [
+    "page-heading",
+    "description-title",
+    "description",
+    "main-video",
+    "callout-title",
+    "callout-description",
+    "callout-button1",
+    "callout-button2",
+    "bullets",
+    "images-heading",
+    "images",
+    "links",
+    "points",
+    "navigation-links"
+  ]
+}
