@@ -8,8 +8,9 @@ $(document).ready(function() {
 
 	/*------------ For Scrollspy Init ------------ */
 	$('.nav-link').each(function(i) {
-		var position = $($(this).attr("href")).position();
-		if(position) {
+		var position = $(this).attr("href");
+		if(position[0] === "#") {
+			position = position.position();
 			$(this).scrollspy({
 				min : position.top - 50,
 				max : position.top + $($(this).attr("href")).height(),

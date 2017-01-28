@@ -303,3 +303,7 @@ img.thumb {
 .top-bar {
     background: #111111;
 }
+
+.wrapper {
+    margin-top: 50px;
+}
