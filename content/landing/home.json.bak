@@ -1,28 +1,40 @@
 {
-  "heading": "Moltensteelman",
-  "portfolio-heading": "Videos of the beast",
+  "page-heading": "Moltensteelman",
+  "banner-heading": "Products",
+  "portfolio-heading": "Videos of the beast 2",
+  "portfolio-description": "",
   "team-heading": "Our Makers",
-  "about-title": "A little about us",
+  "team-description": "",
+  "about-heading": "A little about us",
+  "about-description": "",
   "about-blurb-heading": "\"Robot Aliens And Fire!\"",
   "about-blurb": "In 2007, Martin Montensano set on an adventure of both skill and scale to build what has long been called The Walking Beast. What was once called Acme Labs, consists of two members (three?) of Martin Montensano, Anne Peterson, and... Currently, moltensteelman has a miniature version of the walking beast and a pyrosaurus that you can purchase here on this site.",
+  "about-image": "../../assets/img/2016PyroPairJD.jpg",
+  "events-heading": "Events",
+  "events-description": "",
+  "mentions-heading": "Mentioned In",
+  "mentions-description": "Articles about our work have been mentioned in the publications below",
   "splashes": [
     {
       "heading": "The walking beast",
-      "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg"
+      "img1": "../../assets/img/2012TWBacme.jpg",
+      "img2": "",
+      "img3": "",
+      "link": "/thewalkingbeast"
     },
     {
-      "heading": "The Pyrosauraus",
-      "img1": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": ""
+      "heading": "Pyrosaurus",
+      "img1": "../../assets/img/Pyrosaurus-card.jpg",
+      "img2": "",
+      "img3": "",
+      "link": "/pyrosaurus"
     },
     {
-      "heading": "The mini beast",
-      "img1": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img2": "http://img.youtube.com/vi/r19Gx4zXkLI/hqdefault.jpg",
-      "img3": ""
+      "heading": "The Mini Walking Beast",
+      "img1": "../../assets/img/MTWB-ad-card.jpg",
+      "img2": "",
+      "img3": "",
+      "link": "/theminiwalkingbeast"
     }
   ],
   "products": [
@@ -93,8 +105,34 @@
   ],
   "mentions": [
     {
-      "alt": "Burning Man Blog",
-      "img": "../../assets/img/burning-man-logo.png"
+      "alt": "Dark Roasted Blend Publication",
+      "link": "http://www.darkroastedblend.com/2009/05/mesmerizing-kinetic-sculptures.html",
+      "img": "../../assets/img/dark-roasted-blend-logo.png"
+    },
+    {
+      "alt": "Discovery Channel",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/discovery-channel-logo.png"
+    },
+    {
+      "alt": "Popular Science",
+      "link": "http://www.popsci.com/diy/article/2008-08/make-walking-beast",
+      "img": "../../assets/img/popular-science-logo.png"
+    },
+    {
+      "alt": "History Channel",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/history-channel-logo.png"
+    },
+    {
+      "alt": "FF Journal",
+      "link": "http://www.ffjournal.net/item/7974-shaking-the-ground.html",
+      "img": "../../assets/img/ff-journal-logo.jpg"
+    },
+    {
+      "alt": "Statesman Journal",
+      "link": "http://burningman.com",
+      "img": "../../assets/img/statesman-journal-logo2.jpeg"
     }
   ],
   "members": [
@@ -133,7 +171,6 @@
       "pinterest": "moltensteelman"
     }
   ],
-  "about-image": "../../assets/img/2016PyroPairJD.jpg",
   "services": [
     {
       "image": "<i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-bolt fa-stack-1x text-primary'></i>",
@@ -143,7 +180,34 @@
       "link-text": "Learn more about welding"
     }
   ],
+  "events": [
+    {
+      "title": "Seattle Makerfair",
+      "image": "../../assets/img/seattle-makerfaire.png",
+      "day": "12",
+      "month": "Feb",
+      "date": "3/12/2017",
+      "when": "3/12/2017 -3/14/2017",
+      "description": "Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly showcase of invention, creativity and resourcefulness, and a celebration of the Maker Movement.  It’s a place where people show what they are making, and share what they are learning.",
+      "where": "123 some address way, Seattle WA",
+      "link": "facebook.com/seattlemakerfair",
+      "link-text": "Seattle MakerFaire"
+    },
+    {
+      "title": "Seattle Makerfair",
+      "image": "../../assets/img/seattle-makerfaire.png",
+      "day": "12",
+      "month": "Apr",
+      "date": "3/12/2017",
+      "when": "3/12/2017 -3/14/2017",
+      "description": "the seattle maker fair is cool.",
+      "where": "123 some address way, Seattle WA",
+      "link": "facebook.com/seattlemakerfair",
+      "link-text": "Seattle MakerFaire"
+    }
+  ],
   "page-author-blurb": "Ken Eucker published this site",
   "page-author-link": "http://keneucker.com",
-  "page-author-link-text": "Ken Eucker published this site"
+  "page-author-link-text": "Ken Eucker published this site",
+  "contact-us-subject": "Homepage Contact Form"
 }
