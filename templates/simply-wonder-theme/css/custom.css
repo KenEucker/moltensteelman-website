@@ -172,8 +172,8 @@
 
 /* duplicated simply-wonder theme overrides to foundation 4 */
 .nav-custom{
-	background: #1d9ecc;
-	border-color: #1d9ecc;
+  background: #111111;
+  border-color: #111111;
 }
 .top-bar{
 	background: #1d9ecc;
@@ -298,10 +298,6 @@ img.thumb {
 
 .callout {
   color: black;
-}
-
-.top-bar {
-    background: #111111;
 }
 
 .wrapper {
