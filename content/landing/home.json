@@ -14,28 +14,27 @@
   "events-description": "",
   "mentions-heading": "Mentioned In",
   "mentions-description": "Articles about our work have been mentioned in the publications below",
-  "contact-us-subject": "Homepage Contact Form",
   "splashes": [
     {
       "heading": "The walking beast",
-      "link": "/thewalkingbeast",
       "img1": "../../assets/img/2012TWBacme.jpg",
       "img2": "",
-      "img3": ""
+      "img3": "",
+      "link": "/thewalkingbeast"
     },
     {
       "heading": "Pyrosaurus",
-      "link": "/pyrosaurus",
       "img1": "../../assets/img/Pyrosaurus-card.jpg",
       "img2": "",
-      "img3": ""
+      "img3": "",
+      "link": "/pyrosaurus"
     },
     {
       "heading": "The Mini Walking Beast",
-      "link": "/theminiwalkingbeast",
       "img1": "../../assets/img/MTWB-ad-card.jpg",
       "img2": "",
-      "img3": ""
+      "img3": "",
+      "link": "/theminiwalkingbeast"
     }
   ],
   "products": [
@@ -209,5 +208,6 @@
   ],
   "page-author-blurb": "Ken Eucker published this site",
   "page-author-link": "http://keneucker.com",
-  "page-author-link-text": "Ken Eucker published this site"
+  "page-author-link-text": "Ken Eucker published this site",
+  "contact-us-subject": "Homepage Contact Form"
 }
