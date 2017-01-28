@@ -13,8 +13,7 @@
 	<title>Moltensteelman</title>
 
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/foundation.css">
-	<!--<link rel="stylesheet" href="../../vendor/foundation/6/css/foundation.css">-->
+	<link rel="stylesheet" href="../../vendor/foundation/6/css/foundation.css">
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -56,30 +55,32 @@
 
 <body>
 	<div class="wrapper">
-
 		<!-- Header and Nav -->
 		<div class="fixed nav-custom">
 			<nav class="top-bar row">
 				<ul class="title-area">
-					<!-- Title Area -->
 					<li class="name">
 						<h1>
 							<a href="#" class="logo">
-								<!--<i class="icon-fire"></i>-->
 								<img src="../../assets/img/moltensteelman-logo.png">
 								<div id="heading">Simply Wonder</div>
 							</a>
 						</h1>
 					</li>
-					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+					<li class="toggle-topbar menu-icon">
+						<a href="#"><span>Menu</span></a>
+					</li>
 				</ul>
 
 				<section class="top-bar-section">
 					<!-- Right Nav Section -->
 					<ul class="right" id="top-nav">
+						<li class="divider"></li>
+						<li><a href="#heading" id="banner-link" class="nav-link"> Home </a></li>
+
 						<div class="inline">
 							<li class="divider"></li>
-							<li><a href="/" class="link"> Home </a></li>
+							<li><a href="/" class="nav-link link"> Home </a></li>
 						</div>
 					</ul>
 				</section>
@@ -187,9 +188,10 @@
 	<!-- FancyBox main JS -->
 	<script type="text/javascript" src="./js/vendor/jquery.fancybox.js"></script>
 	<script>
-			$(document).foundation();
-		</script>
+		$(document).foundation();
+	</script>
 <script src="./js/custom.js"></script>
+<script src="./js/custom2.js"></script>
 <!--<script src="./js/project.js"></script>-->
 </body>
 

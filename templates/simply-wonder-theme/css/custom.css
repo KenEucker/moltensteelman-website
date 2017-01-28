@@ -239,13 +239,17 @@ img.thumb {
 }
 
 .top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
-    border-right: solid 1px #0C7BA2;
-    border-left: solid 1px #3bbbea;
+    /*border-right: solid 1px #0C7BA2;
+    border-left: solid 1px #3bbbea;*/
+    border-right: solid 1px #333;
+    border-left: solid 1px #333;
 }
 
 .top-bar-section > ul .divider, .top-bar-section > ul [role="separator"] {
-    border-right: solid 1px #0C7BA2;
-    border-left: solid 1px #3bbbea;
+    /*border-right: solid 1px #0C7BA2;
+    border-left: solid 1px #3bbbea;*/
+    border-right: solid 1px #333;
+    border-left: solid 1px #333;
 }
 
 .thumbnail {
@@ -286,4 +290,16 @@ img.thumb {
   width: 45px;
   height: 45px;
   margin-top: 7px;
+}
+
+.menu-icon::after {
+  content: unset;
+}
+
+.callout {
+  color: black;
+}
+
+.top-bar {
+    background: #111111;
 }

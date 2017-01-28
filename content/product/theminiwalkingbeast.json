@@ -18,10 +18,6 @@
     "questions-button": "Ask",
     "navigation-links": [
         {
-            "text": "Home",
-            "link": "/"
-        },
-        {
             "text": "Cherry",
             "link": "/cherry"
         },

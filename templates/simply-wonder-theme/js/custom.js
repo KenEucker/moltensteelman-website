@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
 	// HACK!
-	$.each($('#top-nav div.inline'), function(i, el) {
-		var contents = $(el).html();
-		$(el).replaceWith(contents);
-	});
+	// $.each($('#top-nav div.inline'), function(i, el) {
+	// 	var contents = $(el).html();
+	// 	$(el).replaceWith(contents);
+	// });
 
 	/*------------ For Scrollspy Init ------------ */
 	$('.nav-link').each(function(i) {
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
 	$('.logo').click(function(event) {
 		event.preventDefault();
-		scrollTo(this, "#banner");
+		scrollTo(this, "#heading");
 	});
 
 	$.each($("#top-nav a"),

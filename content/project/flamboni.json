@@ -70,10 +70,6 @@
     ],
     "navigation-links": [
         {
-            "text": "Home",
-            "link": "/"
-        },
-        {
             "text": "Pyrosaurus",
             "link": "/pyrosaurus"
         },
