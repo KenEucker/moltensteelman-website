@@ -9,7 +9,7 @@
     "{\"color\":\"rainbow\"}",
     "{\"color\":\"silver\"}"
   ],
-  "text-field-text": "Individually crafted in gleaming stainless steel, each with its own style and personality. Some are animated, some breathe fire, and all are exquisite.  Articulated wings spread majestically or fold flat to the body. Delightful on the patio or in the home, the Pyrosaurus makes a memorable accent for weddings, fantasy themed parties and special events. Your choice of jewel tones for the mounting ball on stand.    Adult Pyrosaurus Length: 32 inches Wingspan: 47 inches \t Juvenile Pyrosaurus Length:  18 inches Wingspan: 22 inches  Colossal Pyrosaurus Length:  64 inches Wingspan:  94 inches  Mounting balls available in these jewel tones: Blue, green, red, silver, purple, rainbow iridescent. All sizes of Pyrosaurus are available with optional gas flame (for outdoor use only.)  Adult and Colossal Pyrosaurus are available with optional computer controlled animation. ",
+  "text-field-text": "",
   "buy-button-text": "Place Order",
   "links": [
     {
@@ -74,6 +74,21 @@
       "image": "../../assets/img/2012MartinPyro.jpg",
       "title": "Limited Artist's Production ",
       "description": "The Pyrosaurus will be exclusively produced by the original artist in numbered limited edition."
+    },
+    {
+      "image": "../../assets/img/2012MartinPyro.jpg",
+      "title": "Individually crafted",
+      "description": "Individually crafted in gleaming stainless steel, each with its own style and personality. Some are animated, some breathe fire, and all are exquisite. Articulated wings spread majestically or fold flat to the body. Delightful on the patio or in the home, the Pyrosaurus makes a memorable accent for weddings, fantasy themed parties and special events. Your choice of jewel tones for the mounting ball on stand. "
+    },
+    {
+      "image": "../../assets/img/Pyro-spec-0114.jpg",
+      "title": "Different sizes",
+      "description": "Adult Pyrosaurus Length: 32 inches Wingspan: 47 inches Juvenile Pyrosaurus Length: 18 inches Wingspan: 22 inches Colossal Pyrosaurus Length: 64 inches Wingspan: 94 inches "
+    },
+    {
+      "image": "../../assets/img/2015JDPyrosaurus.jpg",
+      "title": "Fire Options",
+      "description": "All sizes of Pyrosaurus are available with optional gas flame (for outdoor use only.) Adult and Colossal Pyrosaurus are available with optional computer controlled animation."
     }
   ],
   "questions-heading": "Have a question about this product?",
