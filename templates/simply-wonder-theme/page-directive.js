@@ -61,18 +61,6 @@ window.page.directive = {
             '.description span': 'event.description'
         } 
     },
-    '#contact':{        
-        'contact<-contact': {
-            'p > b':'contact.company-name',
-            '#address-1': 'contact.address-1',
-            '#address-2': 'contact.address-2',
-            '#phone': 'contact.phone',
-            // '#fax': 'contact.fax',
-            '#email': 'contact.email',
-            '#web': 'contact.web',
-            '#facebook@href': 'contact.facebook',
-            '#twitter@href': 'contact.twitter',
-            '#pinterest@href': 'contact.pinterest'
-        }
-    }    
+    '#contact h3': 'contact-heading',
+    '#contact p': 'contact-blurb'
 };

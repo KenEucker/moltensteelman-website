@@ -18,12 +18,13 @@ window.page.directive = {
     '#description .cost .price': 'price',
     '#description label.text-field': 'text-field-text',
     '#description input@placeholder': 'text-field-placeholder',
-    '#description .options option': {
-        'color<-colors': {
-            '.': 'color.color',
-            '.@value': 'color.color'
-        }
-    },
+    '#payment': 'payment-html',
+    // '#description .options option': {
+    //     'color<-colors': {
+    //         '.': 'color',
+    //         '.@value': 'color'
+    //     }
+    // },
     '#description .button': 'buy-button-text',
     '#links a': {
         'link<-links': {

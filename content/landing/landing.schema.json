@@ -88,7 +88,14 @@
             "id": "link"
           }
         },
-        "id": "2"
+        "id": "2",
+        "required": [
+          "heading",
+          "img1",
+          "img2",
+          "img3",
+          "link"
+        ]
       },
       "id": "splashes"
     },
@@ -122,7 +129,15 @@
             "id": "specs"
           }
         },
-        "id": "0"
+        "id": "0",
+        "required": [
+          "title",
+          "image",
+          "thumb-image",
+          "banner-image",
+          "description",
+          "specs"
+        ]
       },
       "id": "products"
     },
@@ -148,7 +163,13 @@
             "id": "subtitle"
           }
         },
-        "id": "4"
+        "id": "4",
+        "required": [
+          "url",
+          "thumbnail",
+          "title",
+          "subtitle"
+        ]
       },
       "id": "videos"
     },
@@ -170,7 +191,12 @@
             "id": "img"
           }
         },
-        "id": "2"
+        "id": "2",
+        "required": [
+          "alt",
+          "link",
+          "img"
+        ]
       },
       "id": "mentions"
     },
@@ -212,7 +238,17 @@
             "id": "pinterest"
           }
         },
-        "id": "1"
+        "id": "1",
+        "required": [
+          "img",
+          "name",
+          "blurb",
+          "email",
+          "facebook",
+          "twitter",
+          "linkedin",
+          "pinterest"
+        ]
       },
       "id": "members"
     },
@@ -262,7 +298,19 @@
             "id": "pinterest"
           }
         },
-        "id": "0"
+        "id": "0",
+        "required": [
+          "company-name",
+          "address-1",
+          "address-2",
+          "phone",
+          "fax",
+          "email",
+          "web",
+          "facebook",
+          "twitter",
+          "pinterest"
+        ]
       },
       "id": "contact"
     },
@@ -292,7 +340,14 @@
             "id": "link-text"
           }
         },
-        "id": "0"
+        "id": "0",
+        "required": [
+          "image",
+          "name",
+          "text",
+          "link",
+          "link-text"
+        ]
       },
       "id": "services"
     },
@@ -342,7 +397,19 @@
             "id": "link-text"
           }
         },
-        "id": "1"
+        "id": "1",
+        "required": [
+          "title",
+          "image",
+          "day",
+          "month",
+          "date",
+          "when",
+          "description",
+          "where",
+          "link",
+          "link-text"
+        ]
       },
       "id": "events"
     },
@@ -361,7 +428,46 @@
     "contact-us-subject": {
       "type": "string",
       "id": "contact-us-subject"
+    },
+    "contact-heading": {
+      "type": "string",
+      "id": "contact-heading"
+    },
+    "contact-blurb": {
+      "type": "string",
+      "id": "contact-blurb"
     }
   },
-  "id": "/"
+  "id": "/",
+  "required": [
+    "page-heading",
+    "banner-heading",
+    "portfolio-heading",
+    "portfolio-description",
+    "team-heading",
+    "team-description",
+    "about-heading",
+    "about-description",
+    "about-blurb-heading",
+    "about-blurb",
+    "about-image",
+    "events-heading",
+    "events-description",
+    "mentions-heading",
+    "mentions-description",
+    "splashes",
+    "products",
+    "videos",
+    "mentions",
+    "members",
+    "contact",
+    "services",
+    "events",
+    "page-author-blurb",
+    "page-author-link",
+    "page-author-link-text",
+    "contact-us-subject",
+    "contact-heading",
+    "contact-blurb"
+  ]
 }
