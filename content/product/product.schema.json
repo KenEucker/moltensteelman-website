@@ -39,7 +39,11 @@
             "id": "link"
           }
         },
-        "id": "2"
+        "id": "2",
+        "required": [
+          "text",
+          "link"
+        ]
       },
       "id": "links"
     },
@@ -57,7 +61,11 @@
             "id": "link"
           }
         },
-        "id": "1"
+        "id": "1",
+        "required": [
+          "text",
+          "link"
+        ]
       },
       "id": "navigation-links"
     },
@@ -95,7 +103,11 @@
             "id": "alt"
           }
         },
-        "id": "3"
+        "id": "3",
+        "required": [
+          "image",
+          "alt"
+        ]
       },
       "id": "images"
     },
@@ -121,7 +133,12 @@
             "id": "description"
           }
         },
-        "id": "2"
+        "id": "5",
+        "required": [
+          "image",
+          "title",
+          "description"
+        ]
       },
       "id": "features"
     },
@@ -136,7 +153,32 @@
     "questions-button": {
       "type": "string",
       "id": "questions-button"
+    },
+    "payment-html": {
+      "type": "string",
+      "id": "payment-html"
     }
   },
-  "id": "/"
+  "id": "/",
+  "required": [
+    "title",
+    "description",
+    "colors",
+    "text-field-text",
+    "buy-button-text",
+    "links",
+    "navigation-links",
+    "page-heading",
+    "price",
+    "price-heading",
+    "text-field-placeholder",
+    "main-image",
+    "images",
+    "features-heading",
+    "features",
+    "questions-heading",
+    "questions-placeholder",
+    "questions-button",
+    "payment-html"
+  ]
 }
