@@ -438,36 +438,5 @@
       "id": "contact-blurb"
     }
   },
-  "id": "/",
-  "required": [
-    "page-heading",
-    "banner-heading",
-    "portfolio-heading",
-    "portfolio-description",
-    "team-heading",
-    "team-description",
-    "about-heading",
-    "about-description",
-    "about-blurb-heading",
-    "about-blurb",
-    "about-image",
-    "events-heading",
-    "events-description",
-    "mentions-heading",
-    "mentions-description",
-    "splashes",
-    "products",
-    "videos",
-    "mentions",
-    "members",
-    "contact",
-    "services",
-    "events",
-    "page-author-blurb",
-    "page-author-link",
-    "page-author-link-text",
-    "contact-us-subject",
-    "contact-heading",
-    "contact-blurb"
-  ]
+  "id": "/"
 }
