@@ -10,13 +10,6 @@
       "type": "string",
       "id": "description"
     },
-    "colors": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "id": "colors"
-    },
     "text-field-text": {
       "type": "string",
       "id": "text-field-text"
