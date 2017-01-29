@@ -1,14 +1,14 @@
 {
   "page-heading": "Moltensteelman",
   "banner-heading": "Products",
-  "portfolio-heading": "Videos of the beast",
+  "portfolio-heading": "Top Moltensteelman videos",
   "portfolio-description": "",
   "team-heading": "Our Makers",
   "team-description": "",
   "about-heading": "A little about us",
   "about-description": "",
-  "about-blurb-heading": "\"Robot Aliens And Fire!\"",
-  "about-blurb": "In 2007, Martin Montensano set on an adventure of both skill and scale to build what has long been called The Walking Beast. What was once called Acme Labs, consists of two members (three?) of Martin Montensano, Anne Peterson, and... Currently, moltensteelman has a miniature version of the walking beast and a pyrosaurus that you can purchase here on this site.",
+  "about-blurb-heading": "Fantasy robots and fire ",
+  "about-blurb": "",
   "about-image": "../../assets/img/2016PyroPairJD.jpg",
   "events-heading": "Events",
   "events-description": "",
@@ -16,7 +16,7 @@
   "mentions-description": "Articles about our work have been mentioned in the publications below",
   "splashes": [
     {
-      "heading": "The walking beast",
+      "heading": "The Walking Beast",
       "img1": "../../assets/img/2012TWBacme.jpg",
       "img2": "",
       "img3": "",
@@ -30,7 +30,7 @@
       "link": "/pyrosaurus"
     },
     {
-      "heading": "The Mini Walking Beast",
+      "heading": "The Walking Beast RC model kit",
       "img1": "../../assets/img/MTWB-ad-card.jpg",
       "img2": "",
       "img3": "",
@@ -39,11 +39,11 @@
   ],
   "products": [
     {
-      "title": "pyrosaurus",
+      "title": "Pyrosaurus",
       "image": "../../assets/img/2016PyroPairJD.jpg",
       "thumb-image": "../../assets/img/2016PyroPairJD.jpg",
       "banner-image": "../../assets/img/2016PyroPairJD.jpg",
-      "description": "the pyrosaurus is a mini fire breathing dragon!",
+      "description": "the Pyrosaurus breathes fire",
       "specs": ""
     }
   ],
@@ -79,38 +79,22 @@
       "subtitle": "In the snow"
     }
   ],
-  "mentions": [
-    {
-      "alt": "Dark Roasted Blend Publication",
-      "link": "http://www.darkroastedblend.com/2009/05/mesmerizing-kinetic-sculptures.html",
-      "img": "../../assets/img/dark-roasted-blend-logo.png"
-    },
-    {
-      "alt": "Popular Science",
-      "link": "http://www.popsci.com/diy/article/2008-08/make-walking-beast",
-      "img": "../../assets/img/popular-science-logo.png"
-    },
-    {
-      "alt": "FF Journal",
-      "link": "http://www.ffjournal.net/item/7974-shaking-the-ground.html",
-      "img": "../../assets/img/ff-journal-logo.jpg"
-    }
-  ],
+  "mentions": [],
   "members": [
     {
       "img": "../../assets/img/martin-montesano.jpg",
-      "name": "Martin Montesano, Inventor/Builder",
-      "blurb": "Martin Montesano is a brilliant inventor with a pension for large machines and fire. Martin designed and built every single part of The Walking Beast, he laid every single weld.",
+      "name": "Martin Montesano",
+      "blurb": "Martin Montesano is a gifted metal artist with a background in mechanics and an endless imagination.  He builds art that inspires and entertains and he likes getting his projects off the drawing board and into motion. ",
       "email": "moltensteelman@netscape.net",
-      "facebook": "https://www.facebook.com/martin.montesano",
+      "facebook": "https://www.facebook.com/molten.steelman",
       "twitter": "facebook.com/ken.eucker",
       "linkedin": "https://www.linkedin.com/in/martin-montesano-97497511",
       "pinterest": "https://www.pinterest.com/keneucker/"
     },
     {
       "img": "../../assets/img/anne-peterson.jpg",
-      "name": "Anne Peterson, Builder/Organizer",
-      "blurb": "Anne Peterson is a passionate organizer and team builder with many different skills between fabrication and costume making.",
+      "name": "Anne Peterson",
+      "blurb": "Anne Peterson is a talented artist with an eye for the absurd and a knack for making unusual objects.  Anne designs and builds original projects that are often whimsical and always innovative. ",
       "email": "PDXmoopie@gmail.com",
       "facebook": "https://www.facebook.com/moopie",
       "twitter": "facebook.com/ken.eucker",
@@ -120,15 +104,15 @@
   ],
   "contact": [
     {
-      "company-name": "moltensteelman",
-      "address-1": "moltensteelman",
-      "address-2": "moltensteelman",
-      "phone": "moltensteelman",
-      "fax": "moltensteelman",
-      "email": "moltensteelman",
-      "web": "moltensteelman.Com",
+      "company-name": "Moltensteelman Studio",
+      "address-1": "",
+      "address-2": "",
+      "phone": "",
+      "fax": "",
+      "email": "",
+      "web": "moltensteelman.com",
       "facebook": "moltensteelman",
-      "twitter": "moltensteelman",
+      "twitter": "",
       "pinterest": "moltensteelman"
     }
   ],
@@ -141,34 +125,11 @@
       "link-text": "Learn more about welding"
     }
   ],
-  "events": [
-    {
-      "title": "Seattle Makerfair",
-      "image": "../../assets/img/seattle-makerfaire.png",
-      "day": "12",
-      "month": "Feb",
-      "date": "3/12/2017",
-      "when": "3/12/2017 -3/14/2017",
-      "description": "Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly showcase of invention, creativity and resourcefulness, and a celebration of the Maker Movement.  It’s a place where people show what they are making, and share what they are learning.",
-      "where": "123 some address way, Seattle WA",
-      "link": "facebook.com/seattlemakerfair",
-      "link-text": "Seattle MakerFaire"
-    },
-    {
-      "title": "Seattle Makerfair",
-      "image": "../../assets/img/seattle-makerfaire.png",
-      "day": "12",
-      "month": "Apr",
-      "date": "3/12/2017",
-      "when": "3/12/2017 -3/14/2017",
-      "description": "the seattle maker fair is cool.",
-      "where": "123 some address way, Seattle WA",
-      "link": "facebook.com/seattlemakerfair",
-      "link-text": "Seattle MakerFaire"
-    }
-  ],
+  "events": [],
   "page-author-blurb": "Ken Eucker published this site",
   "page-author-link": "http://keneucker.com",
   "page-author-link-text": "Ken Eucker published this site",
-  "contact-us-subject": "Homepage Contact Form"
+  "contact-us-subject": "Homepage Contact Form",
+  "contact-heading": "Contact Us",
+  "contact-blurb": "We bring fire entertainment to all of your fun events!"
 }
