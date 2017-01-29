@@ -1,51 +1,66 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://moltensteelman.com/content/landing",
   "type": "object",
   "properties": {
     "page-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "page-heading"
     },
     "banner-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "banner-heading"
     },
     "portfolio-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "portfolio-heading"
     },
     "portfolio-description": {
-      "type": "string"
+      "type": "string",
+      "id": "portfolio-description"
     },
     "team-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "team-heading"
     },
     "team-description": {
-      "type": "string"
+      "type": "string",
+      "id": "team-description"
     },
     "about-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "about-heading"
     },
     "about-description": {
-      "type": "string"
+      "type": "string",
+      "id": "about-description"
     },
     "about-blurb-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "about-blurb-heading"
     },
     "about-blurb": {
-      "type": "string"
+      "type": "string",
+      "id": "about-blurb"
     },
     "about-image": {
-      "type": "string"
+      "type": "string",
+      "id": "about-image"
     },
     "events-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "events-heading"
     },
     "events-description": {
-      "type": "string"
+      "type": "string",
+      "id": "events-description"
     },
     "mentions-heading": {
-      "type": "string"
+      "type": "string",
+      "id": "mentions-heading"
     },
     "mentions-description": {
-      "type": "string"
+      "type": "string",
+      "id": "mentions-description"
     },
     "splashes": {
       "type": "array",
@@ -53,19 +68,29 @@
         "type": "object",
         "properties": {
           "heading": {
-            "type": "string"
+            "type": "string",
+            "id": "heading"
           },
           "img1": {
-            "type": "string"
+            "type": "string",
+            "id": "img1"
           },
           "img2": {
-            "type": "string"
+            "type": "string",
+            "id": "img2"
           },
           "img3": {
-            "type": "string"
+            "type": "string",
+            "id": "img3"
+          },
+          "link": {
+            "type": "string",
+            "id": "link"
           }
-        }
-      }
+        },
+        "id": "2"
+      },
+      "id": "splashes"
     },
     "products": {
       "type": "array",
@@ -73,25 +98,33 @@
         "type": "object",
         "properties": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "id": "title"
           },
           "image": {
-            "type": "string"
+            "type": "string",
+            "id": "image"
           },
           "thumb-image": {
-            "type": "string"
+            "type": "string",
+            "id": "thumb-image"
           },
           "banner-image": {
-            "type": "string"
+            "type": "string",
+            "id": "banner-image"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "id": "description"
           },
           "specs": {
-            "type": "string"
+            "type": "string",
+            "id": "specs"
           }
-        }
-      }
+        },
+        "id": "0"
+      },
+      "id": "products"
     },
     "videos": {
       "type": "array",
@@ -99,19 +132,25 @@
         "type": "object",
         "properties": {
           "url": {
-            "type": "string"
+            "type": "string",
+            "id": "url"
           },
           "thumbnail": {
-            "type": "string"
+            "type": "string",
+            "id": "thumbnail"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "id": "title"
           },
           "subtitle": {
-            "type": "string"
+            "type": "string",
+            "id": "subtitle"
           }
-        }
-      }
+        },
+        "id": "4"
+      },
+      "id": "videos"
     },
     "mentions": {
       "type": "array",
@@ -119,16 +158,21 @@
         "type": "object",
         "properties": {
           "alt": {
-            "type": "string"
+            "type": "string",
+            "id": "alt"
           },
           "link": {
-            "type": "string"
+            "type": "string",
+            "id": "link"
           },
           "img": {
-            "type": "string"
+            "type": "string",
+            "id": "img"
           }
-        }
-      }
+        },
+        "id": "2"
+      },
+      "id": "mentions"
     },
     "members": {
       "type": "array",
@@ -136,31 +180,41 @@
         "type": "object",
         "properties": {
           "img": {
-            "type": "string"
+            "type": "string",
+            "id": "img"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "id": "name"
           },
           "blurb": {
-            "type": "string"
+            "type": "string",
+            "id": "blurb"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "id": "email"
           },
           "facebook": {
-            "type": "string"
+            "type": "string",
+            "id": "facebook"
           },
           "twitter": {
-            "type": "string"
+            "type": "string",
+            "id": "twitter"
           },
           "linkedin": {
-            "type": "string"
+            "type": "string",
+            "id": "linkedin"
           },
           "pinterest": {
-            "type": "string"
+            "type": "string",
+            "id": "pinterest"
           }
-        }
-      }
+        },
+        "id": "1"
+      },
+      "id": "members"
     },
     "contact": {
       "type": "array",
@@ -168,37 +222,49 @@
         "type": "object",
         "properties": {
           "company-name": {
-            "type": "string"
+            "type": "string",
+            "id": "company-name"
           },
           "address-1": {
-            "type": "string"
+            "type": "string",
+            "id": "address-1"
           },
           "address-2": {
-            "type": "string"
+            "type": "string",
+            "id": "address-2"
           },
           "phone": {
-            "type": "string"
+            "type": "string",
+            "id": "phone"
           },
           "fax": {
-            "type": "string"
+            "type": "string",
+            "id": "fax"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "id": "email"
           },
           "web": {
-            "type": "string"
+            "type": "string",
+            "id": "web"
           },
           "facebook": {
-            "type": "string"
+            "type": "string",
+            "id": "facebook"
           },
           "twitter": {
-            "type": "string"
+            "type": "string",
+            "id": "twitter"
           },
           "pinterest": {
-            "type": "string"
+            "type": "string",
+            "id": "pinterest"
           }
-        }
-      }
+        },
+        "id": "0"
+      },
+      "id": "contact"
     },
     "services": {
       "type": "array",
@@ -206,22 +272,29 @@
         "type": "object",
         "properties": {
           "image": {
-            "type": "string"
+            "type": "string",
+            "id": "image"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "id": "name"
           },
           "text": {
-            "type": "string"
+            "type": "string",
+            "id": "text"
           },
           "link": {
-            "type": "string"
+            "type": "string",
+            "id": "link"
           },
           "link-text": {
-            "type": "string"
+            "type": "string",
+            "id": "link-text"
           }
-        }
-      }
+        },
+        "id": "0"
+      },
+      "id": "services"
     },
     "events": {
       "type": "array",
@@ -229,46 +302,66 @@
         "type": "object",
         "properties": {
           "title": {
-            "type": "string"
+            "type": "string",
+            "id": "title"
           },
           "image": {
-            "type": "string"
+            "type": "string",
+            "id": "image"
           },
           "day": {
-            "type": "string"
+            "type": "string",
+            "id": "day"
           },
           "month": {
-            "type": "string"
+            "type": "string",
+            "id": "month"
           },
           "date": {
-            "type": "string"
+            "type": "string",
+            "id": "date"
           },
           "when": {
-            "type": "string"
+            "type": "string",
+            "id": "when"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "id": "description"
           },
           "where": {
-            "type": "string"
+            "type": "string",
+            "id": "where"
           },
           "link": {
-            "type": "string"
+            "type": "string",
+            "id": "link"
           },
           "link-text": {
-            "type": "string"
+            "type": "string",
+            "id": "link-text"
           }
-        }
-      }
+        },
+        "id": "1"
+      },
+      "id": "events"
     },
     "page-author-blurb": {
-      "type": "string"
+      "type": "string",
+      "id": "page-author-blurb"
     },
     "page-author-link": {
-      "type": "string"
+      "type": "string",
+      "id": "page-author-link"
     },
     "page-author-link-text": {
-      "type": "string"
+      "type": "string",
+      "id": "page-author-link-text"
+    },
+    "contact-us-subject": {
+      "type": "string",
+      "id": "contact-us-subject"
     }
-  }
+  },
+  "id": "/"
 }

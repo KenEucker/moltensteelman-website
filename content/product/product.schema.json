@@ -1,24 +1,29 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://moltensteelman.com/content/product",
   "type": "object",
   "properties": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "id": "title"
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "id": "description"
     },
     "colors": {
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "id": "colors"
     },
     "text-field-text": {
-      "type": "string"
+      "type": "string",
+      "id": "text-field-text"
     },
     "buy-button-text": {
-      "type": "string"
+      "type": "string",
+      "id": "buy-button-text"
     },
     "links": {
       "type": "array",
@@ -26,13 +31,17 @@
         "type": "object",
         "properties": {
           "text": {
-            "type": "string"
+            "type": "string",
+            "id": "text"
           },
           "link": {
-            "type": "string"
+            "type": "string",
+            "id": "link"
           }
-        }
-      }
+        },
+        "id": "2"
+      },
+      "id": "links"
     },
     "navigation-links": {
       "type": "array",
@@ -40,13 +49,94 @@
         "type": "object",
         "properties": {
           "text": {
-            "type": "string"
+            "type": "string",
+            "id": "text"
           },
           "link": {
-            "type": "string"
+            "type": "string",
+            "id": "link"
           }
-        }
-      }
+        },
+        "id": "1"
+      },
+      "id": "navigation-links"
+    },
+    "page-heading": {
+      "type": "string",
+      "id": "page-heading"
+    },
+    "price": {
+      "type": "string",
+      "id": "price"
+    },
+    "price-heading": {
+      "type": "string",
+      "id": "price-heading"
+    },
+    "text-field-placeholder": {
+      "type": "string",
+      "id": "text-field-placeholder"
+    },
+    "main-image": {
+      "type": "string",
+      "id": "main-image"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "id": "image"
+          },
+          "alt": {
+            "type": "string",
+            "id": "alt"
+          }
+        },
+        "id": "3"
+      },
+      "id": "images"
+    },
+    "features-heading": {
+      "type": "string",
+      "id": "features-heading"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "image": {
+            "type": "string",
+            "id": "image"
+          },
+          "title": {
+            "type": "string",
+            "id": "title"
+          },
+          "description": {
+            "type": "string",
+            "id": "description"
+          }
+        },
+        "id": "2"
+      },
+      "id": "features"
+    },
+    "questions-heading": {
+      "type": "string",
+      "id": "questions-heading"
+    },
+    "questions-placeholder": {
+      "type": "string",
+      "id": "questions-placeholder"
+    },
+    "questions-button": {
+      "type": "string",
+      "id": "questions-button"
     }
-  }
+  },
+  "id": "/"
 }

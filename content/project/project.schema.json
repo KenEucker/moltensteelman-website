@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://moltensteelman.com/content/project",
   "type": "object",
   "properties": {
     "page-heading": {
@@ -36,12 +36,16 @@
     },
     "bullets": {
       "type": "array",
-      "uniqueItems": false,
       "items": {
         "type": "object",
         "properties": {
           "amount": {
             "type": "integer",
+            "multipleOf": 1,
+            "maximum": 10000,
+            "minimum": 1,
+            "exclusiveMaximum": false,
+            "exclusiveMinimum": false,
             "id": "amount"
           },
           "name": {
@@ -49,11 +53,7 @@
             "id": "name"
           }
         },
-        "id": "4",
-        "required": [
-          "amount",
-          "name"
-        ]
+        "id": "4"
       },
       "id": "bullets"
     },
@@ -63,7 +63,6 @@
     },
     "images": {
       "type": "array",
-      "uniqueItems": false,
       "items": {
         "type": "object",
         "properties": {
@@ -76,17 +75,12 @@
             "id": "alt"
           }
         },
-        "id": "38",
-        "required": [
-          "image",
-          "alt"
-        ]
+        "id": "32"
       },
       "id": "images"
     },
     "links": {
       "type": "array",
-      "uniqueItems": false,
       "items": {
         "type": "object",
         "properties": {
@@ -99,17 +93,12 @@
             "id": "link"
           }
         },
-        "id": "2",
-        "required": [
-          "text",
-          "link"
-        ]
+        "id": "2"
       },
       "id": "links"
     },
     "points": {
       "type": "array",
-      "uniqueItems": false,
       "items": {
         "type": "object",
         "properties": {
@@ -122,17 +111,12 @@
             "id": "description"
           }
         },
-        "id": "2",
-        "required": [
-          "heading",
-          "description"
-        ]
+        "id": "2"
       },
       "id": "points"
     },
     "navigation-links": {
       "type": "array",
-      "uniqueItems": false,
       "items": {
         "type": "object",
         "properties": {
@@ -145,30 +129,10 @@
             "id": "link"
           }
         },
-        "id": "1",
-        "required": [
-          "text",
-          "link"
-        ]
+        "id": "2"
       },
       "id": "navigation-links"
     }
   },
-  "id": "/",
-  "required": [
-    "page-heading",
-    "description-title",
-    "description",
-    "main-video",
-    "callout-title",
-    "callout-description",
-    "callout-button1",
-    "callout-button2",
-    "bullets",
-    "images-heading",
-    "images",
-    "links",
-    "points",
-    "navigation-links"
-  ]
+  "id": "/"
 }
