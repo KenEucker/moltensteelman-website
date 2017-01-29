@@ -1,7 +1,7 @@
 {
   "page-heading": "Moltensteelman",
   "banner-heading": "Products",
-  "portfolio-heading": "Videos of the beast 2",
+  "portfolio-heading": "Videos of the beast",
   "portfolio-description": "",
   "team-heading": "Our Makers",
   "team-description": "",
@@ -49,10 +49,16 @@
   ],
   "videos": [
     {
-      "url": "https://www.youtube.com/embed/G7U07qE3lEc",
-      "thumbnail": "http://img.youtube.com/vi/G7U07qE3lEc/hqdefault.jpg",
-      "title": "Burning Man 2010",
-      "subtitle": "a very cool art car"
+      "url": "https://www.youtube.com/watch?v=KqgbLZrsQVw",
+      "thumbnail": "http://img.youtube.com/vi/KqgbLZrsQVw/hqdefault.jpg",
+      "title": "The Walking Beast",
+      "subtitle": "by Moltensteelman"
+    },
+    {
+      "url": "https://www.youtube.com/embed/bxi9wM2Xhu4",
+      "thumbnail": "http://img.youtube.com/vi/bxi9wM2Xhu4/hqdefault.jpg",
+      "title": "The Walking Beast",
+      "subtitle": "walks onto a lowboy trailer"
     },
     {
       "url": "https://www.youtube.com/embed/r19Gx4zXkLI",
@@ -61,46 +67,16 @@
       "subtitle": ""
     },
     {
-      "url": "https://www.youtube.com/embed/al-CxNrLo6k",
-      "thumbnail": "http://img.youtube.com/vi/al-CxNrLo6k/hqdefault.jpg",
-      "title": "Walking Beast at Burning Man '07",
-      "subtitle": "Subtitle"
-    },
-    {
-      "url": "https://www.youtube.com/embed/iBsAdfcCXKA",
-      "thumbnail": "http://img.youtube.com/vi/iBsAdfcCXKA/hqdefault.jpg",
-      "title": "Burning Man 2008",
-      "subtitle": "The beast walks by"
-    },
-    {
-      "url": "https://www.youtube.com/embed/6eDqxHLXNbs",
-      "thumbnail": "http://img.youtube.com/vi/6eDqxHLXNbs/hqdefault.jpg",
-      "title": "EDC LA 2009",
-      "subtitle": "The walking beast"
-    },
-    {
-      "url": "https://www.youtube.com/embed/aAgXUGCbKdk",
-      "thumbnail": "http://img.youtube.com/vi/aAgXUGCbKdk/hqdefault.jpg",
-      "title": "Mechanical Advantage",
-      "subtitle": "Burning Man 2008"
-    },
-    {
-      "url": "https://www.youtube.com/embed/2UJGajdzQV8",
-      "thumbnail": "http://img.youtube.com/vi/2UJGajdzQV8/hqdefault.jpg",
-      "title": "Molten Steel Man - The Walking Beast",
-      "subtitle": "PDX BurnOut 2009"
-    },
-    {
-      "url": "https://www.youtube.com/embed/B3fqNVr1LLc",
-      "thumbnail": "http://img.youtube.com/vi/B3fqNVr1LLc/hqdefault.jpg",
-      "title": "Burning Man 2010",
-      "subtitle": "The Walking Beast"
-    },
-    {
-      "url": "https://www.youtube.com/embed/bxi9wM2Xhu4",
-      "thumbnail": "http://img.youtube.com/vi/bxi9wM2Xhu4/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Uzs5Ru8LtgU",
+      "thumbnail": "http://img.youtube.com/vi/Uzs5Ru8LtgU/0.jpg",
       "title": "The Walking Beast",
-      "subtitle": "walks onto a lowboy trailer"
+      "subtitle": "by Moltensteelman"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nK6Gt_jIKw4",
+      "thumbnail": "http://img.youtube.com/vi/nK6Gt_jIKw4/0.jpg",
+      "title": "The Walking Beast",
+      "subtitle": "In the snow"
     }
   ],
   "mentions": [
@@ -110,29 +86,14 @@
       "img": "../../assets/img/dark-roasted-blend-logo.png"
     },
     {
-      "alt": "Discovery Channel",
-      "link": "http://burningman.com",
-      "img": "../../assets/img/discovery-channel-logo.png"
-    },
-    {
       "alt": "Popular Science",
       "link": "http://www.popsci.com/diy/article/2008-08/make-walking-beast",
       "img": "../../assets/img/popular-science-logo.png"
     },
     {
-      "alt": "History Channel",
-      "link": "http://burningman.com",
-      "img": "../../assets/img/history-channel-logo.png"
-    },
-    {
       "alt": "FF Journal",
       "link": "http://www.ffjournal.net/item/7974-shaking-the-ground.html",
       "img": "../../assets/img/ff-journal-logo.jpg"
-    },
-    {
-      "alt": "Statesman Journal",
-      "link": "http://burningman.com",
-      "img": "../../assets/img/statesman-journal-logo2.jpeg"
     }
   ],
   "members": [
