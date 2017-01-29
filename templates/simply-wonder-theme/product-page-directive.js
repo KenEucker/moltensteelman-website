@@ -6,7 +6,8 @@ window.page.directive = {
             'a@href': 'link.link'
         }
     },
-    '.images img.big@src': 'main-image',
+    '.big img@src': 'main-image',
+    '.big .video': 'main-video',
     '.images .column': {
         'image<-images': {
             'img@src': 'image.image'
@@ -19,12 +20,6 @@ window.page.directive = {
     '#description label.text-field': 'text-field-text',
     '#description input@placeholder': 'text-field-placeholder',
     '#payment': 'payment-html',
-    // '#description .options option': {
-    //     'color<-colors': {
-    //         '.': 'color',
-    //         '.@value': 'color'
-    //     }
-    // },
     '#description .button': 'buy-button-text',
     '#links a': {
         'link<-links': {

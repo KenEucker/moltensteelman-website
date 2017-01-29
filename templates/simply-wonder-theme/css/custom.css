@@ -202,8 +202,13 @@
 	opacity:1;
 }
 
-img.big {
-  width: 650px;
+.big img{
+  max-width: 640px;
+  max-height: 340px;
+  border-radius: 5px;
+}
+.big {
+  max-width: 650px;
   max-height: 350px;
 }
 

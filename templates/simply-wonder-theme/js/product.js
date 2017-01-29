@@ -15,10 +15,26 @@ $(document).ready(function() {
             var option = this.options[e.target.selectedIndex].text;
             paymentPrice.html(option.substr(option.indexOf('$') - 1));
         });
-
     
+    $('i.icon-youtube').hide();
+
+    if($('.big .video').html().length) {
+        $('.big img')[0].src = "";
+    }
+
+    $('i.icon-youtube').click(function(){
+        $('.big img')[0].src = "";
+        $('.big .video').show();     
+        $(this).hide();
+    });
+
     $('.images img.thumb').click(function(){
-        $('img.big')[0].src = this.src;
+        $('.big img')[0].src = this.src;
+
+        if($('.big .video').html().length) {
+            $('.big .video').hide();     
+            $('i.icon-youtube').show();
+        }
     });
     $('#questions').submit(function(e){
         e.preventDefault();
