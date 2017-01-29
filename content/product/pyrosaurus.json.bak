@@ -1,13 +1,13 @@
 {
   "title": "Moltensteelman Pyrosaurus ",
-  "description": "A family of fantasy dragons ",
+  "description": "A family of fantasy dragons individually crafted in gleaming stainless steel, each with its own style and personality. Some are animated, some breathe fire, and all are exquisite.  Articulated wings spread majestically or fold flat to the body. Delightful on the patio or in the home, the Pyrosaurus makes a memorable accent for weddings, fantasy themed parties and special events. Your choice of jewel tones for the mounting ball on stand.",
   "colors": [
-    "{\"color\":\"blue\"}",
-    "{\"color\":\"red\"}",
-    "{\"color\":\"purple\"}",
-    "{\"color\":\"green\"}",
-    "{\"color\":\"rainbow\"}",
-    "{\"color\":\"silver\"}"
+    "Blue",
+    "Red",
+    "Purple",
+    "Green",
+    "Rainbow",
+    "Silver"
   ],
   "text-field-text": "",
   "buy-button-text": "Place Order",
@@ -27,12 +27,12 @@
   ],
   "navigation-links": [
     {
-      "text": "Cherry",
-      "link": "/cherry"
-    },
-    {
       "text": "The Mini Walking Beast",
       "link": "/theminiwalkingbeast"
+    },
+    {
+      "text": "Cherry",
+      "link": "/cherry"
     }
   ],
   "page-heading": "Moltensteelman Pyrosaurus ",
