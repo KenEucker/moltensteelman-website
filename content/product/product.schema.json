@@ -32,11 +32,7 @@
             "id": "link"
           }
         },
-        "id": "2",
-        "required": [
-          "text",
-          "link"
-        ]
+        "id": "2"
       },
       "id": "links"
     },
@@ -54,11 +50,7 @@
             "id": "link"
           }
         },
-        "id": "1",
-        "required": [
-          "text",
-          "link"
-        ]
+        "id": "1"
       },
       "id": "navigation-links"
     },
@@ -82,6 +74,10 @@
       "type": "string",
       "id": "main-image"
     },
+    "main-video": {
+      "type": "string",
+      "id": "main-video"
+    },
     "images": {
       "type": "array",
       "items": {
@@ -96,11 +92,7 @@
             "id": "alt"
           }
         },
-        "id": "3",
-        "required": [
-          "image",
-          "alt"
-        ]
+        "id": "3"
       },
       "id": "images"
     },
@@ -126,12 +118,7 @@
             "id": "description"
           }
         },
-        "id": "5",
-        "required": [
-          "image",
-          "title",
-          "description"
-        ]
+        "id": "2"
       },
       "id": "features"
     },
