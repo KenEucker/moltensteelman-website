@@ -63,10 +63,10 @@
       "protected": false
     },
     {
-      "route": "/theminiwalkingbeast",
+      "route": "/thewalkingbeastrcmodel",
       "template": "simply-wonder-theme",
       "page": "product.html",
-      "content": "content/product/theminiwalkingbeast.json",
+      "content": "content/product/thewalkingbeastrcmodel.json",
       "protected": false
     },
     {
