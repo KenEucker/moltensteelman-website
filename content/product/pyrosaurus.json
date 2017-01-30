@@ -4,11 +4,11 @@
   "description": "A family of fantasy dragons individually crafted in gleaming stainless steel, each with its own style and personality. Some are animated, some breathe fire, and all are exquisite.  Articulated wings spread majestically or fold flat to the body. Delightful on the patio or in the home, the Pyrosaurus makes a memorable accent for weddings, fantasy themed parties and special events. Your choice of jewel tones for the mounting ball, choose blue, green, purple, red, silver or rainbow iridescent. Gas flame for outdoor use only. ",
   "price": "$2,700",
   "price-heading": "Price",
-  "buy-button-text": "Place Order",
   "text-field-text": "",
   "text-field-placeholder": "",
+  "buy-button-text": "Place Order",
   "main-image": "../../assets/img/2016PyroPairJD.jpg",
-  "main-video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/JCI905E3o2Y' frameborder='0' allowfullscreen></iframe>",
+  "main-video": "<iframe width='480' height='315' src='https://www.youtube.com/embed/JCI905E3o2Y' frameborder='0' allowfullscreen></iframe>",
   "images": [
     {
       "image": "../../assets/img/2016PyroPairJD.jpg",
