@@ -89,12 +89,12 @@
 		<!-- End Header and Nav -->
 		<!-- Reveal requires this even though we are only using reveal for the modal window -->
 		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
 				</section>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="images medium-7 columns">
 				<div class="big thumbnail">
@@ -190,39 +190,38 @@
 			</div>
 		</div>
 
-		<!--Contact form Start here-->
-		<!--<div id="contact-us" class="reveal-modal small">
-				<div class="widget">
+		<!--Contact Start here-->
+		<section id="contact" class="page-section">
+			<!--Contact form Start here-->
+			<div id="contact-us" class="reveal-modal small">
 				<h4>Contact Us</h4>
-				<form class="contactform" data-abide>
+				<form action="/Gmail" method="post" class="form-stacked" data-abide>
+					<input type="hidden" id="formname" name="subject" value="contact-us" />
 					<div class="item item-pair">
 						<label for="FullName">Full Name
-						<input type="text" name="FullName" id="FullName" class="small-input cat_textbox" required   pattern="[a-zA-Z]+"  maxlength="255">
-							<small class="error small-input">Name is required and must be a string.</small>
-						</label>
+									<input type="text" name="name" id="FullName" class="small-input cat_textbox" required   pattern="[a-zA-Z]+"  maxlength="255">
+									<small class="error small-input">Name is required and must be a string.</small>
+								</label>
 						<label for="EmailAddress">Email Address
-						<input type="text" name="EmailAddress" id="EmailAddress" class="small-input cat_textbox" maxlength="255" required  >
-							<small class="error small-input">An email address is required.</small>
-						</label>
-					</div>
-					<div class="item">
-						<label for="Website">Website
-						<input type="text" name="Website" id="Website" class="small-input cat_textbox" maxlength="255">
-						</label>
+									<input type="text" name="replyTo" id="EmailAddress" class="small-input cat_textbox" maxlength="255" required  >
+									<small class="error small-input">An email address is required.</small>
+								</label>
 					</div>
 					<div class="item">
 						<label>Message</label>
-						<textarea  cols="10" name="Message" rows="4" class="cat_listbox" required ></textarea>
+						<textarea cols="10" name="message" rows="4" class="cat_listbox" required></textarea>
 						<small class="error">Please enter your message</small>
 					</div>
-					<div class="item">
-						<input class="button alert small" type="submit" value="Submit" id="catwebformbutton">
+					<div class="actions">
+						<input class="button alert" type="submit" value="Send">
 					</div>
-					</form>
 					<a class="close-reveal-modal">&#215;</a>
+				</form>
 				</div>
-			</div>-->
-		<!--Contact form End here-->
+				<!--Contact form End here-->
+			<!--End .row-->
+		</section>
+		<!--Contact End here-->
 
 		<!--Footer Start here-->
 		<footer class="footer">
@@ -240,7 +239,6 @@
 			</p>
 		</footer>
 		<!--Footer End here-->
-
 
 	</div>
 	<!--End .wrapper-->

@@ -153,6 +153,38 @@
 
 		<hr>
 
+		<!--Contact Start here-->
+		<section id="contact" class="page-section">
+			<!--Contact form Start here-->
+			<div id="contact-us" class="reveal-modal small">
+				<h4>Contact Us</h4>
+				<form action="/Gmail" method="post" class="form-stacked" data-abide>
+					<input type="hidden" id="formname" name="subject" value="contact-us" />
+					<div class="item item-pair">
+						<label for="FullName">Full Name
+									<input type="text" name="name" id="FullName" class="small-input cat_textbox" required   pattern="[a-zA-Z]+"  maxlength="255">
+									<small class="error small-input">Name is required and must be a string.</small>
+								</label>
+						<label for="EmailAddress">Email Address
+									<input type="text" name="replyTo" id="EmailAddress" class="small-input cat_textbox" maxlength="255" required  >
+									<small class="error small-input">An email address is required.</small>
+								</label>
+					</div>
+					<div class="item">
+						<label>Message</label>
+						<textarea cols="10" name="message" rows="4" class="cat_listbox" required></textarea>
+						<small class="error">Please enter your message</small>
+					</div>
+					<div class="actions">
+						<input class="button alert" type="submit" value="Send">
+					</div>
+					<a class="close-reveal-modal">&#215;</a>
+				</form>
+				</div>
+				<!--Contact form End here-->
+			<!--End .row-->
+		</section>
+		<!--Contact End here-->
 
 		<!--Footer Start here-->
 		<footer class="footer">

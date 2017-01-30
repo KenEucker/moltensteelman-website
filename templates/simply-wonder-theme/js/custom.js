@@ -6,6 +6,9 @@ $(document).ready(function() {
 		$(el).replaceWith(contents);
 	});
 
+	// HACKEY SACK
+	$('#sitemap a[href="#contact-us"]').attr('data-reveal-id','contact-us');
+
 	/*------------ For Scrollspy Init ------------ */
 	$('.nav-link').each(function(i) {
 		var position = $(this).attr("href");
@@ -23,7 +26,6 @@ $(document).ready(function() {
 			});
 		}
 	});
-
 	/*------------ For Top Banner ------------ */
 	// Full list of configuration options available here:
 	// https://github.com/hakimel/reveal.js#configuration
@@ -38,11 +40,6 @@ $(document).ready(function() {
 		autoSlide : 5000,
 		minScale : 0.2,
 		maxScale : 1.0
-	});
-
-	$('.controller-pause').click(function(){
-		Reveal.configure({ autoSlide: 0 }); // off
-		$(this).fadeOut();
 	});
 
 	/*------------ For smooth scroll ------------ */

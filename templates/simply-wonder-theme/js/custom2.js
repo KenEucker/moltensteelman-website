@@ -7,5 +7,13 @@ $(document).ready(function() {
 	});
 
 
+	/*------------ For Top Banner ------------ */
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		width : 1024,
+		height : 660,
+		history : true,
+	});
 
 });
