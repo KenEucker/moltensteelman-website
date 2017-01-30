@@ -48,7 +48,7 @@
   "links": [],
   "navigation-links": [
     {
-      "text": "The Mini Walking Beast",
+      "text": "The Walking Beast RC Model",
       "link": "/thewalkingbeastrcmodel"
     },
     {
@@ -59,5 +59,41 @@
   "questions-heading": "Have a question about this product?",
   "questions-placeholder": "Ask your question here",
   "questions-button": "Ask",
-  "payment-html": "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\"> <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\"> <input type=\"hidden\" name=\"hosted_button_id\" value=\"XMXJTR58SX8T8\"> <table> <tr><td><input type=\"hidden\" name=\"on0\" value=\"Size\">Size</td></tr><tr><td><select name=\"os0\"> \t<option value=\"Juvenile\">Juvenile $1,900.00 USD</option> \t<option value=\"Juvenile Delinquent (w/Fire)\">Juvenile Delinquent (w/Fire) $2,700.00 USD</option> \t<option value=\"Adult\">Adult $3,750.00 USD</option> \t<option value=\"Adult (w/Fire)\">Adult (w/Fire) $4,700.00 USD</option> \t<option value=\"Animated Adult (w/Fire)\">Animated Adult (w/Fire) $7,500.00 USD</option> \t<option value=\"Colossal (w/Fire)\">Colossal (w/Fire) $12,500.00 USD</option> \t<option value=\"Animated Colossal (w/Fire)\">Animated Colossal (w/Fire) $15,500.00 USD</option> </select> </td></tr> <tr><td><input type=\"hidden\" name=\"on1\" value=\"Color\">Color</td></tr><tr><td><select name=\"os1\"> \t<option value=\"Blue\">Blue </option> \t<option value=\"Green\">Green </option> \t<option value=\"Red\">Red </option> \t<option value=\"Purple\">Purple </option> \t<option value=\"Rainbow\">Rainbow </option> </select> </td></tr> </table> <input type=\"hidden\" name=\"currency_code\" value=\"USD\"> <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\"> <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\"> </form>"
+  "payment-html": "<form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\" target=\"_top\"> <input type=\"hidden\" name=\"cmd\" value=\"_s-xclick\"> <input type=\"hidden\" name=\"hosted_button_id\" value=\"XMXJTR58SX8T8\"> <table> <tr><td><input type=\"hidden\" name=\"on0\" value=\"Size\">Size</td></tr><tr><td><select name=\"os0\"> \t<option value=\"Juvenile\">Juvenile $1,900.00 USD</option> \t<option value=\"Juvenile Delinquent (w/Fire)\">Juvenile Delinquent (w/Fire) $2,700.00 USD</option> \t<option value=\"Adult\">Adult $3,750.00 USD</option> \t<option value=\"Adult (w/Fire)\">Adult (w/Fire) $4,700.00 USD</option> \t<option value=\"Animated Adult (w/Fire)\">Animated Adult (w/Fire) $7,500.00 USD</option> \t<option value=\"Colossal (w/Fire)\">Colossal (w/Fire) $12,500.00 USD</option> \t<option value=\"Animated Colossal (w/Fire)\">Animated Colossal (w/Fire) $15,500.00 USD</option> </select> </td></tr> <tr><td><input type=\"hidden\" name=\"on1\" value=\"Color\">Color</td></tr><tr><td><select name=\"os1\"> \t<option value=\"Blue\">Blue </option> \t<option value=\"Green\">Green </option> \t<option value=\"Red\">Red </option> \t<option value=\"Purple\">Purple </option> \t<option value=\"Rainbow\">Rainbow </option> </select> </td></tr> </table> <input type=\"hidden\" name=\"currency_code\" value=\"USD\"> <input type=\"image\" src=\"https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif\" border=\"0\" name=\"submit\" alt=\"PayPal - The safer, easier way to pay online!\"> <img alt=\"\" border=\"0\" src=\"https://www.paypalobjects.com/en_US/i/scr/pixel.gif\" width=\"1\" height=\"1\"> </form>",
+  "sitemap": [
+    {
+      "header": "Products",
+      "links": [
+        {
+          "link": "/pyrosaurus",
+          "text": "Pyrosaurus"
+        },
+        {
+          "link": "/cherry",
+          "text": "Cherry"
+        },
+        {
+          "link": "/thewalkingbeastrcmodel",
+          "text": "The Walking Beast RC Model"
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "links": [
+        {
+          "link": "/thewalkingbeast",
+          "text": "The Walking Beast"
+        },
+        {
+          "link": "/flamboni",
+          "text": "The Flamboni"
+        },
+        {
+          "link": "/sarp10",
+          "text": "The SARP-10"
+        }
+      ]
+    }
+  ]
 }

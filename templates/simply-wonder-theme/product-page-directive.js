@@ -27,6 +27,18 @@ window.page.directive = {
             '.@href': 'link.link'
         }
     },
+    '#sitemap .column': {
+        'map<-sitemap': {
+            'h6': 'map.header',
+            'div': {
+                'link<-map.links': {
+                    'a@href': 'link.link',
+                    'a': 'link.text'
+                }
+            }
+        }
+    },
+    //'#ps': 'copyright',
     '#tabs > li.first a': 'features-heading',
     '#features h4': 'features-heading',
     '#features .review': {

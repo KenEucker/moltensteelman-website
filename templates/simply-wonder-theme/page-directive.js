@@ -61,6 +61,17 @@ window.page.directive = {
             '.description span': 'event.description'
         } 
     },
+    '#sitemap .column': {
+        'map<-sitemap': {
+            'h6': 'map.header',
+            'div': {
+                'link<-map.links': {
+                    'a@href': 'link.link',
+                    'a': 'link.text'
+                }
+            }
+        }
+    },
     '#contact h3': 'contact-heading',
     '#contact p': 'contact-blurb'
 };

@@ -30,5 +30,16 @@ window.page.directive = {
             '.stat': 'bullet.amount',
             'span': 'bullet.name'
         }
-    }
+    },
+    '#sitemap .column': {
+        'map<-sitemap': {
+            'h6': 'map.header',
+            'div': {
+                'link<-map.links': {
+                    'a@href': 'link.link',
+                    'a': 'link.text'
+                }
+            }
+        }
+    },
 };

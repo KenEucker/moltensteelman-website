@@ -22,6 +22,10 @@
       "type": "string",
       "id": "price-heading"
     },
+    "buy-button-text": {
+      "type": "string",
+      "id": "buy-button-text"
+    },
     "text-field-text": {
       "type": "string",
       "id": "text-field-text"
@@ -29,10 +33,6 @@
     "text-field-placeholder": {
       "type": "string",
       "id": "text-field-placeholder"
-    },
-    "buy-button-text": {
-      "type": "string",
-      "id": "buy-button-text"
     },
     "main-image": {
       "type": "string",
@@ -56,7 +56,7 @@
             "id": "alt"
           }
         },
-        "id": "1"
+        "id": "3"
       },
       "id": "images"
     },
@@ -124,6 +124,38 @@
     "payment-html": {
       "type": "string",
       "id": "payment-html"
+    },
+    "sitemap": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "header": {
+            "type": "string",
+            "id": "header"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "link": {
+                  "type": "string",
+                  "id": "link"
+                },
+                "text": {
+                  "type": "string",
+                  "id": "text"
+                }
+              },
+              "id": "2"
+            },
+            "id": "links"
+          }
+        },
+        "id": "0"
+      },
+      "id": "sitemap"
     }
   },
   "id": "/"
