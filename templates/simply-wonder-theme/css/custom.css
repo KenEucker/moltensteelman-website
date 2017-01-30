@@ -269,7 +269,7 @@ img.thumb {
 
 .slides img {
   max-height: 350px;
-  border-radius: 40px;
+  border-radius: 20px;
   margin-top: 0 !important;
 }
 
@@ -284,7 +284,7 @@ img.thumb {
 
 .controller-pause {
   left: 43%;
-  top: unset !important;
+  margin-top: -185px;
 }
 
 .reveal-modal {

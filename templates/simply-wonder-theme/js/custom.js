@@ -127,23 +127,7 @@ $(document).ready(function() {
 		});
 		
 	}
-
-	function showMemberBlurb(target) {
-		$('#about-blurb .member').html($(target).find('.caption').html());
-		$('#about-blurb .original').addClass('hidden');
-		$('#about-blurb .member').removeClass('hidden');
-	}
-
-	$('div.our-team').hover(function(){
-		showMemberBlurb(this);
-	});
-	$('div.our-team').click(function(){
-		showMemberBlurb(this);
-	});
-	$('#about-title').click(function(){
-			$('#about-blurb .original').removeClass('hidden');
-			$('#about-blurb .member').addClass('hidden');
-	});
+	
 	$('form input[type="submit"]').click(function() {
 		$('form .close-reveal-modal').click();
 	});
