@@ -29,7 +29,7 @@ $(document).ready(function() {
 	// https://github.com/hakimel/reveal.js#configuration
 	Reveal.initialize({
 		width : 1024,
-		height : 560,
+		height : 660,
 		controls : false,
 		progress : false,
 		history : true,
