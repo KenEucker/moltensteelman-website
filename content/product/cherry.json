@@ -20,9 +20,5 @@
   "questions-heading": "Have a question about this product?",
   "questions-placeholder": "Ask your question here",
   "questions-button": "Ask",
-  "colors": [
-    {
-      "color": "Stainless steel "
-    }
-  ]
+  "payment-html": ""
 }

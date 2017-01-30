@@ -2,11 +2,6 @@
     "page-heading": "The Mini Walking Beast",
     "title": "Here is a title, finally",
     "description": "The Mini Walking Beast",
-    "colors": [
-        {
-            "color": "Unpainted Steel"
-        }
-    ],
     "price": "Available",
     "price-heading": "Pre Order",
     "buy-button-text": "Pre Order",
@@ -25,5 +20,6 @@
             "text": "Pyrosaurus",
             "link": "/pyrosaurus"
         }
-    ]
+    ],
+  "payment-html": ""
 }
