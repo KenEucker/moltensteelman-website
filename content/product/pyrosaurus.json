@@ -94,6 +94,19 @@
           "text": "The SARP-10"
         }
       ]
+    },
+    {
+      "header": "Why",
+      "links": [
+        {
+          "link": "#contact-us",
+          "text": "Message Us for more"
+        },
+        {
+          "link": "/version",
+          "text": "Open Sourced Website"
+        }
+      ]
     }
   ]
 }

@@ -131,5 +131,54 @@
   "page-author-link-text": "Ken Eucker published this site",
   "contact-us-subject": "Homepage Contact Form",
   "contact-heading": "Contact Us",
-  "contact-blurb": "We bring fire entertainment to all of your fun events!"
+  "contact-blurb": "We bring fire entertainment to all of your fun events!",
+  "sitemap": [
+    {
+      "header": "Products",
+      "links": [
+        {
+          "link": "/pyrosaurus",
+          "text": "Pyrosaurus"
+        },
+        {
+          "link": "/cherry",
+          "text": "Cherry"
+        },
+        {
+          "link": "/thewalkingbeastrcmodel",
+          "text": "The Walking Beast RC Model"
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "links": [
+        {
+          "link": "/thewalkingbeast",
+          "text": "The Walking Beast"
+        },
+        {
+          "link": "/flamboni",
+          "text": "The Flamboni"
+        },
+        {
+          "link": "/sarp10",
+          "text": "The SARP-10"
+        }
+      ]
+    },
+    {
+      "header": "Why",
+      "links": [
+        {
+          "link": "#contact-us",
+          "text": "Message Us for more"
+        },
+        {
+          "link": "/version",
+          "text": "Open Sourced Website"
+        }
+      ]
+    }
+  ]
 }
