@@ -29,7 +29,7 @@ $(document).ready(function() {
 	// https://github.com/hakimel/reveal.js#configuration
 	Reveal.initialize({
 		width : 1024,
-		height : 350,
+		height : 560,
 		controls : false,
 		progress : false,
 		history : true,
@@ -127,7 +127,7 @@ $(document).ready(function() {
 		});
 		
 	}
-	
+
 	$('form input[type="submit"]').click(function() {
 		$('form .close-reveal-modal').click();
 	});
