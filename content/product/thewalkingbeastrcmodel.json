@@ -4,13 +4,40 @@
     "description": "The Mini Walking Beast",
     "price": "Available",
     "price-heading": "Pre Order",
-    "buy-button-text": "Pre Order",
     "text-field-text": "Maker Name",
     "text-field-placeholder": "For recognition of your contributions",
+    "buy-button-text": "Pre Order",
+    "main-image": "../../assets/img/2016PyroPairJD.jpg",
+    "main-video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/JCI905E3o2Y' frameborder='0' allowfullscreen></iframe>",
+    "images": [
+        {
+            "image": "../../assets/img/2016PyroPairJD.jpg",
+            "alt": "Pair of pyrosaurus'"
+        },
+        {
+            "image": "../../assets/img/2015JDPyrosaurus.jpg",
+            "alt": "Pair of pyrosaurus"
+        }
+    ],
+    "features-heading": "Features",
+    "features": [
+        {
+            "image": "../../assets/img/2015JDPyrosaurus.jpg",
+            "title": "A range of options ",
+            "description": "All Pyrosaurus are made of rust-free stainless steel and have wings that fully extend and fold flat to the body. Adult Pyrosuarus is available with or without fire; also available with optional animation. Juvenile Pyrosaurus is available with or without fire. The Juvenile Delinquent (shown) breathes a 24 inch flame plume. Colossal Pyrosaurus is equipped with fire and is available as a stationary figure or with optional animation. "
+        },
+        {
+            "image": "../../assets/img/Pyro-spec-0114.jpg",
+            "title": "Fully designed and elegantly crafted ",
+            "description": "The Pyrosaurus are drawn from the artist’s imagination and laser cut from original designs. Each Pyrosaurus is precision crafted and expertly welded, using heavy gauge stainless steel and top quality fittings for lasting quality. "
+        },
+        {
+            "image": "../../assets/img/2012MartinPyro.jpg",
+            "title": "Limited artist's production ",
+            "description": "The Pyrosaurus will be exclusively produced by the original artist in numbered limited edition."
+        }
+    ],
     "links": [],
-    "questions-heading": "Have a question about this product?",
-    "questions-placeholder": "Ask your question here",
-    "questions-button": "Ask",
     "navigation-links": [
         {
             "text": "Cherry",
@@ -21,5 +48,8 @@
             "link": "/pyrosaurus"
         }
     ],
-  "payment-html": ""
+    "questions-heading": "Have a question about this product?",
+    "questions-placeholder": "Ask your question here",
+    "questions-button": "Ask",
+    "payment-html": ""
 }
