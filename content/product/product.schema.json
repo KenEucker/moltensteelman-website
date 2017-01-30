@@ -2,6 +2,10 @@
   "$schema": "http://moltensteelman.com/content/product",
   "type": "object",
   "properties": {
+    "page-heading": {
+      "type": "string",
+      "id": "page-heading"
+    },
     "title": {
       "type": "string",
       "id": "title"
@@ -9,54 +13,6 @@
     "description": {
       "type": "string",
       "id": "description"
-    },
-    "text-field-text": {
-      "type": "string",
-      "id": "text-field-text"
-    },
-    "buy-button-text": {
-      "type": "string",
-      "id": "buy-button-text"
-    },
-    "links": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "text": {
-            "type": "string",
-            "id": "text"
-          },
-          "link": {
-            "type": "string",
-            "id": "link"
-          }
-        },
-        "id": "2"
-      },
-      "id": "links"
-    },
-    "navigation-links": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "text": {
-            "type": "string",
-            "id": "text"
-          },
-          "link": {
-            "type": "string",
-            "id": "link"
-          }
-        },
-        "id": "1"
-      },
-      "id": "navigation-links"
-    },
-    "page-heading": {
-      "type": "string",
-      "id": "page-heading"
     },
     "price": {
       "type": "string",
@@ -66,9 +22,17 @@
       "type": "string",
       "id": "price-heading"
     },
+    "text-field-text": {
+      "type": "string",
+      "id": "text-field-text"
+    },
     "text-field-placeholder": {
       "type": "string",
       "id": "text-field-placeholder"
+    },
+    "buy-button-text": {
+      "type": "string",
+      "id": "buy-button-text"
     },
     "main-image": {
       "type": "string",
@@ -92,7 +56,7 @@
             "id": "alt"
           }
         },
-        "id": "3"
+        "id": "1"
       },
       "id": "images"
     },
@@ -121,6 +85,29 @@
         "id": "2"
       },
       "id": "features"
+    },
+    "links": {
+      "type": "array",
+      "items": {},
+      "id": "links"
+    },
+    "navigation-links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "id": "text"
+          },
+          "link": {
+            "type": "string",
+            "id": "link"
+          }
+        },
+        "id": "1"
+      },
+      "id": "navigation-links"
     },
     "questions-heading": {
       "type": "string",
