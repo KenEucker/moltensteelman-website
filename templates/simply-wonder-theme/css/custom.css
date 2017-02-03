@@ -164,6 +164,9 @@
 
 .gallery-item a {
   border-radius: 15% !important;
+  max-width: 220px;
+  /*width: unset;
+  height: unset;*/
 }
 
 #portfolio .fancybox img {
@@ -185,7 +188,7 @@
 	background: transparent;
 }
 .top-bar, .top-bar ul {
-	background-color: transparent;
+	background-color: black;
 }
 .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] { 
 	border-right: solid 1px #0C7BA2;

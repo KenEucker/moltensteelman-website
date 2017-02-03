@@ -451,13 +451,13 @@ button.btn-grey:hover, button.btn-grey:focus, .button.btn-grey:hover, .button.bt
 		margin-bottom: 20px;
 		display: block;
 		border-radius: 50%;
-		width: 100px;
-		height: 100px;
+		/*width: 100px;
+		height: 100px;*/
 		margin: 0 auto;
 	}
 	#portfolio .fancybox img{
 		border-radius: 50%;
-		height: 90px;
+		/*height: 90px;*/
 		margin: 0 auto;
 	}
 	.small-input{width: 100% !important;}
