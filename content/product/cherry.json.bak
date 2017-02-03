@@ -1,12 +1,12 @@
 {
-  "page-heading": "CHR-14 Chariot Hauling Robot ",
+  "page-heading": "Cherry CHR-14 Chariot Racer  ",
   "title": "Moltensteelman CHR-14 -- Cherry Chariot Hauling Robot",
-  "description": "A mech is a walking robot that is operated by a human pilot. We think mechs are pretty cool and we came up with an original design for a two-legged mech we call Cherry – the Moltensteelman CHR-14 Chariot Racer.   Cherry pulls a futuristic chariot that carries a driver and passenger in style, at speeds that range from a gentle cruise to a brisk 7 mph. These steadfast chariots are fun to ride and fun to watch, elegant in motion and easy to drive. Operates on energy efficient low-pressure hydraulics and powered by a long-lasting and reliable battery system. State of the art electronic systems put precision controls at your fingertips. Engineered for optimum weight and maximum durability and easily folds to a compact size for storage and transport. Bring your imagination -- Cherry is the ideal machine to customize for your dream fantasy ride, perfect for groups and for dramatic getaways.   Will be produced on order with price discounts available for quantity orders.  ",
+  "description": "A mech is a walking robot that is operated by a human pilot. We think mechs are pretty cool and we came up with an original design for a two-legged mech we call Cherry – the Moltensteelman CHR-14 Chariot Racer.   Cherry pulls a futuristic chariot that will carry a driver and passenger. Cherry is built for fun, customizable and easy to operate.  Engineered for durability and folds to compact size for storage and transport.  Will be produced on order, with price discounts available for quantity orders.  ",
   "price": "In development ",
   "price-heading": "Pre Order",
+  "buy-button-text": "Pre Order",
   "text-field-text": "",
   "text-field-placeholder": "For recognition of your contributions",
-  "buy-button-text": "Pre Order",
   "main-image": "../../assets/img/2016PyroPairJD.jpg",
   "main-video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/JCI905E3o2Y' frameborder='0' allowfullscreen></iframe>",
   "images": [
@@ -51,5 +51,54 @@
   "questions-heading": "Have a question about this product?",
   "questions-placeholder": "Ask your question here",
   "questions-button": "Ask",
-  "payment-html": ""
+  "payment-html": "",
+  "sitemap": [
+    {
+      "header": "Products",
+      "links": [
+        {
+          "link": "/pyrosaurus",
+          "text": "Pyrosaurus"
+        },
+        {
+          "link": "/cherry",
+          "text": "Cherry"
+        },
+        {
+          "link": "/thewalkingbeastrcmodel",
+          "text": "The Walking Beast RC Model"
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "links": [
+        {
+          "link": "/thewalkingbeast",
+          "text": "The Walking Beast"
+        },
+        {
+          "link": "/flamboni",
+          "text": "The Flamboni"
+        },
+        {
+          "link": "/sarp10",
+          "text": "The SARP-10"
+        }
+      ]
+    },
+    {
+      "header": "Why",
+      "links": [
+        {
+          "link": "#contact-us",
+          "text": "Message Us for more"
+        },
+        {
+          "link": "/version",
+          "text": "Open Sourced Website"
+        }
+      ]
+    }
+  ]
 }
