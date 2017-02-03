@@ -312,3 +312,14 @@ img.thumb {
 .top-bar.expanded {
     margin-top: -50px;
 }
+
+.caption {
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#about .section-content {
+    text-align: center;
+}
+
