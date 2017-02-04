@@ -47,6 +47,7 @@ window.page.directive = {
         }
     },
     '#events .section-title': 'events-heading',
+    '#events-link': 'events-heading',
     '#events .section-description': 'events-description',
     "#events .event": {
         'event<-events': {
