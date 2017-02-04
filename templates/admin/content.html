@@ -23,7 +23,10 @@
     </script>
   </head>
   <body>
-      <div class="rows">
+      <div class="rows">  
+          <div id="new-window">
+              <h3 class="inline"><a href="content.html" target="_blank">Open Editor in it's own window<i class="fa fa-arrow-right"></i></a></h3>
+          </div>
           <div>
             <h4 class="inline">Home</h4>
             <h3 class="inline"><span><a href="editor.html?type=landing&content=home">Edit</a></span></h3>
@@ -60,5 +63,10 @@
             <h3 class="inline"><span><a href="/flamboni" target="_blank">Visit</a></span></h3>
           </div>
       </div>
+      <script>
+        if (window == window.top) {
+          document.querySelector('#new-window').style.display = "none";
+        }
+      </script>
   </body>
 </html>
