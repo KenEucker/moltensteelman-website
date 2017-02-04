@@ -150,7 +150,9 @@ function serveFile(route, req, res) {
 }
 
 function backupFile(target) {
-    var backup = target + ".bak";
+    var datestamp = Date().toLocaleDateString("en-US").replace(/[/]/g,'-'),
+        extension = "bak",
+        backup = target + "." + datestamp + "." + extension;
     
     try{
         fs.writeFileSync(backup, fs.readFileSync(target));
