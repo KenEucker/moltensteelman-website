@@ -24,6 +24,7 @@ h3 span {
     display: inline-block;
 }
 
-h1.inline {
+h4.inline {
     vertical-align: middle;
+    color: gray;
 }
