@@ -7,8 +7,8 @@
   "buy-button-text": "Pre Order",
   "text-field-text": "Moltensteelman Studio ",
   "text-field-placeholder": "TWB-RC Model Kit ",
-  "main-image": "../../assets/img/TWB-RC-Feature3artists.jpg",
-  "main-video": "",
+  "main-image": "../../assets/img/2016PyroPairJD.jpg",
+  "main-video": "<if rame width='560' height='315' src='https://www.youtube.com/embed/JCI905E3o2Y' frameborder='0' allowfullscreen></iframe>",
   "images": [
     {
       "image": "../../assets/img/TWB-RC-Feature3artists.jpg",

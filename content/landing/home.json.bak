@@ -8,7 +8,7 @@
   "about-heading": "A little about us",
   "about-description": "",
   "about-blurb-heading": "Fantasy robots and fire ",
-  "about-blurb": "Here is the about blurb where you can go on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on about fire and stuff and things and amish people.<br><br>Then break and  and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on for a little while longer.",
+  "about-blurb": "Moltensteelman is a dynamic duo.",
   "about-image": "../../assets/img/2016PyroPairJD.jpg",
   "events-heading": "Events",
   "events-description": "",
@@ -35,6 +35,13 @@
       "img2": "",
       "img3": "",
       "link": "/thewalkingbeastrcmodel"
+    },
+    {
+      "heading": "CHR-14 Chariot Hauling Robot - \"Cherry\"",
+      "img1": "../../assets/img/CHR-14card.jpg",
+      "img2": "",
+      "img3": "",
+      "link": "/cherry"
     }
   ],
   "products": [
@@ -131,5 +138,54 @@
   "page-author-link-text": "Ken Eucker published this site",
   "contact-us-subject": "Homepage Contact Form",
   "contact-heading": "Contact Us",
-  "contact-blurb": "We bring fire entertainment to all of your fun events!"
+  "contact-blurb": "We bring fire entertainment to all of your fun events!",
+  "sitemap": [
+    {
+      "header": "Products",
+      "links": [
+        {
+          "link": "/pyrosaurus",
+          "text": "Pyrosaurus"
+        },
+        {
+          "link": "/cherry",
+          "text": "Cherry"
+        },
+        {
+          "link": "/thewalkingbeastrcmodel",
+          "text": "The Walking Beast RC Model"
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "links": [
+        {
+          "link": "/thewalkingbeast",
+          "text": "The Walking Beast"
+        },
+        {
+          "link": "/flamboni",
+          "text": "The Flamboni"
+        },
+        {
+          "link": "/sarp10",
+          "text": "The SARP-10"
+        }
+      ]
+    },
+    {
+      "header": "Why",
+      "links": [
+        {
+          "link": "#contact-us",
+          "text": "Message Us for more"
+        },
+        {
+          "link": "/version",
+          "text": "Open Sourced Website"
+        }
+      ]
+    }
+  ]
 }
