@@ -19,3 +19,11 @@ h3 span {
 .button-group {
     vertical-align: top !important;
 }
+
+.inline {
+    display: inline-block;
+}
+
+h1.inline {
+    vertical-align: middle;
+}
