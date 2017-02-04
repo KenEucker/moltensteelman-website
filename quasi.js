@@ -150,7 +150,10 @@ function serveFile(route, req, res) {
 }
 
 function backupFile(target) {
-    var datestamp = Date().toLocaleDateString("en-US").replace(/[/]/g,'-'),
+    var date = new Date(),
+        datestamp = (date.getMonth() + 1) + "-" + 
+  					(date.getDate()) + "-" +
+                    (date.getFullYear()),
         extension = "bak",
         backup = target + "." + datestamp + "." + extension;
     
