@@ -10,6 +10,14 @@
       "type": "string",
       "id": "banner-heading"
     },
+    "callout-heading": {
+      "type": "string",
+      "id": "callout-heading"
+    },
+    "callout-description": {
+      "type": "string",
+      "id": "callout-description"
+    },
     "portfolio-heading": {
       "type": "string",
       "id": "portfolio-heading"

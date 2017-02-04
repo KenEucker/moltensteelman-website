@@ -9,6 +9,8 @@ window.page.directive = {
             'img@src':'splash.img1'
         }
     },
+    '#callout h1': 'callout-heading',
+    '#callout h5': 'callout-description',
     '#portfolio-link': 'portfolio-heading',
     '#portfolio .section-title': 'portfolio-heading',
     '#portfolio .section-description': 'portfolio-description',
