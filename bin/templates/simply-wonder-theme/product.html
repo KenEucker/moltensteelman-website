@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="moltensteelman" />
+	<meta name="keywords" content="moltensteelman, Robot, Aliens, Fire" />
+	<meta name="author" content="Ken Eucker" />
+	<title>Moltensteelman</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../../vendor/foundation/6/css/foundation.css">
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+	<!-- Icon Fonts -->
+	<link rel="stylesheet" href="css/font-awesome.css" media="screen">
+
+	<!-- Reveal core CSS -->
+	<link rel="stylesheet" href="css/reveal.css">
+
+	<!-- fancyBox CSS files -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+	<link href="css/jquery.fancybox-buttons.css" rel="stylesheet">
+
+	<!-- CSS3 Animation  -->
+	<link href="css/animate.css" rel="stylesheet">
+
+	<!--Hacky-->
+	<link href="css/foundation-4-to-6.css" rel="stylesheet">
+
+	<!--Themes styles for this template -->
+	<!-- Select your Theme from below-->
+	<link href="css/style-theme-2.css" rel="stylesheet">
+
+	<!--Custom styles for this template - Add your CSS style in custom.css-->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+		<![endif]-->
+	<script src="js/vendor/custom.modernizr.js"></script>
+
+	<!-- PURE Templating -->
+	<script>window.page = {};</script>
+<script src="./sample.js"></script>
+<script src="./product-page-directive.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header and Nav -->
+		<div class="fixed nav-custom">
+			<nav class="top-bar row">
+				<ul class="title-area">
+					<li class="name">
+						<h1>
+							<a href="#" class="logo">
+								<img src="../../assets/img/moltensteelman-logo.png">
+								<div id="heading">Simply Wonder</div>
+							</a>
+						</h1>
+					</li>
+					<li class="toggle-topbar menu-icon">
+						<a href="#"><span>Menu</span></a>
+					</li>
+				</ul>
+
+				<section class="top-bar-section">
+					<!-- Right Nav Section -->
+					<ul class="right" id="top-nav">
+						<li class="divider"></li>
+						<li><a href="/" class="nav-link"> Home </a></li>
+
+						<div class="inline">
+							<li class="divider"></li>
+							<li><a href="/" class="nav-link link"> Home </a></li>
+						</div>
+					</ul>
+				</section>
+			</nav>
+		</div>
+		<!-- End Header and Nav -->
+		<!-- Reveal requires this even though we are only using reveal for the modal window -->
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="images medium-7 columns">
+				<div class="big thumbnail">
+					<img class="" src="http://placehold.it/650x350">
+					<div class="video"></div>
+				</div>
+				<div class="row small-up-5">
+					<div class="column">
+						<img class="thumbnail thumb" src="http://placehold.it/250x200">
+					</div>
+					<div class="columns">
+						<i class="icon-youtube" style="font-size:70px;cursor:pointer;"></i>
+					</div>
+				</div>
+			</div>
+			<div id="description" class="medium-6 large-5 columns">
+				<h3>My Awesome Product</h3>
+				<p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
+					Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in.</p>
+
+				<div id="payment" class="rows">
+					
+				</div>
+				<!--<div class="row options">
+					<div class="small-3 columns">
+						<label>Color</label>
+					</div>
+					<div class="small-9 columns">
+						<select>
+							<option value="husker">Small</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-3 columns">
+						<label for="middle-label" class="text-field middle">Quantity</label>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" id="middle-label" placeholder="One fish two fish">
+					</div>
+				</div>-->
+				<div class="row">
+					<div class="cost small-9 columns">
+						<label>
+							<span>Cost</span>
+							<h5 class="price right">$1,799</h5> 
+						</label>
+					</div>
+					<!--<div class="small-9 columns">
+						<a href="#" class="button large expanded">Buy Now</a>
+					</div>-->
+				</div>
+
+
+				<div id="links" class="small secondary expanded button-group">
+					<a class="button">Facebook</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="column row">
+			<hr>
+			<ul id="tabs" class="tabs" data-tabs id="example-tabs">
+				<li class="tabs-title is-active first"><a href="#panel1" aria-selected="true">Reviews</a></li>
+				<!--<li class="tabs-title"><a href="#panel2">Similar Products</a></li>-->
+			</ul>
+			<div id="features" class="tabs-content" data-tabs-content="example-tabs">
+				<div class="tabs-panel is-active" id="panel1">
+					<h4>Reviews</h4>
+					<div class="review media-object stack-for-small">
+						<div class="media-object-section">
+							<img class="thumbnail" src="http://placehold.it/200x200">
+						</div>
+						<div class="media-object-section">
+							<h5>Mike Stevenson</h5>
+							<p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus,
+								resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+						</div>
+					</div>
+					<form method="post" action="/Gmail" id="questions" data-abide>			
+						<input type="hidden" id="formname" name="subject" value="product-question" />
+						<label class="question-heading">
+							My Review
+						</label>
+						<div class="input"> 
+							<input type="email" name="replyTo" id="EmailAddress" placeholder="Email Address" class="small-input cat_textbox" maxlength="255" required  >
+						</div>
+						<textarea name="message" placeholder=""></textarea>
+						<!--<input class="button alert" type="submit" value="Send"> -->
+						<button type="submit" class="button">Submit Review</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!--Contact Start here-->
+		<section id="contact" class="page-section">
+			<!--Contact form Start here-->
+			<div id="contact-us" class="reveal-modal small">
+				<h4>Contact Us</h4>
+				<form action="/Gmail" method="post" class="form-stacked" data-abide>
+					<input type="hidden" id="formname" name="subject" value="contact-us" />
+					<div class="item item-pair">
+						<label for="FullName">Full Name
+									<input type="text" name="name" id="FullName" class="small-input cat_textbox" required   pattern="[a-zA-Z]+"  maxlength="255">
+									<small class="error small-input">Name is required and must be a string.</small>
+								</label>
+						<label for="EmailAddress">Email Address
+									<input type="text" name="replyTo" id="EmailAddress" class="small-input cat_textbox" maxlength="255" required  >
+									<small class="error small-input">An email address is required.</small>
+								</label>
+					</div>
+					<div class="item">
+						<label>Message</label>
+						<textarea cols="10" name="message" rows="4" class="cat_listbox" required></textarea>
+						<small class="error">Please enter your message</small>
+					</div>
+					<div class="actions">
+						<input class="button alert" type="submit" value="Send">
+					</div>
+					<a class="close-reveal-modal">&#215;</a>
+				</form>
+				</div>
+				<!--Contact form End here-->
+			<!--End .row-->
+		</section>
+		<!--Contact End here-->
+
+		<!--Footer Start here-->
+		<footer class="footer">
+			<div id="sitemap" class="row text-center">
+				<div class="column large-4 medium-4">
+					<h6>Products</h6>
+					<div>
+						<a href="/pyrosaurus">Pyrosaurus</a>
+					</div>
+				</div>
+			</div>
+			<p id="ps" 	class="text-center">
+				<!-- Copyright information. You can remove my site link. -->
+				Copyright © moltensteelman | Developed by <a href="http://keneucker.com">Ken Eucker</a>
+			</p>
+		</footer>
+		<!--Footer End here-->
+
+	</div>
+	<!--End .wrapper-->
+
+	<!-- Foundation  core JavaScript
+		================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../../vendor/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../../vendor/foundation/6/js/vendor/foundation.min.js"></script>
+
+	<!-- Youtube API -->
+	<script src="http://www.youtube.com/player_api"></script>
+
+	<!-- jQuery scrollspy JS  -->
+	<script src="./js/vendor/jquery-scrollspy.js"></script>
+
+
+	<!-- Reveal jQuery -->
+	<script src="./js/vendor/head.min.js"></script>
+	<script src="./js/vendor/reveal.min.js"></script>
+	<script src="./js/vendor/classList.js"></script>
+
+	<!-- FancyBox main JS -->
+	<script type="text/javascript" src="./js/vendor/jquery.fancybox.js"></script>
+	<script>
+			$(document).foundation();
+		</script>
+<script src="./js/custom.js"></script>
+<script src="./js/custom2.js"></script>
+<script src="./js/product.js"></script>
+</body>
+
+</html>

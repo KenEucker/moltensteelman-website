@@ -1,0 +1,142 @@
+{
+    "page-heading": "The SARP10",
+    "description-title": "The SARP10",
+    "description": "It's a spaceship!",
+    "main-video": "https://www.youtube.com/embed/KqgbLZrsQVw",
+    "callout-title": "\"A masterful feat of engineering\"",
+    "callout-description": "That it is",
+    "callout-button1": "",
+    "callout-button2": "",
+    "bullets": [
+        {
+            "amount": 2,
+            "name": "legs"
+        }
+    ],
+    "images-heading": "Photos",
+    "images": [
+        {
+            "image":"../../assets/img/2010moopieSARP10.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-01.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-02.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-03.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-05.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-06.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-07.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-08.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-09.jpg",
+            "alt":"Pair of pyrosaurus'"
+        },
+        {
+            "image":"../../assets/img/OP-10.jpg",
+            "alt":"Pair of pyrosaurus'"
+        }
+        ],
+    "links": [
+        {
+            "text": "Facebook",
+            "link": "http://facebook.com"
+        }
+    ],
+    "points": [
+        {
+            "heading": "Specifications",
+            "description": "7 tons (14,250 lbs) or about the weight of 4 cars<br>The Walking Beast weighs more than most monster trucks!<br>Height 11 feet<br>Width 8 feet 4 inches<br>Length 24 feet<br>Ground Pressure 20.8 psi when standing on four legs<br>(as compared to 30 psi for a standard passenger car)"
+        },
+        {
+            "heading": "Powered By",
+            "description": "454 cu. in. Big block Chevy V-8 <br>TH400 transmission modified with 475 straight cut gears <br>Two Klune-V extreme under drive Goliath planetary gear reduction boxes <br>Rockwell 2 1/2 ton military differential modified with custom 5 ton parts <br>Final Drive Ratio is 125:1 <br>Fuel Consumption is 2 gallons gasoline per mile (GPM) <br>"
+        },
+        {
+            "heading": "Construction",
+            "description": "Linkage - 6-bar linkage system designed and patented by Joe Klann for walking machines.<br>The Walking Beast  linkage has 56 pivot points and uses 114 bearings.<br>Metals Used - Steel, aluminum, 1040, 4130, 4140, 4340, and 8620 chromium and molybdenum alloy<br>Method - Frame, legs and linkage are tubing cut, notched and welded, or CNC plasma cut, and then formed on a press brake and welded together to form box or angle structures. All pivot points and pins are CNC machined."
+        }
+    ],
+    "navigation-links": [
+        {
+            "text": "Pyrosaurus",
+            "link": "/pyrosaurus"
+        },
+        {
+            "text": "The Mini Walking Beast",
+            "link": "/theminiwalkingbeast"
+        },
+        {
+            "text": "Cherry",
+            "link": "/cherry"
+        }
+    ],
+  "sitemap": [
+    {
+      "header": "Products",
+      "links": [
+        {
+          "link": "/pyrosaurus",
+          "text": "Pyrosaurus"
+        },
+        {
+          "link": "/cherry",
+          "text": "Cherry"
+        },
+        {
+          "link": "/thewalkingbeastrcmodel",
+          "text": "The Walking Beast RC Model"
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "links": [
+        {
+          "link": "/thewalkingbeast",
+          "text": "The Walking Beast"
+        },
+        {
+          "link": "/flamboni",
+          "text": "The Flamboni"
+        },
+        {
+          "link": "/sarp10",
+          "text": "The SARP-10"
+        }
+      ]
+    },
+    {
+      "header": "Why",
+      "links": [
+        {
+          "link": "#contact-us",
+          "text": "Message Us for more"
+        },
+        {
+          "link": "/version",
+          "text": "Open Sourced Website"
+        }
+      ]
+    }
+  ]
+}

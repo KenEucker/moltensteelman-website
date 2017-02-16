@@ -1,0 +1,112 @@
+{
+  "page-heading": "Cherry CHR-14 Chariot Racer  ",
+  "title": "Moltensteelman CHR-14 -- Cherry Chariot Hauling Robot",
+  "description": "A mech is a walking robot that is operated by a human pilot. We think mechs are pretty cool and we came up with an original design for a two-legged mech we call Cherry – the Moltensteelman CHR-14 Chariot Racer.   Cherry pulls a futuristic chariot that can carry a driver and passenger. We are building Cherry to be fun to ride, customizable and easy to operate, and it folds to a compact size for storage and transport.  Cherry will be produced on order, with price discounts available for quantity orders.  ",
+  "price": "In development ",
+  "price-heading": "Pre Order",
+  "buy-button-text": "Pre Order",
+  "text-field-text": "",
+  "text-field-placeholder": "For recognition of your contributions",
+  "main-image": "../../assets/img/2011prototype2leg.jpg",
+  "main-video": "",
+  "images": [
+    {
+      "image": "../../assets/img/2011prototype2leg.jpg",
+      "alt": "Pair of pyrosaurus'"
+    },
+    {
+      "image": "../../assets/img/CHR-14-Cherry-body-legs.jpg",
+      "alt": "Pair of pyrosaurus"
+    },
+    {
+      "image": "../../assets/img/CHR-14-Cherry-in-progress.jpg",
+      "alt": ""
+    },
+    {
+      "image": "../../assets/img/Mech-prototype-July-2014.jpg",
+      "alt": ""
+    }
+  ],
+  "features-heading": "Features",
+  "features": [
+    {
+      "image": "../../assets/img/2015JDPyrosaurus.jpg",
+      "title": "A range of options ",
+      "description": "All Pyrosaurus are made of rust-free stainless steel and have wings that fully extend and fold flat to the body. Adult Pyrosuarus is available with or without fire; also available with optional animation. Juvenile Pyrosaurus is available with or without fire. The Juvenile Delinquent (shown) breathes a 24 inch flame plume. Colossal Pyrosaurus is equipped with fire and is available as a stationary figure or with optional animation. "
+    },
+    {
+      "image": "../../assets/img/Pyro-spec-0114.jpg",
+      "title": "Fully designed and elegantly crafted ",
+      "description": "The Pyrosaurus are drawn from the artist’s imagination and laser cut from original designs. Each Pyrosaurus is precision crafted and expertly welded, using heavy gauge stainless steel and top quality fittings for lasting quality. "
+    },
+    {
+      "image": "../../assets/img/2012MartinPyro.jpg",
+      "title": "Limited artist's production ",
+      "description": "The Pyrosaurus will be exclusively produced by the original artist in numbered limited edition."
+    }
+  ],
+  "links": [],
+  "navigation-links": [
+    {
+      "text": "Pyrosaurus",
+      "link": "/pyrosaurus"
+    },
+    {
+      "text": "The Walking Beast RC Model Kit",
+      "link": "/thewalkingbeastrcmodel"
+    }
+  ],
+  "questions-heading": "Have a question about this product?",
+  "questions-placeholder": "Ask your question here",
+  "questions-button": "Ask",
+  "payment-html": "",
+  "sitemap": [
+    {
+      "header": "Products",
+      "links": [
+        {
+          "link": "/pyrosaurus",
+          "text": "Pyrosaurus"
+        },
+        {
+          "link": "/cherry",
+          "text": "Cherry"
+        },
+        {
+          "link": "/thewalkingbeastrcmodel",
+          "text": "The Walking Beast RC Model"
+        }
+      ]
+    },
+    {
+      "header": "Projects",
+      "links": [
+        {
+          "link": "/thewalkingbeast",
+          "text": "The Walking Beast"
+        },
+        {
+          "link": "/flamboni",
+          "text": "The Flamboni"
+        },
+        {
+          "link": "/sarp10",
+          "text": "The SARP-10"
+        }
+      ]
+    },
+    {
+      "header": "Why",
+      "links": [
+        {
+          "link": "#contact-us",
+          "text": "Message Us for more"
+        },
+        {
+          "link": "/version",
+          "text": "Open Sourced Website"
+        }
+      ]
+    }
+  ]
+}

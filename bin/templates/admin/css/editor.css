@@ -1,0 +1,30 @@
+html, body {
+    background-color: transparent;
+}
+
+label {
+    background-color: #767676;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+h3 span {
+    background-color: #1779ba;
+    color: #fefefe;
+    padding: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.button-group {
+    vertical-align: top !important;
+}
+
+.inline {
+    display: inline-block;
+}
+
+h4.inline {
+    vertical-align: middle;
+    color: gray;
+}
